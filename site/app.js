@@ -14,6 +14,14 @@ const LANE_H = 40;
 const STUB_EST_PX = 230;  // rough rendered stub width, for lane collision
 const STORAGE_KEY = "bayfilm.hidden";
 
+// compact venue tags for the mobile timeline
+const SHORT_NAMES = {
+  roxie: "Roxie", balboa: "Balboa", "4star": "4 Star", newmission: "Alamo",
+  bampfa: "BAMPFA", grandlake: "Grand Lake", stanford: "Stanford", lark: "Lark",
+};
+
+let autoScrollPending = true;  // scroll to "now" once, on first today render
+
 function isoToday() {
   const d = new Date();
   return [
@@ -238,6 +246,12 @@ function renderBoard() {
 
   const isToday = state.date === isoToday();
   const nowMin = minutes(nowHHMM());
+  const desktopMq = window.matchMedia("(min-width: 761px)").matches;
+
+  if (!desktopMq) {
+    renderMobileTimeline(board, shows, isToday, nowMin);
+    return;
+  }
 
   const timed = shows.filter((s) => s.time);
   let startH = 12, endH = 24;
@@ -332,23 +346,101 @@ function renderBoard() {
   }
 }
 
+/* ---------- mobile board: chronological timeline ---------- */
+
+function nowDividerHtml(nowMin) {
+  return `<div class="tl__now"><span>now ${fmtTime(
+    `${String(Math.floor(nowMin / 60)).padStart(2, "0")}:${String(nowMin % 60).padStart(2, "0")}`
+  )}</span></div>`;
+}
+
+function renderMobileTimeline(board, shows, isToday, nowMin) {
+  const sorted = [...shows].sort((a, b) =>
+    (a.time || "00:00").localeCompare(b.time || "00:00") ||
+    a.theater.localeCompare(b.theater));
+
+  const staleNotes = [...new Set(
+    sorted.map((s) => {
+      const t = state.data.theaters[s.theater];
+      const label = staleLabel(t);
+      return label ? `${SHORT_NAMES[s.theater] || t.name} ${label}` : null;
+    }).filter(Boolean))];
+
+  const parts = [];
+  if (staleNotes.length) {
+    parts.push(`<p class="tl__stale">${staleNotes.join(" · ")}</p>`);
+  }
+  let lastHour = null;
+  let nowPlaced = !isToday;
+  for (const s of sorted) {
+    const m = s.time ? minutes(s.time) : null;
+    if (!nowPlaced && m !== null && m >= nowMin) {
+      parts.push(nowDividerHtml(nowMin));
+      nowPlaced = true;
+    }
+    const hour = m === null ? "TBA" : fmtHour(Math.floor(m / 60)).toUpperCase();
+    if (hour !== lastHour) {
+      parts.push(`<div class="tl__hour">${hour === "TBA" ? "TBA" : hour + "M"}</div>`);
+      lastHour = hour;
+    }
+    const t = state.data.theaters[s.theater];
+    const past = isToday && m !== null && m < nowMin;
+    parts.push(
+      `<a class="tl__row${past ? " is-past" : ""}" href="${s.url || "#"}"` +
+      (isToday && s.time ? ` data-time="${s.time}"` : "") +
+      ` target="_blank" rel="noopener">` +
+      `<span class="tl__time">${fmtTime(s.time)}</span>` +
+      `<span class="tl__title">${escapeHtml(s.title)}` +
+      (s.note ? ` <span class="fbadge">${escapeHtml(s.note)}</span>` : "") +
+      `</span>` +
+      `<span class="tl__venue">${SHORT_NAMES[s.theater] || t.name}</span>` +
+      `</a>`);
+  }
+  if (!nowPlaced) parts.push(nowDividerHtml(nowMin));
+  board.innerHTML = `<div class="tl">${parts.join("")}</div>`;
+
+  if (autoScrollPending && isToday) {
+    const divider = board.querySelector(".tl__now");
+    if (divider) divider.scrollIntoView({ block: "center" });
+  }
+  autoScrollPending = false;
+}
+
 // Nudge the now-line and past-dimming along without rebuilding the board —
 // a full re-render mid-scroll kills momentum scrolling on touch devices.
 function updateBoardClock() {
   if (state.view !== "board" || state.date !== isoToday()) return;
   const board = $("#board");
-  const startMin = Number(board.dataset.startMin);
-  const span = Number(board.dataset.span);
-  if (!span) return;
   const nowMin = minutes(nowHHMM());
-  const pct = ((nowMin - startMin) / span) * 100;
-  board.querySelectorAll(".nowline").forEach((line) => {
-    line.style.left = pct + "%";
-    line.style.display = pct > 0 && pct < 100 ? "" : "none";
-  });
-  board.querySelectorAll(".stub-link[data-time]").forEach((a) => {
+
+  const span = Number(board.dataset.span);
+  if (span) {  // desktop grid
+    const startMin = Number(board.dataset.startMin);
+    const pct = ((nowMin - startMin) / span) * 100;
+    board.querySelectorAll(".nowline").forEach((line) => {
+      line.style.left = pct + "%";
+      line.style.display = pct > 0 && pct < 100 ? "" : "none";
+    });
+  }
+  board.querySelectorAll("[data-time]").forEach((a) => {
     a.classList.toggle("is-past", minutes(a.dataset.time) < nowMin);
   });
+  // slide the mobile now-divider down past finished screenings
+  const divider = board.querySelector(".tl__now");
+  if (divider) {
+    divider.innerHTML = nowDividerHtml(nowMin).replace(/^<div[^>]*>|<\/div>$/g, "");
+    const rows = [...board.querySelectorAll(".tl__row[data-time]")];
+    const next = rows.find((r) => minutes(r.dataset.time) >= nowMin);
+    if (next) {
+      const hour = next.previousElementSibling?.classList.contains("tl__hour")
+        ? next.previousElementSibling : next;
+      if (hour.previousElementSibling !== divider) {
+        divider.parentNode.insertBefore(divider, hour);
+      }
+    } else if (divider.nextElementSibling) {
+      divider.parentNode.appendChild(divider);
+    }
+  }
 }
 
 /* ---------- shared film-row rendering ---------- */
