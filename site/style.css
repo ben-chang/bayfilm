@@ -421,8 +421,8 @@ a, button, input, summary { touch-action: manipulation; }
 .tl__row {
   display: flex;
   align-items: baseline;
-  gap: 10px;
-  padding: 9px 0;
+  gap: 12px;
+  padding: 15px 0;
   border-bottom: 1px solid var(--fog-deep);
   text-decoration: none;
 }
@@ -430,23 +430,23 @@ a, button, input, summary { touch-action: manipulation; }
 .tl__row.is-past { opacity: 0.42; }
 
 .tl__time {
-  flex: 0 0 52px;
+  flex: 0 0 58px;
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
 }
 
 .tl__title {
   flex: 1;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .tl__venue {
   flex: 0 0 auto;
   font-family: var(--mono);
-  font-size: 11.5px;
+  font-size: 12.5px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--ink-soft);
