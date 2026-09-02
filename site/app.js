@@ -614,6 +614,36 @@ function escapeHtml(s) {
   }[c]));
 }
 
+/* ---------- theme ---------- */
+
+const THEME_KEY = "bayfilm.theme";
+const THEME_COLORS = { light: "#F1F2EF", dark: "#191B1C" };
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  document.querySelector('meta[name="theme-color"]')
+    ?.setAttribute("content", THEME_COLORS[theme]);
+  const btn = $("#themeToggle");
+  if (btn) btn.textContent = theme === "dark" ? "Light mode ◐" : "Dark mode ◐";
+}
+
+function initTheme() {
+  applyTheme(document.documentElement.dataset.theme || "light");
+  $("#themeToggle").addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* private mode */ }
+    applyTheme(next);
+  });
+  // follow OS changes unless the user has made an explicit choice
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+    let stored = null;
+    try { stored = localStorage.getItem(THEME_KEY); } catch (err) {}
+    if (stored !== "light" && stored !== "dark") {
+      applyTheme(e.matches ? "dark" : "light");
+    }
+  });
+}
+
 function syncHash() {
   const suffix = state.view === "films" ? "/films" : state.view === "all" ? "/all" : "";
   history.replaceState(null, "", "#" + state.date + suffix);
@@ -635,6 +665,7 @@ function render() {
 }
 
 async function init() {
+  initTheme();
   try {
     const resp = await fetch("data/showtimes.json");
     if (!resp.ok) throw new Error(resp.status);

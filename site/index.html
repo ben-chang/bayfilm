@@ -46,7 +46,18 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,500;10..72,700;10..72,800&family=Archivo:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,500;10..72,700;10..72,800&family=Archivo:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script>
+  // set the theme before first paint to avoid a flash of the wrong scheme
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("bayfilm.theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") {
+      t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23DB4B1F'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='Arial Black' fill='%23FAFAF7'>B</text></svg>">
 </head>
@@ -56,15 +67,16 @@
   <div class="masthead__inner">
     <h1 class="wordmark">BAY<span>FILM</span></h1>
     <p class="tagline">What's playing at San Francisco Bay Area independent movie theaters</p>
-    <p class="kudos">See also <a href="https://www.spiralhwy.com/" target="_blank" rel="noopener">Spiral HWY</a>, an excellent film aggregation site.</p>
     <p class="updated" id="updated"></p>
+    <button class="themetoggle" id="themeToggle" aria-live="polite"></button>
     <details class="about">
       <summary>About BayFilm</summary>
       <p>Thanks for using BayFilm! This website gathers showtimes from the San Francisco Bay Area's independent
       movie theaters into one guide. Listings are indexed nightly
       from each theater's calendar and linked to their box offices.
       Be sure to check out events from <a href="https://sffilm.org/">SFFilm</a> and <a href="https://www.sfmoma.org/">SFMoMA</a> as well!
-      Thanks for using and hope you enjoy!
+      See also <a href="https://www.spiralhwy.com/" target="_blank" rel="noopener">Spiral HWY</a>, an excellent film aggregation site.
+      Thanks for using and hope you enjoy!</p>
     </details>
   </div>
 </header>
@@ -92,14 +104,14 @@
     </div>
     <div id="allfilmsList"></div>
   </section>
-  <p id="empty" class="empty" hidden>No screenings match — try another day or turn theaters back on.</p>
+  <p id="empty" class="empty" hidden>No screenings match, try another day or turn theaters back on.</p>
   <p id="loaderror" class="empty" hidden>Couldn't load showtimes data. If you opened this file directly, serve the folder instead: <code>python3 -m http.server -d site</code></p>
 </main>
 
 <footer class="colophon">
-  <p>Listings indexed nightly from each theater's own calendar. Always confirm with the box office — programs change.</p>
+  <p>Listings are indexed nightly from each theater's own calendar. Always check with the official box office since programs change.</p>
   <p id="sources"></p>
-  <p>Also worth checking — these theaters are hard to index, so their listings aren't included here:
+  <p>Also worth checking, these theaters are hard to index, so their listings aren't included here:
     <a href="https://rafaelfilm.cafilm.org/" target="_blank" rel="noopener">Smith Rafael Film Center</a> (San Rafael) ·
     <a href="https://thenewparkway.com/" target="_blank" rel="noopener">The New Parkway</a> (Oakland) ·
     <a href="https://rialtocinemas.com/elmwood/" target="_blank" rel="noopener">Rialto Cinemas Elmwood</a> (Berkeley) ·
@@ -107,6 +119,7 @@
   </p>
   <p>BayFilm doesn't sell anything and isn't affiliated with any theater</p>
   <p>2026</p>
+  <div class="colophon__ghost" aria-hidden="true">BAYFILM</div>
 </footer>
 
 <script src="app.js"></script>

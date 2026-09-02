@@ -9,10 +9,29 @@
   --bridge-ink: #B23A12; /* text-safe orange, ≥4.5:1 on all light surfaces */
   --hairline: #B4B8B0;
   --stub: #FAFAF7;       /* screening stub card */
+  --edge: #22272B;       /* component outlines (= ink in light) */
+  --shadow: #22272B;     /* hard offset shadows */
+  --on-ink-soft: #B9BFB8; /* muted text on inverted (ink-bg) chips */
 
   --display: "Big Shoulders", "Arial Narrow", sans-serif;
   --body: "Archivo", system-ui, sans-serif;
   --mono: "Spline Sans Mono", ui-monospace, monospace;
+  --serif: "Instrument Serif", Georgia, serif;
+}
+
+/* screening-room dark theme — tonal remap, all text pairs ≥4.5:1 */
+:root[data-theme="dark"] {
+  --fog: #191B1C;
+  --fog-deep: #202224;
+  --ink: #E8E9E6;
+  --ink-soft: #A9B0B2;
+  --bridge: #EF7A50;
+  --bridge-ink: #EF7A50;
+  --hairline: #3C4043;
+  --stub: #232628;
+  --edge: #565B5E;
+  --shadow: #000000;
+  --on-ink-soft: #4C5256;
 }
 
 * { box-sizing: border-box; }
@@ -43,7 +62,7 @@ a, button, input, summary { touch-action: manipulation; }
 /* ---------- masthead ---------- */
 
 .masthead {
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 2px solid var(--edge);
   background: var(--fog);
 }
 
@@ -67,24 +86,12 @@ a, button, input, summary { touch-action: manipulation; }
 
 .tagline {
   margin: 10px 0 0;
-  font-size: 16px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 21px;
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 400;
 }
-
-.kudos {
-  margin: 6px 0 0;
-  font-size: 13.5px;
-  color: var(--ink-soft);
-}
-
-.kudos a {
-  color: var(--ink);
-  text-decoration-color: var(--bridge);
-  text-underline-offset: 2px;
-}
-
-.kudos a:hover { color: var(--bridge-ink); }
 
 .updated {
   margin: 2px 0 0;
@@ -115,12 +122,29 @@ a, button, input, summary { touch-action: manipulation; }
 
 .about p {
   margin: 8px 0 0;
-  font-size: 13.5px;
-  line-height: 1.55;
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--ink-soft);
   border-left: 3px solid var(--bridge);
   padding-left: 12px;
 }
+
+.themetoggle {
+  display: inline-block;
+  margin: 8px 14px 0 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--bridge);
+  text-underline-offset: 2px;
+}
+
+.themetoggle:hover { color: var(--bridge-ink); }
 
 .about a { color: var(--ink); }
 
@@ -134,7 +158,7 @@ a, button, input, summary { touch-action: manipulation; }
   overflow-x: auto;
   /* keep edge-swipes on the strip from chaining into page pan / back gesture */
   overscroll-behavior-x: contain;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--edge);
   background: var(--fog-deep);
   padding: 0 max(20px, calc((100vw - 1180px) / 2));
   scrollbar-width: thin;
@@ -181,7 +205,7 @@ a, button, input, summary { touch-action: manipulation; }
   color: var(--fog);
 }
 .day.is-selected .day__dow,
-.day.is-selected .day__count { color: #B9BFB8; }
+.day.is-selected .day__count { color: var(--on-ink-soft); }
 .day.is-selected .day__num { color: var(--fog); }
 
 .day.is-today .day__dow { color: var(--bridge-ink); font-weight: 600; }
@@ -241,7 +265,7 @@ a, button, input, summary { touch-action: manipulation; }
 .chiptoggle { display: none; }
 
 .chip {
-  border: 1px solid var(--ink);
+  border: 1px solid var(--edge);
   background: var(--stub);
   border-radius: 2px;
   padding: 4px 10px;
@@ -269,7 +293,7 @@ a, button, input, summary { touch-action: manipulation; }
 
 .viewtoggle {
   display: flex;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--edge);
   border-radius: 2px;
   overflow: hidden;
 }
@@ -299,7 +323,7 @@ a, button, input, summary { touch-action: manipulation; }
   position: relative;
   height: 22px;
   margin-left: 168px;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid var(--edge);
 }
 
 .axis__tick {
@@ -320,7 +344,7 @@ a, button, input, summary { touch-action: manipulation; }
 .trow__label {
   flex: 0 0 168px;
   padding: 12px 12px 12px 0;
-  border-right: 1px solid var(--ink);
+  border-right: 1px solid var(--edge);
 }
 
 .trow__name {
@@ -476,17 +500,17 @@ a, button, input, summary { touch-action: manipulation; }
   gap: 7px;
   max-width: 240px;
   background: var(--stub);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--edge);
   border-left: 3px solid var(--bridge);
   border-radius: 2px;
   padding: 4px 9px;
-  box-shadow: 1px 1px 0 var(--ink);
+  box-shadow: 1px 1px 0 var(--shadow);
   transition: transform 120ms ease, box-shadow 120ms ease;
 }
 
 .stub-link:hover .stub {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
 }
 
 .stub__time {
@@ -553,20 +577,21 @@ a, button, input, summary { touch-action: manipulation; }
 
 .film__title {
   flex-basis: 100%;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.05;
-  text-transform: uppercase;
-  margin: 2px 0 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.02;
+  margin: 0;
 }
 
 .film__desc {
   flex-basis: 100%;
   margin: 2px 0 0;
-  font-size: 13.5px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
   color: var(--ink-soft);
-  line-height: 1.45;
+  line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -628,7 +653,7 @@ a, button, input, summary { touch-action: manipulation; }
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--edge);
   border-radius: 2px 0 0 2px;
   background: var(--stub);
   padding: 2px 8px;
@@ -645,7 +670,7 @@ a, button, input, summary { touch-action: manipulation; }
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 600;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--edge);
   border-left: 0;
   border-radius: 0 2px 2px 0;
   background: var(--fog-deep);
@@ -673,7 +698,7 @@ a, button, input, summary { touch-action: manipulation; }
   gap: 12px;
   flex-wrap: wrap;
   padding: 10px 0 4px;
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 2px solid var(--edge);
 }
 
 .searchlabel {
@@ -691,7 +716,7 @@ a, button, input, summary { touch-action: manipulation; }
   font-size: 16px; /* below 16px, iOS force-zooms the page on focus */
   color: var(--ink);
   background: var(--stub);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--edge);
   border-radius: 2px;
   padding: 7px 12px;
 }
@@ -710,7 +735,9 @@ a, button, input, summary { touch-action: manipulation; }
   padding: 60px 0;
   text-align: center;
   color: var(--ink-soft);
-  font-size: 15px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 19px;
 }
 
 .empty code {
@@ -722,7 +749,7 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .colophon {
-  border-top: 2px solid var(--ink);
+  border-top: 2px solid var(--edge);
   background: var(--fog-deep);
 }
 
@@ -735,6 +762,22 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .colophon a { color: var(--ink); }
+
+.colophon__ghost {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(90px, 16vw, 230px);
+  line-height: 0.72;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--ink);
+  opacity: 0.07;
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  margin-top: 14px;
+  transform: translateY(8%);
+}
 
 /* ---------- mobile: board flows as a list ---------- */
 
@@ -777,7 +820,7 @@ a, button, input, summary { touch-action: manipulation; }
     align-items: center;
     gap: 6px;
     align-self: flex-start;
-    border: 1px solid var(--ink);
+    border: 1px solid var(--edge);
     border-radius: 2px;
     background: var(--stub);
     padding: 8px 12px;
