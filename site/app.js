@@ -252,6 +252,9 @@ function renderBoard() {
   const desktop = window.matchMedia("(min-width: 761px)").matches;
   const nowPct = ((nowMin - startH * 60) / span) * 100;
   const showNowLine = isToday && desktop && nowPct > 0 && nowPct < 100;
+  // stashed so updateBoardClock() can adjust in place without a rebuild
+  board.dataset.startMin = startH * 60;
+  board.dataset.span = span;
 
   const axis = document.createElement("div");
   axis.className = "axis";
@@ -302,6 +305,7 @@ function renderBoard() {
       const past = isToday && s.time && minutes(s.time) < nowMin;
       const a = document.createElement("a");
       a.className = "stub-link" + (past ? " is-past" : "");
+      if (isToday && s.time) a.dataset.time = s.time;
       a.href = s.url || "#";
       a.target = "_blank";
       a.rel = "noopener";
@@ -326,6 +330,25 @@ function renderBoard() {
       lanes.style.height = 9 + laneEnds.length * LANE_H + 4 + "px";
     }
   }
+}
+
+// Nudge the now-line and past-dimming along without rebuilding the board —
+// a full re-render mid-scroll kills momentum scrolling on touch devices.
+function updateBoardClock() {
+  if (state.view !== "board" || state.date !== isoToday()) return;
+  const board = $("#board");
+  const startMin = Number(board.dataset.startMin);
+  const span = Number(board.dataset.span);
+  if (!span) return;
+  const nowMin = minutes(nowHHMM());
+  const pct = ((nowMin - startMin) / span) * 100;
+  board.querySelectorAll(".nowline").forEach((line) => {
+    line.style.left = pct + "%";
+    line.style.display = pct > 0 && pct < 100 ? "" : "none";
+  });
+  board.querySelectorAll(".stub-link[data-time]").forEach((a) => {
+    a.classList.toggle("is-past", minutes(a.dataset.time) < nowMin);
+  });
 }
 
 /* ---------- shared film-row rendering ---------- */
@@ -574,9 +597,7 @@ async function init() {
   });
 
   // keep the now-line and past-dimming honest while the tab stays open
-  setInterval(() => {
-    if (state.view === "board" && state.date === isoToday()) renderBoard();
-  }, 60 * 1000);
+  setInterval(updateBoardClock, 60 * 1000);
 
   render();
 }

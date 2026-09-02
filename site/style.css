@@ -32,6 +32,9 @@ a { color: inherit; }
 
 button { font: inherit; color: inherit; cursor: pointer; }
 
+/* removes the 300ms tap delay and double-tap zoom on interactive elements */
+a, button, input, summary { touch-action: manipulation; }
+
 :focus-visible {
   outline: 2px solid var(--bridge);
   outline-offset: 2px;
@@ -129,6 +132,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   display: flex;
   gap: 0;
   overflow-x: auto;
+  /* keep edge-swipes on the strip from chaining into page pan / back gesture */
+  overscroll-behavior-x: contain;
   border-bottom: 1px solid var(--ink);
   background: var(--fog-deep);
   padding: 0 max(20px, calc((100vw - 1180px) / 2));
@@ -592,7 +597,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   min-width: 220px;
   max-width: 460px;
   font: inherit;
-  font-size: 15px;
+  font-size: 16px; /* below 16px, iOS force-zooms the page on focus */
   color: var(--ink);
   background: var(--stub);
   border: 1px solid var(--ink);
