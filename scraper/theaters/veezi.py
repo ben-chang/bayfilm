@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import re
 from datetime import date
+from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
@@ -40,10 +41,16 @@ def scrape(theater_id: str, site_token: str) -> list[Screening]:
             if not name_el:
                 continue
             title = clean_text(name_el.get_text())
+            desc_el = film.select_one(".film-desc")
+            desc = clean_text(desc_el.get_text()) if desc_el else None
+            img_el = film.select_one("img.poster")
+            img = None
+            if img_el and img_el.get("src"):
+                img = urljoin("https://ticketing.us.veezi.com/", img_el["src"])
             for a in film.select("ul.session-times li a"):
                 t = parse_time_12h(a.get_text())
                 if t:
                     screenings.append(
-                        Screening(theater_id, title, iso, t, a.get("href"))
+                        Screening(theater_id, title, iso, t, a.get("href"), desc=desc, img=img)
                     )
     return screenings

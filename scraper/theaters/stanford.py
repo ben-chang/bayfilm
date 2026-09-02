@@ -32,7 +32,22 @@ def _calendar_links() -> list[str]:
 
 
 def _parse_calendar(url: str, today: date) -> list[Screening]:
-    soup = BeautifulSoup(fetch(url), "html.parser")
+    html = fetch(url)
+    soup = BeautifulSoup(html, "html.parser")
+    # The banner states the festival's year ("September 11 - 27, 2026");
+    # trusting it avoids past dates being inferred into next year.
+    banner = soup.select_one("div.banner")
+    year_m = re.search(r"\b(20\d{2})\b", banner.get_text() if banner else html)
+    cal_year = int(year_m.group(1)) if year_m else None
+
+    def resolve(month: int, day: int) -> date:
+        if cal_year:
+            try:
+                return date(cal_year, month, day)
+            except ValueError:
+                pass
+        return infer_year(month, day, today)
+
     screenings: list[Screening] = []
     for cell in soup.select("td.playdate"):
         # The site's HTML has unclosed <td> tags, so the parser nests sibling
@@ -44,9 +59,9 @@ def _parse_calendar(url: str, today: date) -> list[Screening]:
         m = RANGE_RE.search(clean_text(date_el.get_text()))
         if not m:
             continue
-        start = infer_year(MONTHS[m.group(1).lower()], int(m.group(2)), today)
+        start = resolve(MONTHS[m.group(1).lower()], int(m.group(2)))
         end_month = MONTHS[m.group(3).lower()] if m.group(3) else start.month
-        end = infer_year(end_month, int(m.group(4)), today)
+        end = resolve(end_month, int(m.group(4)))
         if end < start:
             end = start
         days = [start + timedelta(days=i) for i in range((end - start).days + 1)]

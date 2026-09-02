@@ -31,6 +31,7 @@ jobs:
       - run: python -m scraper.main
         env:
           TZ: America/Los_Angeles
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

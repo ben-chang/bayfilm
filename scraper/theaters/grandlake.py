@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import re
 from datetime import date
+from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
@@ -30,6 +31,8 @@ def scrape() -> list[Screening]:
         if not title_el:
             continue
         title = clean_text(title_el.get_text())
+        img_el = pod.select_one(".poster img")
+        img = urljoin(HOME_URL, img_el["src"]) if img_el and img_el.get("src") else None
         # theaternum spans inject screen numbers right after each time ("3:15" + "1")
         for span in pod.select("span.theaternum"):
             span.decompose()
@@ -48,6 +51,6 @@ def scrape() -> list[Screening]:
                         if key not in seen:
                             seen.add(key)
                             screenings.append(
-                                Screening("grandlake", title, d.isoformat(), t, TICKETS_URL)
+                                Screening("grandlake", title, d.isoformat(), t, TICKETS_URL, img=img)
                             )
     return screenings

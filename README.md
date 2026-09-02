@@ -27,10 +27,12 @@ HTML/CSS/JS and can be hosted anywhere that serves files.
 | BAMPFA | Berkeley | bampfa.org calendar (HTML, "Film" events only) |
 | Grand Lake Theatre | Oakland | renaissancerialto.com homepage (HTML) |
 | Stanford Theatre | Palo Alto | stanfordtheatre.org festival calendars (HTML) |
+| Lark Theater | Larkspur | Agile Ticketing public JSON feed |
 
 **Not covered (yet):** Vogue (site was unreachable when built — may have
 closed), Smith Rafael Film Center (Cloudflare-blocked to scripts), New
-Parkway (JS-only app with no accessible feed).
+Parkway (JS-only app with no accessible feed), Rialto Cinemas
+Elmwood/Cerrito (showtimes JS-injected, no accessible feed).
 
 ## Quick start
 
@@ -93,23 +95,43 @@ bayfilm/
 ```
 
 - `date` is `YYYY-MM-DD`, `time` is 24-hour `HH:MM` local (absent if the
-  source doesn't list one).
+  source doesn't list one). Screenings may carry a `note` (format badges).
+- A top-level `films` map (lowercased title → `{desc, img}`) holds blurbs and
+  poster URLs so they aren't repeated on every screening; theater entries
+  carry `scraped_at`. Posters come from TMDb when a title matches
+  (`scraper/tmdb.py`, needs `TMDB_API_KEY` in the environment — set as a
+  GitHub Actions secret for CI), falling back to the theater's own image.
+  Lookups (including misses) are cached in the committed
+  `scraper/tmdb_cache.json`, so repeat runs make few API calls and CI keeps
+  posters even without the key.
 - `main.py` drops past dates, sorts by date/time, and writes the file.
   Screenings are already filtered to today-forward, so the frontend does no
-  date math beyond picking the default day.
+  date math beyond picking the default day and dimming today's past times.
 
 ## The frontend
 
 `app.js` fetches the JSON once and renders everything client-side:
 
 - **Day strip** — the next 14 days that have screenings, with show counts.
-- **Theater chips** — toggle venues on and off (struck-through = hidden).
+- **Region + theater filters** — Everywhere/SF/East Bay/Peninsula/North Bay
+  quick toggles plus per-theater chips; selections persist in localStorage.
 - **Board view** — one row per theater; each screening is a stub positioned
-  on a shared time axis. Overlapping stubs stack into lanes. Below 760px the
-  axis collapses and stubs flow as a wrapped list.
-- **By-film view** — the same day grouped by title, one line per venue.
-- **URL hash state** — `#2026-09-05` or `#2026-09-05/films`, so days and
-  views are shareable/bookmarkable.
+  on a shared time axis. Overlapping stubs stack into lanes. On today's
+  board, past showtimes are dimmed and an orange line marks the current
+  time. Below 760px the axis collapses and stubs flow as a wrapped list.
+- **By-film view** — the same day grouped by title, with blurbs and
+  Letterboxd/IMDb links.
+- **All films view** — every upcoming film across dates with a search box
+  (matches titles and formats, e.g. "70mm").
+- **Add to calendar** — the `+` beside any time in the film views downloads
+  an `.ics` for that screening.
+- **Format badges** — 70mm / 35mm / live score / Q&A etc., detected from
+  titles at scrape time (`FORMAT_PATTERNS` in `scraper/main.py`).
+- **Freshness badges** — each theater carries a `scraped_at`; rows whose
+  data is >24h older than the rest are flagged "listings from …" (this is
+  how the BAMPFA/Stanford CI fallback stays honest).
+- **URL hash state** — `#2026-09-05`, `#2026-09-05/films`, or
+  `#2026-09-05/all`, so days and views are shareable/bookmarkable.
 
 ## Scraper notes and quirks
 

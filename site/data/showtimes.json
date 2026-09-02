@@ -1,84 +1,1269 @@
 {
- "generated_at": "2026-09-02T18:19:43Z",
+ "generated_at": "2026-09-02T21:39:00Z",
  "theaters": {
   "roxie": {
    "id": "roxie",
    "name": "Roxie Theater",
    "city": "San Francisco",
-   "url": "https://roxie.com"
+   "url": "https://roxie.com",
+   "region": "SF",
+   "scraped_at": "2026-09-02T21:39:00Z"
   },
   "balboa": {
    "id": "balboa",
    "name": "Balboa Theater",
    "city": "San Francisco",
-   "url": "https://www.balboamovies.com"
+   "url": "https://www.balboamovies.com",
+   "region": "SF",
+   "scraped_at": "2026-09-02T21:39:00Z"
   },
   "4star": {
    "id": "4star",
    "name": "4 Star Theater",
    "city": "San Francisco",
-   "url": "https://www.4-star-movies.com"
+   "url": "https://www.4-star-movies.com",
+   "region": "SF",
+   "scraped_at": "2026-09-02T21:39:00Z"
   },
   "newmission": {
    "id": "newmission",
    "name": "Alamo Drafthouse New Mission",
    "city": "San Francisco",
-   "url": "https://drafthouse.com/sf"
+   "url": "https://drafthouse.com/sf",
+   "region": "SF",
+   "scraped_at": "2026-09-02T21:39:00Z"
   },
   "bampfa": {
    "id": "bampfa",
    "name": "BAMPFA",
    "city": "Berkeley",
-   "url": "https://bampfa.org"
+   "url": "https://bampfa.org",
+   "region": "East Bay",
+   "scraped_at": "2026-09-02T21:39:00Z"
   },
   "grandlake": {
    "id": "grandlake",
    "name": "Grand Lake Theatre",
    "city": "Oakland",
-   "url": "https://renaissancerialto.com"
+   "url": "https://renaissancerialto.com",
+   "region": "East Bay",
+   "scraped_at": "2026-09-02T21:39:00Z"
   },
   "stanford": {
    "id": "stanford",
    "name": "Stanford Theatre",
    "city": "Palo Alto",
-   "url": "https://stanfordtheatre.org"
+   "url": "https://stanfordtheatre.org",
+   "region": "Peninsula",
+   "scraped_at": "2026-09-02T21:39:00Z"
+  },
+  "lark": {
+   "id": "lark",
+   "name": "Lark Theater",
+   "city": "Larkspur",
+   "url": "https://larktheater.net",
+   "region": "North Bay",
+   "scraped_at": "2026-09-02T21:39:00Z"
+  }
+ },
+ "films": {
+  "the samurai and the prisoner": {
+   "desc": "Co-presented by the Japan Society of Northern California “Kurosawa has made one of his best films, a work that feels a bit like Agatha Christie, […]",
+   "img": "https://image.tmdb.org/t/p/w342/1GWVlPM1v6k84LsmDkfDzLlGf0O.jpg"
+  },
+  "colony": {
+   "desc": "Fresh from its Cannes Midnight world premiere and Korea’s biggest local opening of the year, Colony marks Yeon Sang-ho’s return to the territory he […]",
+   "img": "https://image.tmdb.org/t/p/w342/tN799oUR0f1gUKDYdMNrDaY7I51.jpg"
+  },
+  "roxie first looks #13": {
+   "desc": "With Filmmakers Q&A after the Sunday, August 30th screening! First Looks, the Roxie’s Oscar-Qualifying Theatrical Release program, supports filmmakers in their Academy Award quest. […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/GOOD-BOY-Thumbnail-704x396.jpeg"
+  },
+  "barrio triste": {
+   "desc": "Medellin, 1987. A group of teen outcasts steals a news camera to document every detail of their dangerous lives. The first feature from acclaimed […]",
+   "img": "https://image.tmdb.org/t/p/w342/w2zymRakHhwKUnRCLPKrBiL8inL.jpg"
+  },
+  "american doctor": {
+   "desc": "Co-presented by the Arab Film & Media Institute (AFMI) and the Jewish Film Institute From Oscar®-nominated and Emmy® Award-winning filmmaker Poh Si Teng, American Doctor follows three American […]",
+   "img": "https://image.tmdb.org/t/p/w342/sOSrlaXvItVdwU1P5Qpttcl12sd.jpg"
+  },
+  "fantastic planet": {
+   "desc": "A landmark of adult animation and one of the most influential animated science-fiction films ever made, Fantastic Planet remains as visually astonishing and intellectually […]",
+   "img": "https://image.tmdb.org/t/p/w342/prq0j1S0K07UjwLZLF6oMGflRUI.jpg"
+  },
+  "the hole (newly struck 35mm print)": {
+   "desc": "Set on the eve of the 21st century, Tsai Ming-liang’s fourth feature turns a crumbling Taipei apartment block into one of cinema’s strangest and […]",
+   "img": "https://image.tmdb.org/t/p/w342/tQMxsrsVtpB2D2n01nUqgOMmSWD.jpg"
+  },
+  "filipiñana": {
+   "desc": "Director Rafael Manuel in person for Q&A on Saturday, September 5! Presented by FiliKula Amid stifling heat and pervasive drought, Isabel (Jorrybell Agoto), a 17-year-old […]",
+   "img": "https://image.tmdb.org/t/p/w342/paJZyL5uwTJZLlWbEcN6MbFLGYA.jpg"
+  },
+  "teenage sex and death at camp miasma": {
+   "desc": "Visionary director Jane Schoenbrun (I Saw the TV Glow) presents a new kind of horror remake in TEENAGE SEX AND DEATH AT CAMP MIASMA. […]",
+   "img": "https://image.tmdb.org/t/p/w342/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg"
+  },
+  "catvideofest 2026": {
+   "desc": "A portion of ticket sales go to benefit San Francisco’s, heroic Give Me Shelter Cat Rescue! The world’s #1 cat video festival is back […]",
+   "img": "https://image.tmdb.org/t/p/w342/wXgqFo84RwEt6cRIe24BCjBPqPS.jpg"
+  },
+  "mary oliver: saved by the beauty of the world": {
+   "desc": "If poetry had a pop icon, Mary Oliver would be it. Celebrated best-selling poet, Pulitzer Prize-winner, lover of dogs and long walks in the […]",
+   "img": "https://image.tmdb.org/t/p/w342/aAZ7Ih2tU65y55CfE0nIFSaow4n.jpg"
+  },
+  "sholay: the final cut (4k restoration)": {
+   "desc": "Co-Presented by 3rd i Conceived as the biggest action-adventure film ever made in India, Ramesh Sippy’s deeply influential 1975 “Curry Western” remains a towering […]",
+   "img": "https://image.tmdb.org/t/p/w342/ya9bwgqA4eNl5bQ9QqS0jcmRoBS.jpg"
+  },
+  "the iron giant": {
+   "desc": "Something huge is on the horizon. Hogarth Hughes just rescued an enormous robot that fell from the stars to Earth. Now young Hogarth has […]",
+   "img": "https://image.tmdb.org/t/p/w342/k1Cv5CHJvqGWK1xJDUJz8DojFEy.jpg"
+  },
+  "stanley kwan’s center stage (4k restoration)": {
+   "desc": "35th ANNIVERSARY 4K RESTORATION International superstar Maggie Cheung (In the Mood for Love) embodies tragic screen siren Ruan Lingyu, known as the “Greta Garbo […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/6-2-704x396.jpg"
+  },
+  "union county": {
+   "desc": "Co-presented by Shatterproof Post-Film Panel with Judge William Orrick, (Convictions Alternative Program) & Arlene Prince, (Executive Director, Ohlhoff Recovery Programs), moderated by Shatterproof CEO, […]",
+   "img": "https://image.tmdb.org/t/p/w342/73Dt773ChYDF5ZgTPDyH6E7qZhs.jpg"
+  },
+  "arthouse 50: freeway": {
+   "desc": "“Rude in the way the truth is rude — only funnier. The movie seduces with its humor, all the while presenting a realized vision […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/2-1-704x396.jpg"
+  },
+  "the cycle of love": {
+   "desc": "Filmmaker Orlando von Einsiedel IN PERSON 9/9! In 1977, PK, a 23-year-old Delhi street artist from a poor, ‘untouchable’ family, picked up a handful […]",
+   "img": "https://image.tmdb.org/t/p/w342/5yK0eXbsYIxXJQ9uNoG7RtAsM8W.jpg"
+  },
+  "roxie first looks #14": {
+   "desc": "With Filmmakers Q&A after the Saturday, August 12th screening! First Looks, the Roxie’s Oscar-Qualifying Theatrical Release program, supports filmmakers in their Academy Award quest. […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/FORGOTTEN-SPACEMAN_01-704x396.jpg"
+  },
+  "gandahar (4k restoration)": {
+   "desc": "The long-awaited 4K restoration of René Laloux’s final masterpiece reveals one of animation’s most astonishing science-fiction visions. An entire civilization must confront its destiny […]",
+   "img": "https://image.tmdb.org/t/p/w342/cjwEa9RZ8BqoGMddrrYm8ftP9f9.jpg"
+  },
+  "maquilápolis": {
+   "desc": "After the screening, there will be an IN PERSON Q&A with filmmakers Vicky Funari and Sergio De La Torre and protagonists Lourdes Luján and […]",
+   "img": "https://image.tmdb.org/t/p/w342/1BNJibYvAxUQgQED76igoN2tVRN.jpg"
+  },
+  "mysterious skin (4k restoration)": {
+   "desc": "At the age of eight, Kansas youngsters Neil and Brian played on the same little league baseball team. Now, ten years later, the two […]",
+   "img": "https://image.tmdb.org/t/p/w342/wgSwDqhl6Rt3cuSCwt5sNpPna3x.jpg"
+  },
+  "the big cheese": {
+   "desc": "Co-presented by Bi-Rite Market Followed by a post-film conversation with local cheese experts and special guests. Panelists to be announced. “What is a “cheesemonger?” […]",
+   "img": "https://image.tmdb.org/t/p/w342/7Mji0YUQglZRqEzIZqfnsE3BN7Y.jpg"
+  },
+  "letty lynton": {
+   "desc": "Part of our series Wild, Weird, Wicked: Films from Before the Code! Virtually unseen for over 90 years, in a sparkling new 4K restoration […]",
+   "img": "https://image.tmdb.org/t/p/w342/1Sx9mRtdzW3M61134h72NjWHiJ4.jpg"
+  },
+  "the american astronaut (35mm)": {
+   "desc": "25th Anniversary of the Sundance-destroying Cult Classic “Emphatically perverse, a salute to the Midnight Movie, a cultural land mass that spawned John Waters and […]",
+   "img": "https://image.tmdb.org/t/p/w342/qeh8Rzyr7VJaZWep7Vi5MP1e5hG.jpg"
+  },
+  "zyzzyva movie night with ingrid rojas contreras: songs of earth": {
+   "desc": "Co-presented by Zyzzyva Magazine and Litquake, San Francisco’s Literary Festival This year’s Litquake festival will take place October 8th-24th! For more information about Litquake’s festival and year-round […]",
+   "img": "https://roxie.com/wp-content/uploads/2024/05/2-3-704x396.jpg"
+  },
+  "barbara forever": {
+   "desc": "EXECUTIVE PRODUCED BY KRISTEN STEWART WINNER, TEDDY AWARD FOR BEST DOCUMENTARY, 2026 BERLIN FILM FESTIVAL Director Brydie O’Connor IN PERSON for Q&A on Friday, […]",
+   "img": "https://image.tmdb.org/t/p/w342/kYjCmL8sg17zoKtm5Pb6Cn4H0nB.jpg"
+  },
+  "floating features: the rock": {
+   "desc": "An FBI chemical weapons expert, and a former SAS soldier turned political prisoner, must break into Alcatraz prison when a rogue military group, led […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-3-704x396.jpg"
+  },
+  "ghost in the shell: 30th anniversary remaster": {
+   "desc": "“My codename is Project 2501, and I am a life form that was born in a sea of information.” In the year 2029, the […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design37-704x396.jpg"
+  },
+  "larry reed: a life in light and shadow": {
+   "desc": "Join us at the Roxie Theater for a special screening honoring the life and work of Larry Reed (1944–2026), master of Balinese shadow theater, […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Larry-Reed-3-704x396.jpeg"
+  },
+  "sf lost neon landscapes: chinatown": {
+   "desc": "This curated program of short films made from San Francisco-centric footage focuses on Chinatown, one of our city’s most beloved and documented neighborhoods. Program […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/6-1-704x396.jpg"
+  },
+  "kwaidan (4k restoration)": {
+   "desc": "Taking its title from an archaic Japanese word meaning “ghost story,” this anthology adapts four folk tales. A penniless samurai marries for money with […]",
+   "img": "https://image.tmdb.org/t/p/w342/t9UMfViYl47SdZZatKQ1JKjjCgs.jpg"
+  },
+  "brailled it": {
+   "desc": "In-person Q&A with Co-Director David Grabias Every year, the best under-18 braille readers and writers in the English-speaking world come to Los Angeles to […]",
+   "img": "https://image.tmdb.org/t/p/w342/nS7wI8ALeyVbmu8ahQVDjq6vgHV.jpg"
+  },
+  "the oldest person in the world": {
+   "desc": "Filmmaker Sam Green will be in attendance for a post-screening Q&A at all three screenings! A decade-long global journey chronicles the ever-changing record holders […]",
+   "img": "https://image.tmdb.org/t/p/w342/tlxL2d2iR2REv2t60tk5P7c2tt6.jpg"
+  },
+  "batch ’81": {
+   "desc": "Presented by FiliKula. Freshman Sid Lucero (Mark Gil, in his breakout performance), desperately wants to join the Alpha Kappa Omega fraternity. Over the course of […]",
+   "img": "https://image.tmdb.org/t/p/w342/lTz0Zq9RNZTV4CPbg6Bpvee66VU.jpg"
+  },
+  "re:vision: my name ain’t suzie": {
+   "desc": "Co-presented by Frameline Video introduction by director Angie Chen In My Name Ain’t Suzie, Angie Chen offers a powerful rebuke to the colonial imagination […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/5-13-704x396.jpg"
+  },
+  "re:vision: valley of the bees": {
+   "desc": "Co-presented by CAFILM Introduced by Kelly Wiggin While his name lacks the recognition of other Eastern European filmmakers, writer / director / occasional actor […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/1-6-704x396.jpg"
+  },
+  "re:vision: dakan": {
+   "desc": "Co-presented by Frameline Dakan follows two young men, Manga and Sori, as they navigate young love of a kind their families cannot abide. Seen […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/1-21-704x396.jpg"
+  },
+  "floating features: bullitt": {
+   "desc": "An all guts, no glory San Francisco cop becomes determined to find the underworld kingpin that killed the witness in his protection. About Floating Features […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-4-704x396.jpg"
+  },
+  "re:vision: the outcasts": {
+   "desc": "Co-presented by National Film Preservation Foundation Written and directed by Robert Wynne-Simmons (writer of folk-horror masterpiece Blood on Satan’s Claw), and starring legendary Irish […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/3-23-704x396.jpg"
+  },
+  "re:vision: i am with a monk": {
+   "desc": "This screening will open with Len Lye’s animated short film SWINGING THE LAMBETH WALK. The film was restored by San Francisco Film Preserve and scanned […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/2-23-704x396.jpg"
+  },
+  "the dreamers and i": {
+   "desc": "Director Kenji Yamamoto and Producer Nancy Kelly in person for Q&A after the screening! Three immigrant entrepreneurs arrive in the U.S. to make their […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/09/4-704x396.jpg"
+  },
+  "re:vision: araya": {
+   "desc": "Co-presented by SF IndieFest and Berkeley Art Museum & Pacific Film Archive Margot Benacerraf’s extraordinary Araya, from the moment of its premiere at the […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/1-20-704x396.jpg"
+  },
+  "re:vision: the dislocation of amber": {
+   "desc": "Co-presented by SF IndieFest and the Sudanese Association for Northern California In The Dislocation of Amber, director Hussein Shariffe uses abandoned areas of the […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/1-25-704x396.jpg"
+  },
+  "re:vision: gehenu lamai (the girls)": {
+   "desc": "Sumitra Peries’s Gehenu Lamai [The Girls] —the first feature directed by a woman in Sri Lanka—is a close observation of a life shrinking. So […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/1-22-704x396.jpg"
+  },
+  "re:vision: lepers & sex aka santo vs the riders of terror": {
+   "desc": "Co-presented by RoxCine Introduced by Peter Conheim This screening will open with Len Lye’s animated short film THE BIRTH OF THE ROBOT. The film was […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/Untitled-design-8-704x396.jpg"
+  },
+  "re:vision: tri": {
+   "desc": "Co-presented by CAFILM A landmark from the golden age of New Yugoslav Film (1963-1973), a compelling and under appreciated (at least in America) chapter […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/2-28-704x396.jpg"
+  },
+  "re:vision: the waiting room": {
+   "desc": "Co-presented by BAVC Media, Canyon Cinema, and San Francisco Cinematheque Introduced by director Karen Sperling Filmmaker Karen Sperling writes, directs, produces, and stars in […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/1-7-704x396.jpg"
+  },
+  "re:vision: the garden of eden": {
+   "desc": "Co-presented by National Film Preservation Foundation and Niles Essanay Silent Film Museum Live musical accompaniment by the Club Foot Quintet. Lewis Milestone’s extensive career […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/2-26-704x396.jpg"
+  },
+  "re:vision: 8 girls in a boat": {
+   "desc": "Co-presented by National Film Preservation Foundation and CAFILM Introduced by David Stenn At an all-girls school in Switzerland, Christa Storm (Dorothy Wilson) is a […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/2-19-704x396.jpg"
+  },
+  "re:vision: melody of murder": {
+   "desc": "Co-presented by Film Noir Foundation This screening will open with Len Lye’s animated short film KALEIDOSCOPE. The film was restored by San Francisco Film Preserve […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/07/Untitled-design-2-1-704x396.jpg"
+  },
+  "memorizing alison": {
+   "desc": "25th Anniversary of Coffee & Language! JP Allen, writers and cast members IN PERSON Best known for his “audacious and skillful” (SF Chronicle) independent films, SF […]",
+   "img": "https://image.tmdb.org/t/p/w342/nxJ968LYee8ya2LoxoYk78S4Bru.jpg"
+  },
+  "staff pick: a welcome distraction": {
+   "desc": "Isabel’s Staff Pick! Ernest (Simon Farrell) is a wayward twenty-something living in Vancouver. Stuck in a rut after a breakup and grieving a recent […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/5-1-704x396.jpg"
+  },
+  "d.e.b.s.": {
+   "desc": "Sapphic Cinema Social Club at The Roxie. A Quarterly Showcase of Classic + New Queer Cinema, Culture, and Community. Sapphic Cinema Social Club is […]",
+   "img": "https://image.tmdb.org/t/p/w342/68BfXrFQPHg9iBWJVgp5R48gTix.jpg"
+  },
+  "black swan": {
+   "desc": "Nina (Natalie Portman) is a ballerina in a New York City ballet company whose life is completely consumed by dance. When artistic director Thomas […]",
+   "img": "https://image.tmdb.org/t/p/w342/viWheBd44bouiLCHgNMvahLThqx.jpg"
+  },
+  "black swan + perfect blue": {
+   "desc": "Presented by Spoke Art Gallery as part of their ongoing series of curated alternative film posters. Featuring two new limited edition screen prints by […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design43-704x396.jpg"
+  },
+  "perfect blue": {
+   "desc": "“Who are…you?” Mima Kirigoe, a former pop idol, makes a bold transition into acting, but her reinvention begins to fracture her sense of identity. […]",
+   "img": "https://image.tmdb.org/t/p/w342/6WTiOCfDPP8XV4jqfloiVWf7KHq.jpg"
+  },
+  "floating features: jaws": {
+   "desc": "When a gigantic great white shark begins to menace the small island community of Amity, a police chief, a marine scientist and grizzled fisherman […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-704x396.jpg"
+  },
+  "ashima": {
+   "desc": "Director Kenji Tsukamoto in person for Q&A! ASHIMA follows elite rock climber Ashima Shiraishi as she travels to South Africa to attempt to become […]",
+   "img": "https://image.tmdb.org/t/p/w342/fm0G1lpyEKIkchgP1P8K6HMpkJa.jpg"
+  },
+  "the healing well fundraiser: figaro up, figaro down": {
+   "desc": "Celebrating The Healing WELL’s annual fundraiser at the Roxie, “The Power of the Second Act.” Featuring panel discussion after the film with director Javid […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/FIGARO_UP_FIGARO_DOWN_sffilm_festival_2026_1200x675-704x396.jpg"
+  },
+  "zoé presents: memorex + rexsexex y más": {
+   "desc": "6 GNP Stadiums in Mexico City. Over 380,000 souls. What happened across those six nights was farmore than an unprecedented record for Mexican rock; […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/1-11-704x396.jpg"
+  },
+  "floating features: top gun": {
+   "desc": "Two rising but reckless Naval officers – Pete “Maverick” Mitchell and Nick “Goose” Bradshaw – are recruited for Top Gun; an elite US Flying […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-2-704x396.jpg"
+  },
+  "floating features: the game": {
+   "desc": "After a wealthy banker is given an opportunity to participate in a mysterious game, his life is turned upside down when he becomes unable […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-3-1-704x396.jpg"
+  },
+  "zyzzyva movie matinee with ingrid rojas contreras: amarcord (35mm)": {
+   "desc": "Co-presented by Zyzzyva Magazine and Litquake, San Francisco’s Literary Festival This year’s Litquake festival will take place October 8th-24th! For more information about Litquake’s festival and year-round […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/04/3-47-704x396.jpg"
+  },
+  "dr. jekyll and mr. hyde (1931)": {
+   "desc": "Fredric March and Miriam Hopkins (Design for Living) star in Robert Lewis Stevenson‘s classic horror tale of a kind and gentle doctor looking for […]",
+   "img": "https://image.tmdb.org/t/p/w342/mZtQORzQWkCSqeeHApH6vJDA1D2.jpg"
+  },
+  "floating features: hocus pocus": {
+   "desc": "After three centuries, three witch sisters are resurrected in Salem, Massachusetts on Halloween night, and it is up to two teenagers, a young girl, […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-5-704x396.jpg"
+  },
+  "rewind presents: the craft": {
+   "desc": "With Live Drag by Mary Vice! WELCOME TO THE WITCHING HOUR. After transferring to a Los Angeles high school, Sarah (Robin Tunney) finds that her […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-1-704x396.jpg"
+  },
+  "floating features: us": {
+   "desc": "In order to get away from their busy lives, the Wilson family takes a vacation to Santa Cruz, California. At night, four strangers break […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-6-704x396.jpg"
+  },
+  "floating features: pacific heights": {
+   "desc": "Drake and Patty purchase a San Francisco Victorian hoping to fund their future through rental income. Their stability collapses when Carter Hayes occupies the […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-7-704x396.jpg"
+  },
+  "floating features: friday the 13th": {
+   "desc": "A group of camp counselors are stalked and murdered by an unknown assailant while trying to reopen a summer camp which, years before, was […]",
+   "img": "https://roxie.com/wp-content/uploads/2026/08/Untitled-design-8-704x396.jpg"
+  },
+  "floating features: national lampoon’s christmas vacation": {
+   "desc": "The Griswolds have planned all year for a great summer vacation. From their suburban Chicago home, across America, to the wonders of Wally World […]",
+   "img": "https://roxie.com/wp-content/uploads/2025/12/Untitled-design-1-704x396.jpg"
+  },
+  "floating features: a christmas story": {
+   "desc": "Based on the humorous writings of author Jean Shepherd, this beloved holiday movie follows the wintry exploits of youngster Ralphie Parker (Peter Billingsley), who […]",
+   "img": "https://roxie.com/wp-content/uploads/2025/12/Untitled-design-3-704x396.jpg"
+  },
+  "dune: part three": {
+   "desc": "The epic finale is a little spicy",
+   "img": "https://image.tmdb.org/t/p/w342/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg"
+  },
+  "hope (2026)": {
+   "desc": "A haunting South Korean thriller about fear, conflict, and cosmic disaster",
+   "img": "https://image.tmdb.org/t/p/w342/1n37BJchWHLiSYQkuFxe5KjB951.jpg"
+  },
+  "mystery voyage": {
+   "desc": "A 1990s kung fu fantasia from Hong Kong",
+   "img": "https://image.tmdb.org/t/p/w342/xj4jehTgE7I5iidvqA7agSYvMe2.jpg"
+  },
+  "avengers: doomsday": {
+   "desc": "The gang's all here. We mean all of them.",
+   "img": "https://image.tmdb.org/t/p/w342/jzPwsojjFStf5lR5Nm07w2hH56G.jpg"
+  },
+  "basic instinct": {
+   "desc": "Paul Verhoeven's sleazy & shocking erotic thriller",
+   "img": "https://image.tmdb.org/t/p/w342/76Ts0yoHk8kVQj9MMnoMixhRWoh.jpg"
+  },
+  "boorman and the devil": {
+   "desc": "Every artist has his demon.",
+   "img": "https://image.tmdb.org/t/p/w342/gAjei5EpYkyRVB0DP9vKaQGtJSA.jpg"
+  },
+  "butthole surfers: the hole truth and nothing butt": {
+   "desc": "The story of like-minded misfits who embarked on a radical rock journey",
+   "img": "https://image.tmdb.org/t/p/w342/y2AzPZ3TD0w8wSX00pJQbLSStSF.jpg"
+  },
+  "chronovisor": {
+   "desc": "A beguiling literary thriller.",
+   "img": "https://image.tmdb.org/t/p/w342/AngfVgLk5EngnbuFpISjvFJkYBz.jpg"
+  },
+  "crunchyroll anime night sneak peek (9/21/2026)": {
+   "desc": "Catch never-before-seen episodes on the big screen before they debut in October",
+   "img": "https://img-assets.drafthouse.com/images/shows/crunchyroll-anime-night-sneak-peek-9-21-2026/CRUNCHYROLL-ANIME-NIGHT-SNEAK-PEEK-9-21-2026_sp-poster.jpg?auto=compress&fit=clip&h=1620&q=80&w=1080"
+  },
+  "deathgasm 2: goremageddon": {
+   "desc": "The long-awaited sequel to the 2015 cult classic",
+   "img": "https://image.tmdb.org/t/p/w342/m3pFJuakpvK2eQ5qcPxeDMMFUyN.jpg"
+  },
+  "destroy all monsters": {
+   "desc": "Monsters of mass destruction",
+   "img": "https://image.tmdb.org/t/p/w342/24r1hsRisfUidwLF67J0iMuWh7p.jpg"
+  },
+  "dire duplicity": {
+   "desc": "The latest film from Neil Breen.",
+   "img": "https://image.tmdb.org/t/p/w342/jN5J4x2KzA9v8qtt2TnTTqCh5BY.jpg"
+  },
+  "dismember the alamo 2026 - new mission": {
+   "desc": "You'll never survive",
+   "img": "https://img-assets.drafthouse.com/images/shows/dismember-the-alamo-2026-new-mission/FSP_960x1400.jpg?auto=compress&fit=clip&h=1620&q=80&w=1080"
+  },
+  "first blood": {
+   "desc": "Ted Kotcheff's genre-defining post-ROCKY masterpiece",
+   "img": "https://image.tmdb.org/t/p/w342/a9sa6ERZCpplbPEO7OMWE763CLD.jpg"
+  },
+  "breaking bad day": {
+   "desc": "Cook up some trouble at the Walter White birthday celebration",
+   "img": "https://img-assets.drafthouse.com/images/shows/breaking-bad-day/BREAKING-BAD_sp-poster-copy.jpg?auto=compress&fit=clip&h=1620&q=80&w=1080"
+  },
+  "ghost in the shell (subtitled)": {
+   "desc": "A mind-bending, boundary-transcending futuristic sci-fi thriller",
+   "img": "https://image.tmdb.org/t/p/w342/zCtL3UBgCoZzd7XTVGhvl6XY75E.jpg"
+  },
+  "the fog (1980)": {
+   "desc": "The beach-side NoCal spookfest, newly restored",
+   "img": "https://image.tmdb.org/t/p/w342/12EeSboRofP3CI4SPmMFNNXCbtY.jpg"
+  },
+  "idiots": {
+   "desc": "They had one simple job",
+   "img": "https://image.tmdb.org/t/p/w342/l1JFNC1SdgyXVr7BaD5ehaYBvOC.jpg"
+  },
+  "it ends": {
+   "desc": "A wrong turn leads a group of friends on a never-ending road trip",
+   "img": "https://image.tmdb.org/t/p/w342/6dfAGvZWbJnzWfSZ8gxFj63BNAH.jpg"
+  },
+  "ken russell's the devils": {
+   "desc": "Experience the uncut version, newly restored and remastered in 4K",
+   "img": "https://image.tmdb.org/t/p/w342/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+  },
+  "faust (1926)": {
+   "desc": "F.W. Murnau's colossal adaptation of the Goethe classic.",
+   "img": "https://image.tmdb.org/t/p/w342/rN703hMFxmkZfyEzsXvFtuFhkXE.jpg"
+  },
+  "the weight": {
+   "desc": "A man is hired to help smuggle a fortune in gold across the wilderness",
+   "img": "https://image.tmdb.org/t/p/w342/8i5iZV50CoEtmDCFM7RSxCkpE8h.jpg"
+  },
+  "nacho libre": {
+   "desc": "He's not lean. He's not mean. He's nacho average hero.",
+   "img": "https://image.tmdb.org/t/p/w342/kh7B91bMl2lZ0mH9WhPfaNUIEQH.jpg"
+  },
+  "spy kids": {
+   "desc": "Real spies...only smaller",
+   "img": "https://image.tmdb.org/t/p/w342/j3rUkHIAAoKr6jU30q3Db4fcIF9.jpg"
+  },
+  "oasis: don't look back in anger": {
+   "desc": "One of the most anticipated rock 'n' roll comebacks of all time",
+   "img": "https://image.tmdb.org/t/p/w342/nuNfPuFZKtkrglYnz2F9weQm3Ng.jpg"
+  },
+  "onslaught": {
+   "desc": "Someone let the super soldiers out",
+   "img": "https://image.tmdb.org/t/p/w342/cOGtvhc6Ij9KvzM6jZsfQyg0B0O.jpg"
+  },
+  "practical magic 2": {
+   "desc": "There's still a little witch in all of us",
+   "img": "https://image.tmdb.org/t/p/w342/2lSf1aoZA6UpTEBxVGqnJ7QayIP.jpg"
+  },
+  "pulp: what do you do for an encore?": {
+   "desc": "One night only!",
+   "img": "https://image.tmdb.org/t/p/w342/hkCCdHK86rwA6jQocTVNC7VqDbD.jpg"
+  },
+  "the birdcage": {
+   "desc": "Robin Williams and Nathan Lane try to play it straight",
+   "img": "https://image.tmdb.org/t/p/w342/4IpC35BoA5aRO0Q1DpFGJ8iKKYq.jpg"
+  },
+  "resident evil (2026)": {
+   "desc": "Zach Cregger's terrifying reinvention of the RESIDENT EVIL franchise",
+   "img": "https://image.tmdb.org/t/p/w342/qku2uWSoJ9amQV5MWo1Eek29iji.jpg"
+  },
+  "star trek ii: the wrath of khan": {
+   "desc": "The Starship Enterprise's most iconic cinematic adventure",
+   "img": "https://image.tmdb.org/t/p/w342/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg"
+  },
+  "star trek iii: the search for spock": {
+   "desc": "The final voyage of the Starship Enterprise",
+   "img": "https://image.tmdb.org/t/p/w342/yqEj0oPfKBMCz7YcCARHDgH7VFm.jpg"
+  },
+  "star trek iv: the voyage home": {
+   "desc": "How on Earth can they save the future?",
+   "img": "https://image.tmdb.org/t/p/w342/xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg"
+  },
+  "star trek: the motion picture - the director's edition": {
+   "desc": "The cinematic maiden voyage of the Starship Enterprise",
+   "img": "https://image.tmdb.org/t/p/w342/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg"
+  },
+  "spider-man: brand new day": {
+   "desc": "The world moved on. The Spidey sense didn't.",
+   "img": "https://image.tmdb.org/t/p/w342/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg"
+  },
+  "star trek: the genesis trilogy": {
+   "desc": "One of the greatest sci-fi movie trilogies of all time",
+   "img": "https://img-assets.drafthouse.com/images/shows/star-trek-the-genesis-trilogy/STAR-TREK-IV-THE-VOYAGE-HOME_sp-poster.jpg?auto=compress&fit=clip&h=1620&q=80&w=1080"
+  },
+  "angel heart": {
+   "desc": "Go down south with Mickey Rourke in this atmospheric thriller.",
+   "img": "https://image.tmdb.org/t/p/w342/h5v3wjJQNB7q2RntEnKDLhKtTFE.jpg"
+  },
+  "der fan": {
+   "desc": "An obsession gone mad",
+   "img": "https://image.tmdb.org/t/p/w342/igLYepYwgDtA4jqUN3LWsnRddv4.jpg"
+  },
+  "event horizon": {
+   "desc": "A haunted ship. A missing crew. An infinite evil.",
+   "img": "https://image.tmdb.org/t/p/w342/qfluaDXv0cIdLwgQWzNB2piHL2q.jpg"
+  },
+  "ice cream man (1995)": {
+   "desc": "I scream, you scream, we all scream for the...",
+   "img": "https://image.tmdb.org/t/p/w342/c6ZouvwSkBPnmKVjeBDwdA44Tx8.jpg"
+  },
+  "the silence of the lambs": {
+   "desc": "Do you still hear the lambs screaming?",
+   "img": "https://image.tmdb.org/t/p/w342/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+  },
+  "the doors": {
+   "desc": "Val Kilmer's portrayal of The Doors' frontman Jim Morrison",
+   "img": "https://image.tmdb.org/t/p/w342/x1LM3dzGuG6xOz0aT2e71o11vhu.jpg"
+  },
+  "the twilight saga: new moon": {
+   "desc": "The next chapter begins",
+   "img": "https://image.tmdb.org/t/p/w342/k2qTooPlHffgNABNWxeJdGMglPK.jpg"
+  },
+  "twilight (2008)": {
+   "desc": "When you can live forever, what do you live for?",
+   "img": "https://image.tmdb.org/t/p/w342/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg"
+  },
+  "tony": {
+   "desc": "Late nights, lies, and lobster – don't miss TONY in theaters",
+   "img": "https://image.tmdb.org/t/p/w342/3WN0JWwRI7oGH7Ni2R6poVWej05.jpg"
+  },
+  "capone cries a lot": {
+   "desc": "Seijun Suzuki's kaleidoscopic vivisection of Americana.",
+   "img": "https://image.tmdb.org/t/p/w342/sLeGmA0zaKRN8STvde3iS36dQI5.jpg"
+  },
+  "castration movie anthology ii. the best of both worlds": {
+   "desc": "The second part of auteur Louise Weard's postmodern epic",
+   "img": "https://image.tmdb.org/t/p/w342/rtxXBBBr7sjW9KQz02dSjDfaV0m.jpg"
+  },
+  "no picnic": {
+   "desc": "A No Wave NYC snapshot, newly restored.",
+   "img": "https://image.tmdb.org/t/p/w342/9YPFf55AIl2mN6e8vI3hTaRAiR2.jpg"
+  },
+  "prime cut": {
+   "desc": "Lee Marvin vs. Gene Hackman in a peculiar American crime picture.",
+   "img": "https://image.tmdb.org/t/p/w342/rAesYoQKGIPBJoT7jmaKAUGD9Y8.jpg"
+  },
+  "spike of bensonhurst": {
+   "desc": "Paul Morrissey's blazing NYC satire.",
+   "img": "https://image.tmdb.org/t/p/w342/uxY7MffVWZeBKSeHwl2pNxQxRJu.jpg"
+  },
+  "dead ringers": {
+   "img": "https://image.tmdb.org/t/p/w342/ofXwDfM8uYAaftD7cBPcIWdCpMn.jpg"
+  },
+  "holy motors": {
+   "img": "https://image.tmdb.org/t/p/w342/4ZuTrrDQhCS9f6KzIX6HfsjjyMd.jpg"
+  },
+  "akira": {
+   "img": "https://image.tmdb.org/t/p/w342/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg"
+  },
+  "cocoon – one summer of girlhood (eng sub)": {
+   "img": "https://image.tmdb.org/t/p/w342/xBWJVkyH3ZbKusKJQSOnixfw5BK.jpg"
+  },
+  "creature from the black lagoon": {
+   "img": "https://image.tmdb.org/t/p/w342/euCzA2Exc70MpTDCVYih8tdE7z1.jpg"
+  },
+  "sleepbomb presents: frankenstein": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000010975"
+  },
+  "the room": {
+   "img": "https://image.tmdb.org/t/p/w342/8D2Oty3FpihcNoNowuYbzOaXKsv.jpg"
+  },
+  "anatomy of a fall": {
+   "img": "https://image.tmdb.org/t/p/w342/1ho0d4LNZw3Y0voeKmSvPSgJOJ2.jpg"
+  },
+  "exorcist ii: the heretic": {
+   "img": "https://image.tmdb.org/t/p/w342/g9i3LTMYLRHvCYSKimZEfd1Vqy7.jpg"
+  },
+  "the mummy": {
+   "img": "https://image.tmdb.org/t/p/w342/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg"
+  },
+  "twin peaks: season 1, ep. 1 (northwest passage)": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011189"
+  },
+  "twin peaks: the return, ep. 1 & 2": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: season 1, ep. 2 & 3": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks fest (fri. pass)": {
+   "img": "https://image.tmdb.org/t/p/w342/u6i0F1Sh6vMizdZCB9E6a9ZTYX3.jpg"
+  },
+  "twin peaks: season 1, ep. 4 & 5": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: season 1, ep. 6, 7, & 8": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: season 2, ep. 1": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "music of the red room (performed by marc capelle)": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: fire walk with me": {
+   "img": "https://image.tmdb.org/t/p/w342/mxsGXqetGnirf99qapYd5MMY1VL.jpg"
+  },
+  "twin peaks: the return, ep. 8 (gotta light)": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks fest (sat. pass)": {
+   "img": "https://image.tmdb.org/t/p/w342/u6i0F1Sh6vMizdZCB9E6a9ZTYX3.jpg"
+  },
+  "twin peaks: season 2, ep. 6 & 7": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: season 2, ep. 8 & 9": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: the return, ep. 1, 2, & 8": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks: season 2, ep. 22": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011199"
+  },
+  "twin peaks fest (sun. pass)": {
+   "img": "https://image.tmdb.org/t/p/w342/u6i0F1Sh6vMizdZCB9E6a9ZTYX3.jpg"
+  },
+  "twin peaks fest (weekend pass)": {
+   "img": "https://image.tmdb.org/t/p/w342/u6i0F1Sh6vMizdZCB9E6a9ZTYX3.jpg"
+  },
+  "mcqueen": {
+   "img": "https://image.tmdb.org/t/p/w342/bc5kAqhNfLitH7zMlLvLRbxV0xD.jpg"
+  },
+  "streetwise": {
+   "img": "https://image.tmdb.org/t/p/w342/fW9z3HXWYTKzlqE3CYMMxaXyyy2.jpg"
+  },
+  "l'eclisse": {
+   "img": "https://image.tmdb.org/t/p/w342/oXoe0Fp92Yw3mMJ9Vq0hPlaMELg.jpg"
+  },
+  "legend of the stardust brothers": {
+   "img": "https://image.tmdb.org/t/p/w342/fkT12vml7dNS53OmjNnuzqX9jYm.jpg"
+  },
+  "twilight": {
+   "img": "https://image.tmdb.org/t/p/w342/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg"
+  },
+  "super shangri-la show": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000006107"
+  },
+  "resident evil": {
+   "img": "https://image.tmdb.org/t/p/w342/qku2uWSoJ9amQV5MWo1Eek29iji.jpg"
+  },
+  "my sassy girl": {
+   "img": "https://image.tmdb.org/t/p/w342/i964xFDEMwZ5uaweParv8ItBfbJ.jpg"
+  },
+  "comedy at the balboa: scott capurro": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000009036"
+  },
+  "the last picture shows": {
+   "img": "https://image.tmdb.org/t/p/w342/kcXtytWGyvJLLwLaUZCPL6hEr6r.jpg"
+  },
+  "ghost dog: way of the samurai": {
+   "img": "https://image.tmdb.org/t/p/w342/gjcl07r9zgQ9tVo9alyHmysPFfX.jpg"
+  },
+  "the rocky horror picture show": {
+   "img": "https://image.tmdb.org/t/p/w342/3pyE6ZqDbuJi7zrNzzQzcKTWdmN.jpg"
+  },
+  "samurai rebellion": {
+   "img": "https://image.tmdb.org/t/p/w342/bKySGFUTgsZyn5i7s5htMVy4Xd2.jpg"
+  },
+  "house on haunted hill": {
+   "img": "https://image.tmdb.org/t/p/w342/g5kdFt3piV3w1pG65W9sSToJ7HB.jpg"
+  },
+  "mean girls": {
+   "img": "https://image.tmdb.org/t/p/w342/2ZkuQXvVhh45uSvkBej4S7Ix1NJ.jpg"
+  },
+  "queen budapest": {
+   "img": "https://image.tmdb.org/t/p/w342/dCsCez4aVeXqMiALdWYp4LFsztI.jpg"
+  },
+  "bea arthur: the documentary": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011170"
+  },
+  "live music: izaak opatz and joe kaplow": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg&code=0000011142"
+  },
+  "copycat": {
+   "img": "https://image.tmdb.org/t/p/w342/oMgwJb016znNZcpDR20eXxZoW8A.jpg"
+  },
+  "live music: ray barbee & thomas campbell": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011087"
+  },
+  "dr. cliff kapono": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011091"
+  },
+  "jack johnson: surfilmusic": {
+   "img": "https://image.tmdb.org/t/p/w342/o0oiGzx04uMQNEQlpR0IgEYGuLT.jpg",
+   "desc": "An intimate documentary following Johnson's journey from surfer to filmmaker to world-renowned musician"
+  },
+  "the innermost limits of pure fun": {
+   "img": "https://image.tmdb.org/t/p/w342/5wxFTKqLl88jA94Z365EmVN1mbl.jpg"
+  },
+  "chris malloy films with live score and q&a": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011095"
+  },
+  "big wave women (a work-in-progress screening)": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011104"
+  },
+  "live music: dead set 805": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011160"
+  },
+  "stop making sense": {
+   "img": "https://image.tmdb.org/t/p/w342/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg"
+  },
+  "fugs film! with live fugs tribute set and q&a": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011146"
+  },
+  "kexp vinelands live: mild universe & more": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011089"
+  },
+  "live music: croz boyce, jas stade": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000010831"
+  },
+  "comedy: honey pluton & spike einbinder": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011078"
+  },
+  "live music: spencer noble, peña, cilantro": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011150"
+  },
+  "los video nasties 2026 (short film tour)": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011181"
+  },
+  "i lost it over: body heat (with joan chen)": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011179"
+  },
+  "media meltdown movie madhouse: ace attorney": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011156"
+  },
+  "my neighbor totoro (subtitled)": {
+   "img": "https://image.tmdb.org/t/p/w342/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
+  },
+  "live music: tom conneely & bop, my dog jack": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011207"
+  },
+  "my neighbor totoro (dubbed)": {
+   "img": "https://image.tmdb.org/t/p/w342/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
+  },
+  "live music: fog lamp, eraser, blue zero": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000010952"
+  },
+  "live music: fred frith, the sleeves": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000010273"
+  },
+  "live music: color green": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011154"
+  },
+  "music: nosferatu with paz lenchantin & dallas acid": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011152"
+  },
+  "live music: the wildwoods": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000010912"
+  },
+  "live music: idaho": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011158"
+  },
+  "live music: todd day wait": {
+   "img": "https://ticketing.us.veezi.com/Media/Poster?siteToken=d2atbcege5knqsavntt91g1250&code=0000011072"
+  },
+  "saint omer": {
+   "img": "https://image.tmdb.org/t/p/w342/ekr25uuxlH7kg3KLhLLZcDZ15xd.jpg"
+  },
+  "we": {
+   "img": "https://image.tmdb.org/t/p/w342/dU4HfnTEJDf9KvxGS9hgO7BVeju.jpg"
+  },
+  "breathless": {
+   "img": "https://image.tmdb.org/t/p/w342/9Wx0Wdn2EOqeCZU4SP6tlS3LOml.jpg"
+  },
+  "mean streets": {
+   "img": "https://image.tmdb.org/t/p/w342/9msfwOeGc9uL1iRRTBdEf15XonC.jpg"
+  },
+  "a woman is a woman": {
+   "img": "https://image.tmdb.org/t/p/w342/jiWRfaeCYNETAS0J5TZNDjWHziW.jpg"
+  },
+  "alice doesn’t live here anymore": {
+   "img": "https://image.tmdb.org/t/p/w342/A99yzz1W3NCG6zR2HXSwn2kWlse.jpg"
+  },
+  "push buttons and ai": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/Replace_Chapman_Push-Button_001%20copy.jpg"
+  },
+  "on call": {
+   "img": "https://image.tmdb.org/t/p/w342/yRK1TjCseek207oqogEPaiu6IJc.jpg"
+  },
+  "vivre sa vie": {
+   "img": "https://image.tmdb.org/t/p/w342/A0BjScjASfMFgyGI5sU0CwfKh3l.jpg"
+  },
+  "modern times": {
+   "img": "https://image.tmdb.org/t/p/w342/AthaPakkuCLROdKxtRbKWclkDBK.jpg"
+  },
+  "taxi driver": {
+   "img": "https://image.tmdb.org/t/p/w342/ekstpH614fwDX8DUln1a2Opz0N8.jpg"
+  },
+  "danton’s death": {
+   "img": "https://image.tmdb.org/t/p/w342/bk7F4OI90l41UHctsGvy41uK1t0.jpg"
+  },
+  "new york, new york": {
+   "img": "https://image.tmdb.org/t/p/w342/9YbyvcrHmY2SVbdfXpb8mC4Fy0g.jpg"
+  },
+  "senegalese meet sene-gallic": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/FRAG%2001_Diop_Senegalaises-and-Senegauloise_004.jpg"
+  },
+  "contempt": {
+   "img": "https://image.tmdb.org/t/p/w342/kNElbRcp4Qz6wmJ9kH5vdY004Hq.jpg"
+  },
+  "the hole": {
+   "img": "https://image.tmdb.org/t/p/w342/tQMxsrsVtpB2D2n01nUqgOMmSWD.jpg"
+  },
+  "bellissima": {
+   "img": "https://image.tmdb.org/t/p/w342/Ao5l92i1QPYq3Na98cffLInFsGB.jpg"
+  },
+  "the last waltz": {
+   "img": "https://image.tmdb.org/t/p/w342/2K7CFH0AIHnGrA4yQjPCoIB5CmQ.jpg"
+  },
+  "it will be better before and temo re": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/WILL%2001_Kipiani_It-Will-Be-Better-Before_002.jpg"
+  },
+  "blackbird blackbird blackberry": {
+   "img": "https://image.tmdb.org/t/p/w342/xcG2bRze3RYzx6ajHJhD7HpeOxV.jpg"
+  },
+  "a tunnel": {
+   "img": "https://image.tmdb.org/t/p/w342/xLUU7TpPUrc8U0g8Ftv8BypShs3.jpg"
+  },
+  "taming the garden": {
+   "img": "https://image.tmdb.org/t/p/w342/4TLiisX13RttEGvAH5U3gfcqwA0.jpg"
+  },
+  "georgian cinema now symposium—activism in authoritarian times: the republic of georgia as a case study": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/Georgian-Cinema-Now-Symposium_001_1200.jpg"
+  },
+  "crossing": {
+   "img": "https://image.tmdb.org/t/p/w342/wlnltvu01zZvcC2dVAp4Xdwb1JG.jpg"
+  },
+  "english teacher and bakhmaro 2050": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/ENG%2001_Orjonikidze_English-Teacher_005.jpg"
+  },
+  "an incomplete day in the history of georgia 10.06.93.": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/INC%2001_Jashi_An-Incomplete-Day_001.jpg"
+  },
+  "self-portrait along the borderline": {
+   "img": "https://image.tmdb.org/t/p/w342/48lvmQC5BtcPozVYs1UgbX5TmRP.jpg"
+  },
+  "italianamerican and american boy: a profile of steven prince": {
+   "img": "https://bamlive.s3.amazonaws.com/styles/170x150/s3/ITAL%2001_Scorsese_Italianamerican_004.jpg"
+  },
+  "wet sand": {
+   "img": "https://image.tmdb.org/t/p/w342/mwrwVs31Oe9gUbwelRaWG2Xfyqx.jpg"
+  },
+  "the odyssey in 70mm": {
+   "img": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg"
+  },
+  "the dog stars": {
+   "img": "https://image.tmdb.org/t/p/w342/5O616X9vmRzQdB68PHzBewPittd.jpg"
+  },
+  "a clockwork orange": {
+   "desc": "In Stanley Kubrick's filming of the Anthony Burgess dystopian novel, sadistic gang leader Alex DeLarge is imprisoned and volunteers for a conduct-aversion experiment, but it doesn't go as planned.",
+   "img": "https://image.tmdb.org/t/p/w342/4sHeTAp65WrSSuc05nRBKddhBxO.jpg"
+  },
+  "a life illuminated": {
+   "desc": "A Life Illuminated follows renowned marine biologist Dr. Edith Widder as she embarks on an extraordinary journey into the magical world of deep sea bioluminescence.",
+   "img": "https://image.tmdb.org/t/p/w342/fvwKe8ttwNoJasZHoGIU4Nt0foC.jpg"
+  },
+  "angel heart (1987)": {
+   "desc": "In 1955 New Orleans, small-time private investigator Harry Angel is hired by a man who calls himself Louis Cypher to track down a singer named Johnny Favorite, but the investigation takes an unexpected and somber turn.",
+   "img": "https://image.tmdb.org/t/p/w342/h5v3wjJQNB7q2RntEnKDLhKtTFE.jpg"
+  },
+  "peter pan. syndrome": {
+   "desc": "Inspired by the tales of J.M. Barrie.",
+   "img": "https://image.tmdb.org/t/p/w342/lwsfeZta2Uhsl5DKl6CsqZCPhNw.jpg"
+  },
+  "asphalt jungle (1950)": {
+   "desc": "A major heist goes off as planned, but then double crosses, bad luck and solid police work cause everything to unravel.",
+   "img": "https://image.tmdb.org/t/p/w342/8xsUnT0P2fJWQv9jGDhs3i9Zx2l.jpg"
+  },
+  "barbarella (1968)": {
+   "desc": "In the 41st century, an astronaut seeks to stop an evil scientist who threatens to unleash a powerful weapon upon the galaxy.",
+   "img": "https://image.tmdb.org/t/p/w342/facTz5BZz4AkJal1FWgjYciekih.jpg"
+  },
+  "bird (1988)": {
+   "desc": "The troubled life and career of jazz musician Charlie Parker",
+   "img": "https://image.tmdb.org/t/p/w342/rTCp6M98RQAxRl0x0guU9GlH7HS.jpg"
+  },
+  "casper (1995)": {
+   "desc": "An afterlife therapist and his daughter meet a friendly young ghost when they move into a crumbling mansion in order to rid the premises of wicked spirits.",
+   "img": "https://image.tmdb.org/t/p/w342/2ah8fNJFZVU3vcXhU5xfAYi2eym.jpg"
+  },
+  "chinatown (1974)": {
+   "desc": "A private detective hired to expose an adulterer in 1930s Los Angeles finds himself caught up in a web of deceit, corruption, and murder.",
+   "img": "https://image.tmdb.org/t/p/w342/kZRSP3FmOcq0xnBulqpUQngJUXY.jpg"
+  },
+  "clash by night (1952)": {
+   "desc": "Mae Doyle comes back to her hometown a cynical woman. Her brother Joe fears that his love, fish cannery worker Peggy, may wind up like Mae. Mae marries Jerry and has a baby; she is happy but restless, drawn to Jerry's friend Earl.",
+   "img": "https://image.tmdb.org/t/p/w342/zhGWvfuKUSeOZZaHJrIGyluGLZY.jpg"
+  },
+  "coco (2d) (2017)": {
+   "img": "https://image.tmdb.org/t/p/w342/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
+  },
+  "cookie queens": {
+   "desc": "It's Girl Scout Cookie season, and four tenacious girls strive to be a top-selling \"Cookie Queen,\" navigating an $800 million business in which innocence and ambition collide.",
+   "img": "https://image.tmdb.org/t/p/w342/lrb4Toi6BJHWwOz9clh1aJGJDj8.jpg"
+  },
+  "curtains! -an improvised noir musical": {
+   "desc": "Based entirely on audience suggestions, this cast of BATS Improv all-stars will walk the twin tightropes of song and story in the dark, stylish streets of Noir. The stool pigeons won’t be the only ones who sing.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/curtains_agile%20copy.jpg"
+  },
+  "dark city (1998)": {
+   "desc": "A man struggles with memories of his past, which include a wife he cannot remember and a nightmarish world no one else ever seems to wake up from.",
+   "img": "https://image.tmdb.org/t/p/w342/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg"
+  },
+  "dr. who and the daleks (1965)": {
+   "desc": "An eccentric inventor and his companions travel in his TARDIS to the Planet Skaro and battle the evil menace of the Daleks.",
+   "img": "https://image.tmdb.org/t/p/w342/qhCHlQFb3DoI0JcofRdN8F1PBSh.jpg"
+  },
+  "dreams in nightmares": {
+   "desc": "Three friends in their mid-thirties as they road trip across the Midwestern United States in search of their friend who has seemingly disappeared off the grid.",
+   "img": "https://image.tmdb.org/t/p/w342/j5dxzoXeQB9pmOnO0TjSoMDceSk.jpg"
+  },
+  "easy rider (1969)": {
+   "desc": "Two bikers head from L.A. to New Orleans through the open country and desert lands, and along the way they meet a man who bridges a counter-culture gap of which they had been unaware.",
+   "img": "https://image.tmdb.org/t/p/w342/3H3vwPGX6EbBRffIVHp3eHHcjka.jpg"
+  },
+  "evil dead ii (1987) - double feature!!!": {
+   "desc": "Ash Williams (Bruce Campbell) holes up in a cabin with a group of strangers while the demons continue their attack.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/evil_dead_ii.jpg"
+  },
+  "exhibition on screen: james mcneill whistler": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/whistler_uk_quad_repro.jpg"
+  },
+  "exhibition on screen: renoir & love": {
+   "desc": "Be transported back to a Parisian summer of love through the eyes of a true visionary.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/pierre%20auguste%20renoir,%20le%20pont%20des%20arts%20paris,%20norton%20simon%20museum%20,%20wiki.jpg"
+  },
+  "fallen angels by noël coward.": {
+   "desc": "Sparkling, dizzying, and deliciously potent, Fallen Angels, Noël Coward’s champagne-fresh comedy of bad manners, shocked and delighted audiences at its 1925 premiere",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/fallen-angels-ticketing-600-x-900-webedia.jpg"
+  },
+  "faust (1926) w/the invincible czars live!": {
+   "desc": "The demon Mephisto wagers with God that he can corrupt a mortal man's soul.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/czars%20faust.jpg"
+  },
+  "giant -- the play": {
+   "desc": "GIANT tells the story of Roald Dahl and the true scandal that shook his legacy",
+   "img": "https://image.tmdb.org/t/p/w342/mI3F2JdhxQuXiCoWKAtAZssQVkj.jpg"
+  },
+  "hadestown: the musical (4k)": {
+   "desc": "A musical juxtaposition of the Orpheus/Eurydice and Hades/Persephone myths that examines the way real life can impact our quest for a perfect world.",
+   "img": "https://image.tmdb.org/t/p/w342/iJNVygzkuOSCOdCPNI1nLSeF7sz.jpg"
+  },
+  "harold and maude": {
+   "desc": "Young, rich, and obsessed with death, Harold finds himself changed forever when he meets lively septuagenarian Maude at a funeral.",
+   "img": "https://image.tmdb.org/t/p/w342/t7qEuGwDjcYu8ajaKZ68DeDnOxw.jpg"
+  },
+  "hook (1991)": {
+   "desc": "When Captain James Hook kidnaps his children, an adult Peter Pan must return to Neverland and reclaim his youthful spirit in order to challenge his old enemy.",
+   "img": "https://image.tmdb.org/t/p/w342/a6rB1lGXoGms7gWxRfJneQmAjNV.jpg"
+  },
+  "impact (1949) filmed in larkspur! noir fest opening night reception": {
+   "desc": "Filmed Iin Larkspur! A wealthy industrialist is presumed dead after an accident engineered by his wife and her lover.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/impact%20lobby%20card.jpg"
+  },
+  "in a lonely place (1950)": {
+   "desc": "A potentially violent screenwriter is a murder suspect until his lovely neighbor clears him, but she soon starts to have her doubts.",
+   "img": "https://image.tmdb.org/t/p/w342/vbdgtwzLOpE6MppZlyYChMagvQq.jpg"
+  },
+  "invasion of the body snatchers (1978) double feature w/the thing": {
+   "desc": "When strange seeds drift to earth from space, mysterious pods begin to grow and invade San Francisco, replicating the city's residents one body at a time.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/invasion-of-the-body-snatchers-md-web-671749065.jpg"
+  },
+  "jeremiah johnson (1972)": {
+   "desc": "A mountain man who wishes to live the life of a hermit becomes the unwilling object of a long vendetta by the Crow tribe and proves to be a match for their warriors in single combat on the early frontier.",
+   "img": "https://image.tmdb.org/t/p/w342/fANj1S3UmBB51wnKxYRKtw8LMBn.jpg"
+  },
+  "key largo (1948)": {
+   "desc": "A drifter visits the family hotel of a war buddy who was killed in action only to find that a Chicago mobster and his gang have taken over the place. As a hurricane approaches, a confrontation ensues.",
+   "img": "https://image.tmdb.org/t/p/w342/rySfmQQZhS7RswOiJcJrww6FcHy.jpg"
+  },
+  "lady and the tramp (1955)": {
+   "desc": "The romantic tale of a sheltered uptown Cocker Spaniel dog and a streetwise downtown Mutt.",
+   "img": "https://image.tmdb.org/t/p/w342/340NcWz9SQXWQyf4oicMxjbrLOb.jpg"
+  },
+  "lured (1947)": {
+   "desc": "British police are after a serial killer who lures his female victims through newspaper personal ads and sends cryptic poem clues to the cops.",
+   "img": "https://image.tmdb.org/t/p/w342/3nBt4ljVJGSynBEHI9xgD0GS6pe.jpg"
+  },
+  "m (1931)": {
+   "desc": "When the police in a German city are unable to catch a child-murderer, other criminals join in the manhunt.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/m%201931.jpg"
+  },
+  "marin jazz presents - jackie ryan sings a tribute to the divine divas of jazz!": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/jackie%20ryan.jpg"
+  },
+  "marin jazz presents - jonathan poretz and his nye big band swing black tie ball": {
+   "desc": "Some say he was born with a microphone in his hand. That would explain why Pacific Coast Jazz artist Jonathan Poretz is so comfortable performing his brand of great American jazz standards to audiences large and small.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/jp.jpeg"
+  },
+  "marin jazz presents - lavay smith & her red hot skillet lickers": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/lavay%20smith_edited_edited_thumb.jpeg"
+  },
+  "marin jazz presents - the ray charles project": {
+   "desc": "In tribute to the genius of Ray Charles, a swinging sextet of outstanding Bay Area musicians offers their take on some of the highlights from Ray’s amazing songbook."
+  },
+  "met opera: 20 years of the met in cinemas": {
+   "img": "https://image.tmdb.org/t/p/w342/dm7qMSsA7XJc2eB55Zsg8YvsTby.jpg"
+  },
+  "met opera: carmen (encore)": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/carmen%20.jpg"
+  },
+  "met opera: così fan tutte": {
+   "img": "https://image.tmdb.org/t/p/w342/AqzDG6S85HqarRfhMj7CnpDCUF8.jpg"
+  },
+  "met opera: la fanciulla del west": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/la%20fanciulla%20del%20west%20.jpg"
+  },
+  "met opera: macbeth": {
+   "img": "https://image.tmdb.org/t/p/w342/9N1SAI1CEn44zqXiPU2JjAfZuJm.jpg"
+  },
+  "met opera: manon": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/manon%20.jpg"
+  },
+  "met opera: otello": {
+   "img": "https://image.tmdb.org/t/p/w342/aAncI7HgzaVTDW3vWoehkaVfuLQ.jpg"
+  },
+  "met opera: parsifal": {
+   "img": "https://image.tmdb.org/t/p/w342/b4oSJNdHIj9A54A6ud4jwp1Wfrw.jpg"
+  },
+  "met opera: samson et dalila": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/samson%20et%20dalila%20.jpg"
+  },
+  "met opera: silent night": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/silent%20night%20.jpg"
+  },
+  "met opera: the magic flute (encore)": {
+   "img": "https://image.tmdb.org/t/p/w342/yyfkaVEI4eHLlDeeR5U1flyX3cd.jpg"
+  },
+  "met opera: tosca (encore)": {
+   "img": "https://image.tmdb.org/t/p/w342/tqDRLNUFfq6DiLbMf9dZrtl2BND.jpg"
+  },
+  "muppet christmas carol (1992)": {
+   "desc": "The Muppets put their spin on the tale of an elder, Christmas-hating miser who is visited by spirits who foretell his future and share secrets from his past and present, which helps change his view on life.",
+   "img": "https://image.tmdb.org/t/p/w342/ssrV29QSVVJuemBHho0Qx7pFYak.jpg"
+  },
+  "my man godfrey (1936)": {
+   "desc": "A scatterbrained socialite hires a vagrant as a family butler - but there's more to Godfrey than meets the eye.",
+   "img": "https://image.tmdb.org/t/p/w342/wtfOW7fIxBZWY78rvUoPpWhMSiR.jpg"
+  },
+  "night of the hunter (1955)": {
+   "desc": "A self-proclaimed preacher marries a gullible widow whose young children are reluctant to tell him where their real dad hid the $10,000 he'd stolen in a robbery.",
+   "img": "https://image.tmdb.org/t/p/w342/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg"
+  },
+  "nosferatu (1922) w/the invincible czars live!": {
+   "desc": "Vampire Count Orlok expresses interest in a new residence and real estate agent Hutter's wife.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/czars%20nosferatu.jpg"
+  },
+  "ntl - frankenstein - cumberbatch as creature": {
+   "desc": "Benedict Cumberbatch as \"The Creature\"",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/frankenstein1.jpg"
+  },
+  "ntl frankenstein - johnny lee miller as the creature": {
+   "desc": "Created by Victor Frankenstein, the one known only as The Creature sets out to discover the world and the meaning of life.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/frankenstein1.jpg"
+  },
+  "ntlive - golden boy": {
+   "desc": "A gifted young violinist with a future in music takes a chance at fame and fortune in the brutal world of professional boxing.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/golden%20boy.jpg"
+  },
+  "ntlive - the misanthrope": {
+   "desc": "Award-winner Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimagining of Molière’s classic dark comedy.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/misanthrope.jpg"
+  },
+  "occupational hazard: the first coral reefers (jimmy buffett)": {
+   "img": "https://image.tmdb.org/t/p/w342/et62NGHX8xV0X2GMQfq8pVLP05c.jpg"
+  },
+  "polar express pajama party! (4k)": {
+   "desc": "Polar Express Pajama Party! A special Holiday screening of Polar Express with Hot Chocolate and Cookies for all guests!",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/polar1.jpg"
+  },
+  "ratatouille (2d) (2007)": {
+   "img": "https://image.tmdb.org/t/p/w342/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
+  },
+  "re-animator (1985) double feature!!!": {
+   "desc": "After an odd new medical student arrives on campus, a dedicated local and his girlfriend become involved in bizarre experiments centering around the re-animation of dead tissue.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/reanimator.jpg"
+  },
+  "the return of the living dead (1985) - double feature!!!": {
+   "desc": "Two employees at a medical supply warehouse accidentally release a toxic gas from top-secret U.S. Army shipment, causing the dead to rise from a nearby cemetery with an insatiable hunger for human brains.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/return_of_the_living_dead.jpg"
+  },
+  "safety last! (1923) + the grand feature film orchestra": {
+   "desc": "A boy leaves his small country town and heads to the big city to get a job. His enthusiasm to get ahead leads to some interesting adventures.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/safety%20last.jpg"
+  },
+  "santa claus conquers the martians (1964) in scent-o-vision!  w/live orchestra!": {
+   "desc": "The children of Mars are sad, so their planet's leader goes to Earth to capture Santa and force him to bring the Christmas spirit to the Martians. But Santa has other plans.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/santa.jpg"
+  },
+  "serial mom (1994)": {
+   "desc": "She's the perfect all-American parent: a great cook and homemaker, a devoted recycler, and a woman who'll literally kill to keep her children happy.",
+   "img": "https://image.tmdb.org/t/p/w342/3Qlycp68b6TQkC1fMMahpf04Oq8.jpg"
+  },
+  "simply said": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/ss_agile_bnr_042525.jpg"
+  },
+  "sin city (2005)": {
+   "desc": "An exploration of the dark and miserable Basin City and three of its residents, all of whom are caught up in violent corruption.",
+   "img": "https://image.tmdb.org/t/p/w342/i66G50wATMmPrvpP95f0XP6ZdVS.jpg"
+  },
+  "six: the musical live!": {
+   "desc": "Tells the story of the six wives of Henry VIII, reimagining them as pop stars who reclaim their narratives from their infamous husband's shadow.",
+   "img": "https://image.tmdb.org/t/p/w342/8m4LGpmZ0wTKKo0ISmSp69ZH70T.jpg"
+  },
+  "steel magnolias (1989)": {
+   "desc": "A young beautician, newly arrived in a small Louisiana town, finds work at the local salon, where a small group of women share a close bond of friendship",
+   "img": "https://image.tmdb.org/t/p/w342/7ExUSN9s9gX9bhVM17zDLEizano.jpg"
+  },
+  "stop making sense (4k) (7.1)": {
+   "desc": "Back By Popular Demand",
+   "img": "https://image.tmdb.org/t/p/w342/utNpurUe1MMjEaHqvpkfxgfpSnV.jpg"
+  },
+  "summer tour": {
+   "desc": "Young Jerry and Annie as they chase Dead and Company's final 2023 tour in a questionable camper van, organizing their lives around the music with intensity.",
+   "img": "https://image.tmdb.org/t/p/w342/ySCWWRKQtbBE37HpBdOCELe28cq.jpg"
+  },
+  "the beastmaster (1982)": {
+   "desc": "A sword-and-sorcery fantasy about a young man's search for revenge. Armed with supernatural powers, the handsome hero and his animal allies wage war against marauding forces.",
+   "img": "https://image.tmdb.org/t/p/w342/ytaKNYpHdQnClTbWL2m19Xv6PXZ.jpg"
+  },
+  "the best little whorehouse in texas (1982)": {
+   "desc": "A town's Sheriff and regular patron of a historical whorehouse fights to keep it running when a television reporter targets it as the Devil's playhouse.",
+   "img": "https://image.tmdb.org/t/p/w342/yw3PNR3NVeKKfLWv8SgFQnXoHZh.jpg"
+  },
+  "the cheap detective (1978)": {
+   "desc": "San Francisco, 1940, detectives, dames, documents, Nazis, and a treasure.",
+   "img": "https://image.tmdb.org/t/p/w342/7poVN0zQuxCIorAR9N6JDJN0dGG.jpg"
+  },
+  "the fin": {
+   "desc": "In the dystopian post-war ”United Korea,” mutated mermen called Omegas are society’s outcasts–-exploited as cheap labor in an ecologically decimated, water-poor landscape.",
+   "img": "https://image.tmdb.org/t/p/w342/azofjhgHBLvUkDAcrnBOWoosur2.jpg"
+  },
+  "the fly (1986)": {
+   "desc": "A botched experiment transmutes a man into a monstrous insect.",
+   "img": "https://image.tmdb.org/t/p/w342/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg"
+  },
+  "the invite (4k)": {
+   "desc": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
+   "img": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg"
+  },
+  "the lady from shanghai (1947)": {
+   "desc": "Fascinated by gorgeous Mrs. Bannister, seaman Michael O'Hara joins a bizarre yachting cruise, and ends up mired in a complex murder plot.",
+   "img": "https://image.tmdb.org/t/p/w342/whqdqWavNMSoeXTx1X3DauO1LG6.jpg"
+  },
+  "the lord of the rings trilogy: the fellowship of the ring - extended (2001)": {
+   "desc": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/lotr%20landscape.jpg"
+  },
+  "the lord of the rings trilogy: the return of the king - extended (2003)": {
+   "desc": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/lotr%20landscape.jpg"
+  },
+  "the lord of the rings trilogy: the two towers - extended (2002)": {
+   "desc": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/lotr%20landscape.jpg"
+  },
+  "the nightmare before christmas 2d (1993)": {
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/thenightmarebeforechristmas_quad_photostyle_uk-1-500x374@2x.jpg"
+  },
+  "the odd couple (1968)": {
+   "desc": "After separating from his wife, fastidious Felix Unger moves in with his divorced poker pal and best friend, slovenly Oscar Madison.",
+   "img": "https://image.tmdb.org/t/p/w342/d3dKPpzEi7WfgmoMnMwWyQnd2ja.jpg"
+  },
+  "the parent trap (1961)": {
+   "desc": "Teenage twin sisters swap places and scheme to reunite their divorced parents.",
+   "img": "https://image.tmdb.org/t/p/w342/jaZFWy6ZAvQoMW2mo9xP5gx4URo.jpg"
+  },
+  "the pink panther (1963)": {
+   "desc": "A clumsy Inspector tries to catch a notorious jewel thief known as \"The Phantom\" before he conducts his most daring heist yet: a priceless diamond known as \"The Pink Panther\".",
+   "img": "https://image.tmdb.org/t/p/w342/aCjJ0sKayks2uL7MJBzdp2i67NI.jpg"
+  },
+  "the rocky horror picture show (1975)": {
+   "desc": "Probably the oddest, most off-the-wall cult film ever made, this kinky rock'n'roll science fiction horror satire is everybody's favourite midnight show. A young couple stumbles into a castle inhabited by weirdos.",
+   "img": "https://image.tmdb.org/t/p/w342/3pyE6ZqDbuJi7zrNzzQzcKTWdmN.jpg"
+  },
+  "the room (2003)": {
+   "desc": "In San Francisco, an amiable banker's seemingly perfect life is turned upside down when his deceitful bride-to-be embarks on a passionate affair with his best friend.",
+   "img": "https://image.tmdb.org/t/p/w342/8D2Oty3FpihcNoNowuYbzOaXKsv.jpg"
+  },
+  "the thing (1982) double feature w/invasion of the body snatchers": {
+   "desc": "A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.",
+   "img": "https://prod1.agileticketing.net/images/user/tlt_13636/thing.jpg"
+  },
+  "touch of evil (1958)": {
+   "desc": "A Mexican official and his American wife are targeted in a Texas border town by the crime family he's trying to put behind bars for drug trafficking, as his concern grows over the tactics of the local detective whose cooperation he needs.",
+   "img": "https://image.tmdb.org/t/p/w342/1pvRgmfBaoMczIJBOi9gCOZ4FMC.jpg"
+  },
+  "who framed roger rabbit (1988)": {
+   "desc": "When a cartoon rabbit is accused of murder, he enlists the help of a burnt out private investigator to prove his innocence.",
+   "img": "https://image.tmdb.org/t/p/w342/lYfRc57Kx9VgLZ48iulu0HKnM15.jpg"
+  },
+  "zardoz (1974)": {
+   "desc": "In the late 23rd century, a savage trained only to kill finds a way into the community of bored immortals that alone preserves humanity's achievements.",
+   "img": "https://image.tmdb.org/t/p/w342/6qvQhJhvM7wWPB2LjVpivSNraIv.jpg"
+  },
+  "alexander's ragtime band": {
+   "img": "https://image.tmdb.org/t/p/w342/tbmvwfs9C1eTIyCcuhdbnFeuQSA.jpg"
+  },
+  "bus stop": {
+   "img": "https://image.tmdb.org/t/p/w342/oXZiz5zIyynjQMJMBbXijS4434z.jpg"
+  },
+  "down argentine way": {
+   "img": "https://image.tmdb.org/t/p/w342/gg3DgplgKq8ZBFnMwMfgGuhSZCs.jpg"
+  },
+  "giant": {
+   "img": "https://image.tmdb.org/t/p/w342/h5RRYPVVuHzd7QOJyP5Dsi8J9XZ.jpg"
+  },
+  "moon over miami": {
+   "img": "https://image.tmdb.org/t/p/w342/c3zBaU3wwTJThzT4jK9Ehwp3ik5.jpg"
+  },
+  "orchestra wives": {
+   "img": "https://image.tmdb.org/t/p/w342/bpsFY09nAQvyFF1HIOaCkfaNX4r.jpg"
+  },
+  "picnic": {
+   "img": "https://image.tmdb.org/t/p/w342/5IMiu8jFEkQ7xzoiXIyeatGz65o.jpg"
+  },
+  "sun valley serenade": {
+   "img": "https://image.tmdb.org/t/p/w342/6N7NMzb1iWEtb5NhLT622EKK5ht.jpg"
+  },
+  "tin pan alley": {
+   "img": "https://image.tmdb.org/t/p/w342/A98sbrtuO5X7HpG3CcH8qJHsLzg.jpg"
   }
  },
  "screenings": [
   {
-   "theater": "newmission",
-   "title": "Spider-Man: Brand New Day",
+   "theater": "lark",
+   "title": "Six: The Musical LIVE!",
    "date": "2026-09-02",
-   "time": "11:00",
-   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576837~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "newmission",
-   "title": "Teenage Sex and Death at Camp Miasma",
+   "theater": "lark",
+   "title": "Summer Tour",
    "date": "2026-09-02",
-   "time": "11:10",
-   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+   "time": "10:50",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576830~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "newmission",
-   "title": "Tony",
+   "theater": "lark",
+   "title": "A Life Illuminated",
    "date": "2026-09-02",
-   "time": "12:20",
-   "url": "https://drafthouse.com/sf/show/tony"
+   "time": "12:25",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576747~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "newmission",
-   "title": "Butthole Surfers: The Hole Truth and Nothing Butt",
+   "theater": "lark",
+   "title": "Cookie Queens",
    "date": "2026-09-02",
-   "time": "12:30",
-   "url": "https://drafthouse.com/sf/show/butthole-surfers-the-hole-truth-and-nothing-butt"
-  },
-  {
-   "theater": "newmission",
-   "title": "Idiots",
-   "date": "2026-09-02",
-   "time": "13:00",
-   "url": "https://drafthouse.com/sf/show/idiots"
+   "time": "14:10",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576826~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -99,7 +1284,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-02",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -135,6 +1321,13 @@
    "date": "2026-09-02",
    "time": "16:00",
    "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "lark",
+   "title": "The Invite (4K)",
+   "date": "2026-09-02",
+   "time": "16:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576843~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "grandlake",
@@ -179,6 +1372,13 @@
    "url": "http://73279.formovietickets.com:2235/"
   },
   {
+   "theater": "lark",
+   "title": "Impact (1949) Filmed In Larkspur! Noir Fest Opening Night Reception",
+   "date": "2026-09-02",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567118~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Teenage Sex and Death at Camp Miasma",
    "date": "2026-09-02",
@@ -204,7 +1404,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-02",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -344,7 +1545,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-03",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -438,6 +1640,13 @@
    "url": "http://73279.formovietickets.com:2235/"
   },
   {
+   "theater": "lark",
+   "title": "Faust (1926) w/The Invincible Czars LIVE!",
+   "date": "2026-09-03",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=559512~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Teenage Sex and Death at Camp Miasma",
    "date": "2026-09-03",
@@ -470,7 +1679,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-03",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "grandlake",
@@ -519,7 +1729,8 @@
    "title": "LIVE MUSIC: Ray Barbee & Thomas Campbell",
    "date": "2026-09-03",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19607?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19607?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
   },
   {
    "theater": "newmission",
@@ -543,6 +1754,13 @@
    "url": "https://drafthouse.com/sf/show/it-ends"
   },
   {
+   "theater": "lark",
+   "title": "Nosferatu (1922) w/The Invincible Czars LIVE!",
+   "date": "2026-09-03",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=559514~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Tony",
    "date": "2026-09-03",
@@ -562,6 +1780,20 @@
    "date": "2026-09-03",
    "time": "21:40",
    "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "lark",
+   "title": "M (1931)",
+   "date": "2026-09-04",
+   "time": "09:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567119~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lady From Shanghai (1947)",
+   "date": "2026-09-04",
+   "time": "11:20",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567120~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -592,6 +1824,13 @@
    "url": "https://drafthouse.com/sf/show/tony"
   },
   {
+   "theater": "lark",
+   "title": "Asphalt Jungle (1950)",
+   "date": "2026-09-04",
+   "time": "13:20",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567121~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Star Trek: The Motion Picture - The Director's Edition",
    "date": "2026-09-04",
@@ -610,7 +1849,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-04",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -632,6 +1872,13 @@
    "date": "2026-09-04",
    "time": "15:45",
    "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "lark",
+   "title": "Clash By Night (1952)",
+   "date": "2026-09-04",
+   "time": "15:45",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567122~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "grandlake",
@@ -676,6 +1923,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19684?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Key Largo (1948)",
+   "date": "2026-09-04",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567123~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Onslaught",
    "date": "2026-09-04",
@@ -694,7 +1948,8 @@
    "title": "The Hole (Newly Struck 35mm Print)",
    "date": "2026-09-04",
    "time": "18:00",
-   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes"
+   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes",
+   "note": "35mm"
   },
   {
    "theater": "newmission",
@@ -736,7 +1991,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-04",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "grandlake",
@@ -779,6 +2035,13 @@
    "date": "2026-09-04",
    "time": "20:00",
    "url": "https://ticketing.uswest.veezi.com/purchase/19687?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Touch Of Evil (1958)",
+   "date": "2026-09-04",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567124~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -851,11 +2114,33 @@
    "url": "https://drafthouse.com/sf/show/guest-selects-the-fog-1980"
   },
   {
+   "theater": "lark",
+   "title": "Dark City (1998)",
+   "date": "2026-09-04",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567125~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Who Framed Roger Rabbit (1988)",
+   "date": "2026-09-05",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567126~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Clash By Night (1952)",
+   "date": "2026-09-05",
+   "time": "11:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567127~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "grandlake",
    "title": "The Odyssey in 70MM",
    "date": "2026-09-05",
    "time": "11:30",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "grandlake",
@@ -928,6 +2213,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19647?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Lured (1947)",
+   "date": "2026-09-05",
+   "time": "13:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567128~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "American Doctor",
    "date": "2026-09-05",
@@ -981,7 +2273,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-05",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -1012,6 +2305,13 @@
    "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
   },
   {
+   "theater": "lark",
+   "title": "The Lady From Shanghai (1947)",
+   "date": "2026-09-05",
+   "time": "15:40",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567129~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "grandlake",
    "title": "Spider-Man: Brand New Day",
    "date": "2026-09-05",
@@ -1037,7 +2337,8 @@
    "title": "The Hole (Newly Struck 35mm Print)",
    "date": "2026-09-05",
    "time": "16:00",
-   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes"
+   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes",
+   "note": "35mm"
   },
   {
    "theater": "balboa",
@@ -1073,6 +2374,13 @@
    "date": "2026-09-05",
    "time": "17:35",
    "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "M (1931)",
+   "date": "2026-09-05",
+   "time": "17:40",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567130~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -1128,7 +2436,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-05",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -1166,11 +2475,19 @@
    "url": "https://roxie.com/film/the-samurai-and-the-prisoner//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Asphalt Jungle (1950)",
+   "date": "2026-09-05",
+   "time": "19:50",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567131~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "4star",
    "title": "Chris Malloy Films with LIVE SCORE and Q&A",
    "date": "2026-09-05",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19611?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19611?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score, Q&A"
   },
   {
    "theater": "balboa",
@@ -1236,6 +2553,13 @@
    "url": "https://drafthouse.com/sf/show/tony"
   },
   {
+   "theater": "lark",
+   "title": "Angel Heart (1987)",
+   "date": "2026-09-05",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567132~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Teenage Sex and Death at Camp Miasma",
    "date": "2026-09-05",
@@ -1250,11 +2574,26 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19639?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "The Cheap Detective (1978)",
+   "date": "2026-09-06",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567133~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Touch Of Evil (1958)",
+   "date": "2026-09-06",
+   "time": "11:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567134~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "grandlake",
    "title": "The Odyssey in 70MM",
    "date": "2026-09-06",
    "time": "11:30",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "grandlake",
@@ -1313,6 +2652,13 @@
    "url": "http://73279.formovietickets.com:2235/"
   },
   {
+   "theater": "lark",
+   "title": "In A Lonely Place (1950)",
+   "date": "2026-09-06",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567135~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Spider-Man: Brand New Day",
    "date": "2026-09-06",
@@ -1348,6 +2694,13 @@
    "url": "http://73279.formovietickets.com:2235/"
   },
   {
+   "theater": "lark",
+   "title": "Who Framed Roger Rabbit (1988)",
+   "date": "2026-09-06",
+   "time": "15:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567136~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Star Trek III: The Search for Spock",
    "date": "2026-09-06",
@@ -1373,7 +2726,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-06",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -1467,6 +2821,13 @@
    "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
   },
   {
+   "theater": "lark",
+   "title": "CURTAINS! -An Improvised Noir Musical",
+   "date": "2026-09-06",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567195~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Teenage Sex and Death at Camp Miasma",
    "date": "2026-09-06",
@@ -1526,7 +2887,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-06",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "grandlake",
@@ -1555,6 +2917,13 @@
    "date": "2026-09-06",
    "time": "19:35",
    "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "lark",
+   "title": "Night Of The Hunter (1955)",
+   "date": "2026-09-06",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567138~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -1613,6 +2982,27 @@
    "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
   },
   {
+   "theater": "lark",
+   "title": "Sin City (2005)",
+   "date": "2026-09-06",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567139~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "In A Lonely Place (1950)",
+   "date": "2026-09-07",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567140~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Night Of The Hunter (1955)",
+   "date": "2026-09-07",
+   "time": "11:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567141~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Spider-Man: Brand New Day",
    "date": "2026-09-07",
@@ -1648,6 +3038,13 @@
    "url": "https://drafthouse.com/sf/show/it-ends"
   },
   {
+   "theater": "lark",
+   "title": "Key Largo (1948)",
+   "date": "2026-09-07",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567142~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "balboa",
    "title": "Akira",
    "date": "2026-09-07",
@@ -1680,7 +3077,15 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-07",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
+  },
+  {
+   "theater": "lark",
+   "title": "The Cheap Detective (1978)",
+   "date": "2026-09-07",
+   "time": "15:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567143~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -1746,6 +3151,13 @@
    "url": "http://73279.formovietickets.com:2235/"
   },
   {
+   "theater": "lark",
+   "title": "Lured (1947)",
+   "date": "2026-09-07",
+   "time": "17:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567144~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Hope (2026)",
    "date": "2026-09-07",
@@ -1792,7 +3204,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-07",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -1823,6 +3236,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19658?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Chinatown (1974)",
+   "date": "2026-09-07",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=567145~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "grandlake",
    "title": "Spider-Man: Brand New Day",
    "date": "2026-09-07",
@@ -1834,7 +3254,8 @@
    "title": "LIVE MUSIC: Dead Set 805",
    "date": "2026-09-07",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19696?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19696?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
   },
   {
    "theater": "grandlake",
@@ -1879,6 +3300,20 @@
    "url": "https://drafthouse.com/sf/show/onslaught"
   },
   {
+   "theater": "lark",
+   "title": "The Best Little Whorehouse in Texas (1982)",
+   "date": "2026-09-08",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578291~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Hadestown: The Musical (4K)",
+   "date": "2026-09-08",
+   "time": "11:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578293~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Spider-Man: Brand New Day",
    "date": "2026-09-08",
@@ -1914,6 +3349,13 @@
    "url": "https://drafthouse.com/sf/show/onslaught"
   },
   {
+   "theater": "lark",
+   "title": "Six: The Musical LIVE!",
+   "date": "2026-09-08",
+   "time": "14:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578296~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Spider-Man: Brand New Day",
    "date": "2026-09-08",
@@ -1932,7 +3374,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-08",
    "time": "15:15",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -1961,6 +3404,13 @@
    "date": "2026-09-08",
    "time": "16:00",
    "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "lark",
+   "title": "The Best Little Whorehouse in Texas (1982)",
+   "date": "2026-09-08",
+   "time": "16:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578292~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -2037,7 +3487,8 @@
    "title": "The Odyssey in 70MM",
    "date": "2026-09-08",
    "time": "19:00",
-   "url": "http://73279.formovietickets.com:2235/"
+   "url": "http://73279.formovietickets.com:2235/",
+   "note": "70mm"
   },
   {
    "theater": "newmission",
@@ -2086,7 +3537,8 @@
    "title": "The Hole (Newly Struck 35mm Print)",
    "date": "2026-09-08",
    "time": "20:15",
-   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes"
+   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes",
+   "note": "35mm"
   },
   {
    "theater": "grandlake",
@@ -2257,6 +3709,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19603?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Six: The Musical LIVE!",
+   "date": "2026-09-09",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578297~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Colony",
    "date": "2026-09-09",
@@ -2306,6 +3765,20 @@
    "url": "https://drafthouse.com/sf/show/tony"
   },
   {
+   "theater": "lark",
+   "title": "Steel Magnolias (1989)",
+   "date": "2026-09-10",
+   "time": "10:45",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578299~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Hadestown: The Musical (4K)",
+   "date": "2026-09-10",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578301~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Hope (2026)",
    "date": "2026-09-10",
@@ -2320,11 +3793,25 @@
    "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
   },
   {
+   "theater": "lark",
+   "title": "Six: The Musical LIVE!",
+   "date": "2026-09-10",
+   "time": "16:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578298~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Fantastic Planet",
    "date": "2026-09-10",
    "time": "16:10",
    "url": "https://roxie.com/film/fantastic-planet//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "Steel Magnolias (1989)",
+   "date": "2026-09-10",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578300~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -2373,7 +3860,8 @@
    "title": "FUGS FILM! with Live Fugs Tribute Set and Q&A",
    "date": "2026-09-10",
    "time": "19:30",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19679?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19679?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "Q&A"
   },
   {
    "theater": "balboa",
@@ -2395,6 +3883,13 @@
    "date": "2026-09-10",
    "time": "20:10",
    "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "Hadestown: The Musical (4K)",
+   "date": "2026-09-10",
+   "time": "20:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=578302~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -2430,6 +3925,13 @@
    "date": "2026-09-11",
    "time": "16:30",
    "url": "https://ticketing.uswest.veezi.com/purchase/19733?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Dreams In Nightmares",
+   "date": "2026-09-11",
+   "time": "16:40",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577270~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "stanford",
@@ -2488,6 +3990,13 @@
    "url": "https://bampfa.org/event/vivre-sa-vie"
   },
   {
+   "theater": "lark",
+   "title": "Occupational Hazard: The First Coral Reefers (Jimmy Buffett)",
+   "date": "2026-09-11",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571549~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "stanford",
    "title": "Alexander's Ragtime Band",
    "date": "2026-09-11",
@@ -2507,6 +4016,13 @@
    "date": "2026-09-11",
    "time": "20:10",
    "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "The Fly (1986)",
+   "date": "2026-09-11",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568058~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -2535,6 +4051,13 @@
    "date": "2026-09-11",
    "time": "22:00",
    "url": "https://ticketing.uswest.veezi.com/purchase/19780?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Ratatouille (2D) (2007)",
+   "date": "2026-09-12",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568060~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -2719,6 +4242,13 @@
    "url": "https://roxie.com/film/mysterious-skin-4k-restoration//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "The Fly (1986)",
+   "date": "2026-09-12",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568059~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Oasis: Don't Look Back in Anger",
    "date": "2026-09-12",
@@ -2780,6 +4310,13 @@
    "date": "2026-09-13",
    "time": "15:00",
    "url": "https://ticketing.uswest.veezi.com/purchase/19740?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Ratatouille (2D) (2007)",
+   "date": "2026-09-13",
+   "time": "15:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568061~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -2894,6 +4431,13 @@
    "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
   },
   {
+   "theater": "lark",
+   "title": "Dreams In Nightmares",
+   "date": "2026-09-13",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577271~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Roxie First Looks #14",
    "date": "2026-09-13",
@@ -2950,6 +4494,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19758?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Ratatouille (2D) (2007)",
+   "date": "2026-09-14",
+   "time": "17:50",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568062~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Letty Lynton",
    "date": "2026-09-14",
@@ -2999,6 +4550,13 @@
    "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Dreams In Nightmares",
+   "date": "2026-09-15",
+   "time": "16:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577272~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Hope (2026)",
    "date": "2026-09-15",
@@ -3025,6 +4583,13 @@
    "date": "2026-09-15",
    "time": "19:00",
    "url": "https://ticketing.uswest.veezi.com/purchase/19762?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Simply Said",
+   "date": "2026-09-15",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=574035~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -3073,7 +4638,8 @@
    "title": "The American Astronaut (35mm)",
    "date": "2026-09-16",
    "time": "18:00",
-   "url": "https://roxie.com/film/the-american-astronaut//#showtimes"
+   "url": "https://roxie.com/film/the-american-astronaut//#showtimes",
+   "note": "35mm"
   },
   {
    "theater": "balboa",
@@ -3090,6 +4656,13 @@
    "url": "https://bampfa.org/event/barbara-forever"
   },
   {
+   "theater": "lark",
+   "title": "Jack Johnson: SURFILMUSIC",
+   "date": "2026-09-16",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571552~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "balboa",
    "title": "Twilight",
    "date": "2026-09-16",
@@ -3100,7 +4673,8 @@
    "title": "LIVE MUSIC: Croz Boyce, Jas Stade",
    "date": "2026-09-16",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19190?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19190?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
   },
   {
    "theater": "roxie",
@@ -3275,7 +4849,15 @@
    "title": "LIVE MUSIC: Spencer Noble, Peña, Cilantro",
    "date": "2026-09-18",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19680?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19680?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
+  },
+  {
+   "theater": "lark",
+   "title": "Jack Johnson: SURFILMUSIC",
+   "date": "2026-09-18",
+   "time": "20:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571553~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -3304,6 +4886,20 @@
    "date": "2026-09-18",
    "time": "21:15",
    "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "lark",
+   "title": "Easy Rider (1969)",
+   "date": "2026-09-18",
+   "time": "21:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568066~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: 20 Years of the Met in Cinemas",
+   "date": "2026-09-19",
+   "time": "10:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566604~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -3425,6 +5021,13 @@
    "url": "https://bampfa.org/event/hole"
   },
   {
+   "theater": "lark",
+   "title": "Marin Jazz Presents - The Ray Charles Project",
+   "date": "2026-09-19",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=532320~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "stanford",
    "title": "Moon Over Miami",
    "date": "2026-09-19",
@@ -3474,6 +5077,20 @@
    "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
   },
   {
+   "theater": "lark",
+   "title": "The Parent Trap (1961)",
+   "date": "2026-09-20",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568090~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: 20 Years of the Met in Cinemas",
+   "date": "2026-09-20",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566714~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Resident Evil (2026)",
    "date": "2026-09-20",
@@ -3500,6 +5117,13 @@
    "date": "2026-09-20",
    "time": "14:30",
    "url": "https://ticketing.uswest.veezi.com/purchase/19623?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "The Parent Trap (1961)",
+   "date": "2026-09-20",
+   "time": "15:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568069~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -3556,6 +5180,13 @@
    "date": "2026-09-20",
    "time": "16:45",
    "url": "https://ticketing.uswest.veezi.com/purchase/19624?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Bird (1988)",
+   "date": "2026-09-20",
+   "time": "17:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568073~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -3621,11 +5252,32 @@
    "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
   },
   {
+   "theater": "lark",
+   "title": "Jack Johnson: SURFILMUSIC",
+   "date": "2026-09-20",
+   "time": "20:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571554~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "stanford",
    "title": "Down Argentine Way",
    "date": "2026-09-20",
    "time": "21:15",
    "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "lark",
+   "title": "Easy Rider (1969)",
+   "date": "2026-09-20",
+   "time": "21:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568067~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Parent Trap (1961)",
+   "date": "2026-09-21",
+   "time": "17:40",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568070~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -3661,6 +5313,13 @@
    "date": "2026-09-21",
    "time": "19:30",
    "url": "https://ticketing.uswest.veezi.com/purchase/19631?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Bird (1988)",
+   "date": "2026-09-21",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568074~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -3712,6 +5371,13 @@
    "url": "https://drafthouse.com/sf/show/terror-tuesday-event-horizon"
   },
   {
+   "theater": "lark",
+   "title": "Met Opera: 20 Years of the Met in Cinemas",
+   "date": "2026-09-23",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566606~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Basic Instinct",
    "date": "2026-09-23",
@@ -3724,6 +5390,13 @@
    "date": "2026-09-23",
    "time": "18:00",
    "url": "https://roxie.com/film/ghost-in-the-shell-30th-anniversary-remaster//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: 20 Years of the Met in Cinemas",
+   "date": "2026-09-23",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566607~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "bampfa",
@@ -3761,6 +5434,13 @@
    "url": "https://bampfa.org/event/blackbird-blackbird-blackberry"
   },
   {
+   "theater": "lark",
+   "title": "NTLive - The Misanthrope",
+   "date": "2026-09-24",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=563864~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Pulp: What Do You Do for an Encore?",
    "date": "2026-09-24",
@@ -3786,7 +5466,8 @@
    "title": "LIVE MUSIC: Tom Conneely & BoP, My Dog Jack",
    "date": "2026-09-24",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19744?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19744?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
   },
   {
    "theater": "bampfa",
@@ -3824,18 +5505,18 @@
    "url": "https://bampfa.org/event/taming-garden"
   },
   {
+   "theater": "lark",
+   "title": "Safety Last! (1923) + The Grand Feature Film Orchestra",
+   "date": "2026-09-25",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=563002~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Floating Features: Bullitt",
    "date": "2026-09-25",
    "time": "19:00",
    "url": "https://roxie.com/film/floating-features-bullitt//#showtimes"
-  },
-  {
-   "theater": "balboa",
-   "title": "The History of Concrete",
-   "date": "2026-09-25",
-   "time": "19:30",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19638?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
    "theater": "stanford",
@@ -3859,6 +5540,13 @@
    "url": "https://roxie.com/film/revision-the-outcasts//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "The Beastmaster (1982)",
+   "date": "2026-09-25",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568075~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "stanford",
    "title": "Orchestra Wives",
    "date": "2026-09-25",
@@ -3871,6 +5559,13 @@
    "date": "2026-09-25",
    "time": "21:45",
    "url": "https://drafthouse.com/sf/show/agfadrome-mystery-voyage-september-2026"
+  },
+  {
+   "theater": "lark",
+   "title": "Lady and the Tramp (1955)",
+   "date": "2026-09-26",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568078~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -3892,6 +5587,20 @@
    "date": "2026-09-26",
    "time": "12:15",
    "url": "https://ticketing.uswest.veezi.com/purchase/19749?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - The Misanthrope",
+   "date": "2026-09-26",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=563865~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Dreamers And I",
+   "date": "2026-09-26",
+   "time": "13:00",
+   "url": "https://roxie.com/film/the-dreamers-and-i//#showtimes"
   },
   {
    "theater": "roxie",
@@ -3916,13 +5625,6 @@
   },
   {
    "theater": "balboa",
-   "title": "The History of Concrete",
-   "date": "2026-09-26",
-   "time": "17:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19670?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
-  },
-  {
-   "theater": "balboa",
    "title": "Resident Evil",
    "date": "2026-09-26",
    "time": "17:30",
@@ -3941,13 +5643,6 @@
    "date": "2026-09-26",
    "time": "18:00",
    "url": "https://roxie.com/film/revision-gehenu-lamai-the-girls//#showtimes"
-  },
-  {
-   "theater": "balboa",
-   "title": "The History of Concrete",
-   "date": "2026-09-26",
-   "time": "19:30",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19671?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
    "theater": "bampfa",
@@ -3971,6 +5666,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19669?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "The Beastmaster (1982)",
+   "date": "2026-09-26",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568076~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Re:Vision: Lepers & Sex AKA Santo vs The Riders of Terror",
    "date": "2026-09-26",
@@ -3990,6 +5692,13 @@
    "date": "2026-09-26",
    "time": "23:00",
    "url": "https://ticketing.uswest.veezi.com/purchase/19668?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Jeremiah Johnson (1972)",
+   "date": "2026-09-27",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568083~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -4013,6 +5722,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19676?siteToken=d2atbcege5knqsavntt91g1250"
   },
   {
+   "theater": "lark",
+   "title": "Exhibition On Screen: James McNeill Whistler",
+   "date": "2026-09-27",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571832~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Re:Vision: The Waiting Room",
    "date": "2026-09-27",
@@ -4025,13 +5741,6 @@
    "date": "2026-09-27",
    "time": "13:30",
    "url": "https://bampfa.org/event/english-teacher-and-bakhmaro-2050"
-  },
-  {
-   "theater": "balboa",
-   "title": "The History of Concrete",
-   "date": "2026-09-27",
-   "time": "14:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19767?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
    "theater": "balboa",
@@ -4055,6 +5764,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19677?siteToken=d2atbcege5knqsavntt91g1250"
   },
   {
+   "theater": "lark",
+   "title": "Lady and the Tramp (1955)",
+   "date": "2026-09-27",
+   "time": "15:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568079~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Re:Vision: The Garden of Eden",
    "date": "2026-09-27",
@@ -4069,18 +5785,18 @@
    "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
   },
   {
-   "theater": "balboa",
-   "title": "The History of Concrete",
-   "date": "2026-09-27",
-   "time": "16:30",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19766?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
-  },
-  {
    "theater": "bampfa",
    "title": "An Incomplete Day in the History of Georgia 10.06.93.",
    "date": "2026-09-27",
    "time": "16:30",
    "url": "https://bampfa.org/event/incomplete-day-history-georgia-100693"
+  },
+  {
+   "theater": "lark",
+   "title": "Jeremiah Johnson (1972)",
+   "date": "2026-09-27",
+   "time": "16:40",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568084~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -4102,6 +5818,13 @@
    "date": "2026-09-27",
    "time": "18:10",
    "url": "https://roxie.com/film/revision-8-girls-in-a-boat//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "Stop Making Sense (4K) (7.1)",
+   "date": "2026-09-27",
+   "time": "18:50",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=574825~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -4129,7 +5852,8 @@
    "title": "LIVE MUSIC: Fog Lamp, Eraser, Blue Zero",
    "date": "2026-09-27",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19359?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19359?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
   },
   {
    "theater": "roxie",
@@ -4153,11 +5877,11 @@
    "url": "https://roxie.com/film/memorizing-alison//#showtimes"
   },
   {
-   "theater": "balboa",
-   "title": "The History of Concrete",
+   "theater": "lark",
+   "title": "Lady and the Tramp (1955)",
    "date": "2026-09-28",
-   "time": "19:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19770?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+   "time": "18:20",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568082~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -4174,6 +5898,13 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19771?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Jeremiah Johnson (1972)",
+   "date": "2026-09-28",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=568085~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Staff Pick: A Welcome Distraction",
    "date": "2026-09-28",
@@ -4186,6 +5917,13 @@
    "date": "2026-09-29",
    "time": "19:00",
    "url": "https://ticketing.uswest.veezi.com/purchase/19773?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "lark",
+   "title": "Exhibition On Screen: James McNeill Whistler",
+   "date": "2026-09-29",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571831~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -4265,6 +6003,13 @@
    "url": "https://bampfa.org/event/italianamerican-and-american-boy-profile-steven-prince"
   },
   {
+   "theater": "lark",
+   "title": "NTLive - The Misanthrope",
+   "date": "2026-10-01",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=563866~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Perfect Blue",
    "date": "2026-10-01",
@@ -4286,6 +6031,13 @@
    "url": "https://roxie.com/film/floating-features-jaws-2//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Met Opera: Così fan tutte",
+   "date": "2026-10-03",
+   "time": "10:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566609~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Ashima",
    "date": "2026-10-03",
@@ -4297,7 +6049,15 @@
    "title": "LIVE MUSIC: Fred Frith, The Sleeves",
    "date": "2026-10-03",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/18098?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/18098?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Così fan tutte",
+   "date": "2026-10-04",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566611~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -4311,7 +6071,8 @@
    "title": "LIVE MUSIC: Color Green",
    "date": "2026-10-04",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19692?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19692?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
   },
   {
    "theater": "newmission",
@@ -4321,11 +6082,25 @@
    "url": "https://drafthouse.com/sf/show/terror-tuesday-the-silence-of-the-lambs-35mm"
   },
   {
+   "theater": "lark",
+   "title": "Met Opera: Così fan tutte",
+   "date": "2026-10-07",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566612~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Zoé Presents: Memorex + Rexsexex y Más",
    "date": "2026-10-07",
    "time": "18:00",
    "url": "https://roxie.com/film/zoe-presents-memorex-rexsexex-y-mas//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Così fan tutte",
+   "date": "2026-10-07",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566613~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "balboa",
@@ -4363,6 +6138,20 @@
    "url": "https://ticketing.uswest.veezi.com/purchase/19742?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
+   "theater": "lark",
+   "title": "Exhibition On Screen: James McNeill Whistler",
+   "date": "2026-10-13",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571833~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - The Misanthrope",
+   "date": "2026-10-15",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=563867~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Ken Russell's The Devils",
    "date": "2026-10-15",
@@ -4377,11 +6166,82 @@
    "url": "https://roxie.com/film/floating-features-the-game//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Barbarella (1968)",
+   "date": "2026-10-16",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571056~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Macbeth",
+   "date": "2026-10-17",
+   "time": "10:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566615~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "ZYZZYVA Movie Matinee with Ingrid Rojas Contreras: Amarcord (35mm)",
    "date": "2026-10-17",
    "time": "12:30",
-   "url": "https://roxie.com/film/zyzzyva-movie-matinee-with-ingrid-rojas-contreras-amarcord//#showtimes"
+   "url": "https://roxie.com/film/zyzzyva-movie-matinee-with-ingrid-rojas-contreras-amarcord//#showtimes",
+   "note": "35mm"
+  },
+  {
+   "theater": "lark",
+   "title": "Casper (1995)",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571059~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Barbarella (1968)",
+   "date": "2026-10-17",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571057~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Casper (1995)",
+   "date": "2026-10-18",
+   "time": "09:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571062~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Macbeth",
+   "date": "2026-10-18",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566616~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Pink Panther (1963)",
+   "date": "2026-10-18",
+   "time": "16:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571063~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Pink Panther (1963)",
+   "date": "2026-10-19",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571064~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Casper (1995)",
+   "date": "2026-10-19",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571061~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Pink Panther (1963)",
+   "date": "2026-10-19",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571065~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -4389,6 +6249,27 @@
    "date": "2026-10-20",
    "time": "18:00",
    "url": "https://roxie.com/film/dr-jekyll-and-mr-hyde-1931//#showtimes"
+  },
+  {
+   "theater": "lark",
+   "title": "Simply Said",
+   "date": "2026-10-20",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=574036~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Macbeth",
+   "date": "2026-10-21",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566617~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Macbeth",
+   "date": "2026-10-21",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566618~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -4409,7 +6290,105 @@
    "title": "LIVE MUSIC: Izaak Opatz and Joe Kaplow",
    "date": "2026-10-23",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19672?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19672?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg",
+   "note": "live score"
+  },
+  {
+   "theater": "lark",
+   "title": "The Return Of The Living Dead (1985) - Double Feature!!!",
+   "date": "2026-10-23",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571066~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "Re-Animator (1985) Double Feature!!!",
+   "date": "2026-10-23",
+   "time": "22:40",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571068~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "Hook (1991)",
+   "date": "2026-10-24",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571070~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Peter Pan. Syndrome",
+   "date": "2026-10-24",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576334~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Marin Jazz Presents - Jackie Ryan Sings A Tribute To The Divine Divas Of Jazz!",
+   "date": "2026-10-24",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=559022~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "My Man Godfrey (1936)",
+   "date": "2026-10-25",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571075~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Exhibition On Screen: James McNeill Whistler",
+   "date": "2026-10-25",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571834~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Hook (1991)",
+   "date": "2026-10-25",
+   "time": "15:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571071~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "My Man Godfrey (1936)",
+   "date": "2026-10-26",
+   "time": "17:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571077~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Invasion Of The Body Snatchers (1978) Double Feature w/The Thing",
+   "date": "2026-10-26",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577420~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "The Thing (1982) Double Feature w/Invasion of the Body Snatchers",
+   "date": "2026-10-26",
+   "time": "20:45",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577417~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "Invasion Of The Body Snatchers (1978) Double Feature w/The Thing",
+   "date": "2026-10-27",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577421~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "The Thing (1982) Double Feature w/Invasion of the Body Snatchers",
+   "date": "2026-10-27",
+   "time": "20:45",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577418~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
   },
   {
    "theater": "roxie",
@@ -4419,11 +6398,44 @@
    "url": "https://roxie.com/film/rewind-presents-the-craft//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Evil Dead II (1987) - Double Feature!!!",
+   "date": "2026-10-28",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571078~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
    "theater": "4star",
    "title": "LIVE MUSIC: The Wildwoods",
    "date": "2026-10-28",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19286?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19286?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
+  },
+  {
+   "theater": "lark",
+   "title": "Army of Darkness (1992) Double Feature!!!",
+   "date": "2026-10-28",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571080~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "Evil Dead II (1987) - Double Feature!!!",
+   "date": "2026-10-29",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571079~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
+  },
+  {
+   "theater": "lark",
+   "title": "Army of Darkness (1992) Double Feature!!!",
+   "date": "2026-10-29",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571081~93654fc6-c14e-40a7-812a-d5d2baa619e8&",
+   "note": "double feature"
   },
   {
    "theater": "roxie",
@@ -4433,6 +6445,90 @@
    "url": "https://roxie.com/film/floating-features-us//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "The Rocky Horror Picture Show (1975)",
+   "date": "2026-10-30",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=557917~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Coco (2D) (2017)",
+   "date": "2026-10-31",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571082~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTL Frankenstein - Johnny Lee Miller as the Creature",
+   "date": "2026-10-31",
+   "time": "17:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577422~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTL - Frankenstein - Cumberbatch as Creature",
+   "date": "2026-10-31",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577423~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Rocky Horror Picture Show (1975)",
+   "date": "2026-10-31",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=557918~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Odd Couple (1968)",
+   "date": "2026-11-01",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571085~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Coco (2D) (2017)",
+   "date": "2026-11-01",
+   "time": "15:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571083~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Odd Couple (1968)",
+   "date": "2026-11-01",
+   "time": "17:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571086~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Coco (2D) (2017)",
+   "date": "2026-11-02",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571084~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Odd Couple (1968)",
+   "date": "2026-11-02",
+   "time": "20:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571087~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Peter Pan. Syndrome",
+   "date": "2026-11-04",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576335~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - Golden Boy",
+   "date": "2026-11-05",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573908~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "roxie",
    "title": "Floating Features: Pacific Heights",
    "date": "2026-11-06",
@@ -4440,11 +6536,61 @@
    "url": "https://roxie.com/film/floating-features-pacific-heights//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Dr. Who and the Daleks (1965)",
+   "date": "2026-11-06",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576206~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - Golden Boy",
+   "date": "2026-11-07",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573911~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Fallen Angels by Noël Coward.",
+   "date": "2026-11-07",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571543~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "4star",
    "title": "LIVE MUSIC: IDAHO",
    "date": "2026-11-07",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19695?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19695?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
+  },
+  {
+   "theater": "lark",
+   "title": "Dr. Who and the Daleks (1965)",
+   "date": "2026-11-07",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576207~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Fallen Angels by Noël Coward.",
+   "date": "2026-11-08",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571544~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Fallen Angels by Noël Coward.",
+   "date": "2026-11-11",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571545~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - Golden Boy",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573909~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -4454,11 +6600,292 @@
    "url": "https://roxie.com/film/floating-features-friday-the-13th//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Serial Mom (1994)",
+   "date": "2026-11-13",
+   "time": "21:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576209~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Carmen (Encore)",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566663~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Marin Jazz Presents - Lavay Smith & Her Red Hot Skillet Lickers",
+   "date": "2026-11-14",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=559024~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Fellowship Of The Ring - Extended (2001)",
+   "date": "2026-11-15",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571042~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Fallen Angels by Noël Coward.",
+   "date": "2026-11-15",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571546~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Fellowship Of The Ring - Extended (2001)",
+   "date": "2026-11-15",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571028~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "4star",
    "title": "LIVE MUSIC: Todd Day Wait",
    "date": "2026-11-15",
    "time": "20:00",
-   "url": "https://ticketing.uswest.veezi.com/purchase/19575?siteToken=d2atbcege5knqsavntt91g1250"
+   "url": "https://ticketing.uswest.veezi.com/purchase/19575?siteToken=d2atbcege5knqsavntt91g1250",
+   "note": "live score"
+  },
+  {
+   "theater": "lark",
+   "title": "Serial Mom (1994)",
+   "date": "2026-11-15",
+   "time": "21:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576210~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Fellowship Of The Ring - Extended (2001)",
+   "date": "2026-11-16",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571029~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Simply Said",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=574037~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Carmen (Encore)",
+   "date": "2026-11-18",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566664~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Carmen (Encore)",
+   "date": "2026-11-18",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566665~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - Golden Boy",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573910~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Zardoz (1974)",
+   "date": "2026-11-20",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576213~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "NTLive - Golden Boy",
+   "date": "2026-11-21",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573912~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Zardoz (1974)",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576214~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Two Towers - Extended (2002)",
+   "date": "2026-11-22",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571044~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Fallen Angels by Noël Coward.",
+   "date": "2026-11-22",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571547~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Two Towers - Extended (2002)",
+   "date": "2026-11-22",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571031~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Two Towers - Extended (2002)",
+   "date": "2026-11-23",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571033~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Fin",
+   "date": "2026-11-27",
+   "time": "20:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577378~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Room (2003)",
+   "date": "2026-11-27",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577380~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Fin",
+   "date": "2026-11-28",
+   "time": "20:15",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577379~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Room (2003)",
+   "date": "2026-11-28",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577381~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Return of the King - Extended (2003)",
+   "date": "2026-11-29",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571043~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Return of the King - Extended (2003)",
+   "date": "2026-11-29",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571036~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "The Lord of the Rings Trilogy: The Return of the King - Extended (2003)",
+   "date": "2026-11-30",
+   "time": "19:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571037~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "GIANT -- The Play",
+   "date": "2026-12-02",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573914~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Polar Express Pajama Party! (4K)",
+   "date": "2026-12-04",
+   "time": "16:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571088~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Polar Express Pajama Party! (4K)",
+   "date": "2026-12-04",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=571089~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "A Clockwork Orange",
+   "date": "2026-12-04",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576215~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Samson et Dalila",
+   "date": "2026-12-05",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566667~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "GIANT -- The Play",
+   "date": "2026-12-05",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573916~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "A Clockwork Orange",
+   "date": "2026-12-05",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576216~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Samson et Dalila",
+   "date": "2026-12-06",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566668~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Samson et Dalila",
+   "date": "2026-12-09",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566669~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Samson et Dalila",
+   "date": "2026-12-09",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566670~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "GIANT -- The Play",
+   "date": "2026-12-10",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573915~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Muppet Christmas Carol (1992)",
+   "date": "2026-12-11",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576217~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Harold and Maude",
+   "date": "2026-12-11",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576218~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: The Magic Flute (Encore)",
+   "date": "2026-12-12",
+   "time": "10:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566672~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "roxie",
@@ -4468,11 +6895,46 @@
    "url": "https://roxie.com/film/floating-features-national-lampoons-christmas-vacation//#showtimes"
   },
   {
+   "theater": "lark",
+   "title": "Harold and Maude",
+   "date": "2026-12-12",
+   "time": "21:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576219~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "GIANT -- The Play",
+   "date": "2026-12-13",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=573917~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Dune: Part Three",
    "date": "2026-12-15",
    "time": "18:00",
    "url": "https://drafthouse.com/sf/show/advance-screening-dune-part-three-hdr-by-barco-insider-screening"
+  },
+  {
+   "theater": "lark",
+   "title": "Simply Said",
+   "date": "2026-12-15",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=574038~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: The Magic Flute (Encore)",
+   "date": "2026-12-16",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566675~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: The Magic Flute (Encore)",
+   "date": "2026-12-16",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566676~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -4531,6 +6993,13 @@
    "url": "https://drafthouse.com/sf/show/dune-part-three"
   },
   {
+   "theater": "lark",
+   "title": "The Nightmare Before Christmas 2D (1993)",
+   "date": "2026-12-18",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576220~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Avengers: Doomsday",
    "date": "2026-12-18",
@@ -4543,6 +7012,13 @@
    "date": "2026-12-18",
    "time": "21:45",
    "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "lark",
+   "title": "The Nightmare Before Christmas 2D (1993)",
+   "date": "2026-12-18",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576221~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -4564,6 +7040,13 @@
    "date": "2026-12-19",
    "time": "14:45",
    "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "lark",
+   "title": "Santa Claus Conquers The Martians (1964) in Scent-o-Vision!  w/Live Orchestra!",
+   "date": "2026-12-19",
+   "time": "18:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=577495~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
    "theater": "newmission",
@@ -4594,6 +7077,13 @@
    "url": "https://drafthouse.com/sf/show/avengers-doomsday"
   },
   {
+   "theater": "lark",
+   "title": "The Nightmare Before Christmas 2D (1993)",
+   "date": "2026-12-19",
+   "time": "22:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=576222~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
    "theater": "newmission",
    "title": "Avengers: Doomsday",
    "date": "2026-12-20",
@@ -4636,711 +7126,200 @@
    "url": "https://drafthouse.com/sf/show/avengers-doomsday"
   },
   {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-03",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-03",
+   "theater": "lark",
+   "title": "Marin Jazz Presents - Jonathan Poretz and his NYE Big Band Swing Black Tie Ball",
+   "date": "2026-12-31",
    "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=559825~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-03",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-04",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-04",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-04",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-05",
-   "time": "15:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-05",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-05",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-05",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-06",
-   "time": "15:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-06",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-06",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-06",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-07",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Big Sleep",
-   "date": "2027-06-07",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "To Have and Have Not",
-   "date": "2027-06-07",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-10",
-   "time": "17:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-10",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-10",
-   "time": "21:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-11",
-   "time": "17:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-11",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-11",
-   "time": "21:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-12",
-   "time": "15:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-12",
-   "time": "17:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-12",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-12",
-   "time": "21:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-13",
-   "time": "15:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-13",
-   "time": "17:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-13",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-13",
-   "time": "21:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-14",
-   "time": "17:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Key Largo",
-   "date": "2027-06-14",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Dark Passage",
-   "date": "2027-06-14",
-   "time": "21:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-17",
-   "time": "17:15",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-17",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-17",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-18",
-   "time": "17:15",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-18",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-18",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-19",
-   "time": "15:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-19",
-   "time": "17:15",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-19",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-19",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-20",
-   "time": "15:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-20",
-   "time": "17:15",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-20",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-20",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-21",
-   "time": "17:15",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Seven Year Itch",
-   "date": "2027-06-21",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Some Like It Hot",
-   "date": "2027-06-21",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Clash By Night",
-   "date": "2027-06-24",
-   "time": "17:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Asphalt Jungle",
-   "date": "2027-06-24",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Clash By Night",
-   "date": "2027-06-24",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Clash By Night",
-   "date": "2027-06-25",
-   "time": "17:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Asphalt Jungle",
-   "date": "2027-06-25",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Clash By Night",
-   "date": "2027-06-25",
-   "time": "21:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Casablanca",
-   "date": "2027-06-26",
-   "time": "15:45",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Maltese Falcon",
-   "date": "2027-06-26",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Casablanca",
-   "date": "2027-06-26",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Maltese Falcon",
-   "date": "2027-06-26",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Casablanca",
-   "date": "2027-06-27",
-   "time": "15:45",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Maltese Falcon",
-   "date": "2027-06-27",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Casablanca",
-   "date": "2027-06-27",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Maltese Falcon",
-   "date": "2027-06-27",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Maltese Falcon",
-   "date": "2027-06-28",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Casablanca",
-   "date": "2027-06-28",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Maltese Falcon",
-   "date": "2027-06-28",
-   "time": "21:25",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Working Man",
-   "date": "2027-07-01",
-   "time": "18:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "As Young As You Feel",
-   "date": "2027-07-01",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Working Man",
-   "date": "2027-07-01",
-   "time": "21:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Working Man",
-   "date": "2027-07-02",
-   "time": "18:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "As Young As You Feel",
-   "date": "2027-07-02",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Working Man",
-   "date": "2027-07-02",
-   "time": "21:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Bad and the Beautiful",
-   "date": "2027-07-03",
+   "theater": "lark",
+   "title": "Met Opera: La Fanciulla del West",
+   "date": "2027-01-23",
    "time": "10:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566678~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "All About Eve",
-   "date": "2027-07-03",
-   "time": "14:50",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: La Fanciulla del West",
+   "date": "2027-01-24",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566679~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Bad and the Beautiful",
-   "date": "2027-07-03",
-   "time": "17:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Exhibition On Screen: Renoir & Love",
+   "date": "2027-01-26",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=572546~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "All About Eve",
-   "date": "2027-07-03",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: La Fanciulla del West",
+   "date": "2027-01-27",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566680~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Bad and the Beautiful",
-   "date": "2027-07-04",
+   "theater": "lark",
+   "title": "Met Opera: La Fanciulla del West",
+   "date": "2027-01-27",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566681~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Exhibition On Screen: Renoir & Love",
+   "date": "2027-01-31",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=572548~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Exhibition On Screen: Renoir & Love",
+   "date": "2027-02-02",
+   "time": "19:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=572547~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Exhibition On Screen: Renoir & Love",
+   "date": "2027-02-07",
+   "time": "13:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=572549~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Silent Night",
+   "date": "2027-03-20",
    "time": "10:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566686~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "All About Eve",
-   "date": "2027-07-04",
-   "time": "14:50",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Silent Night",
+   "date": "2027-03-21",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566683~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Bad and the Beautiful",
-   "date": "2027-07-04",
-   "time": "17:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Silent Night",
+   "date": "2027-03-24",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566684~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "All About Eve",
-   "date": "2027-07-04",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Silent Night",
+   "date": "2027-03-24",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566685~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Bad and the Beautiful",
-   "date": "2027-07-05",
+   "theater": "lark",
+   "title": "Met Opera: Manon",
+   "date": "2027-04-03",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566688~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Manon",
+   "date": "2027-04-04",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566689~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Manon",
+   "date": "2027-04-07",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566690~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Manon",
+   "date": "2027-04-07",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566691~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
+  },
+  {
+   "theater": "lark",
+   "title": "Met Opera: Otello",
+   "date": "2027-04-24",
    "time": "10:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566693~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Bad and the Beautiful",
-   "date": "2027-07-05",
-   "time": "17:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Otello",
+   "date": "2027-04-25",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566694~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "All About Eve",
-   "date": "2027-07-05",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Otello",
+   "date": "2027-04-28",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566695~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Palm Beach Story",
-   "date": "2027-07-08",
-   "time": "17:50",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Otello",
+   "date": "2027-04-28",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566696~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "Let's Make It Legal",
-   "date": "2027-07-08",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Tosca (Encore)",
+   "date": "2027-05-08",
+   "time": "10:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566698~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Palm Beach Story",
-   "date": "2027-07-08",
-   "time": "21:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Tosca (Encore)",
+   "date": "2027-05-12",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566699~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Palm Beach Story",
-   "date": "2027-07-09",
-   "time": "17:50",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Tosca (Encore)",
+   "date": "2027-05-12",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566700~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "Let's Make It Legal",
-   "date": "2027-07-09",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Parsifal",
+   "date": "2027-06-05",
+   "time": "09:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566702~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Palm Beach Story",
-   "date": "2027-07-09",
-   "time": "21:00",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Parsifal",
+   "date": "2027-06-06",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566703~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "The Major and the Minor",
-   "date": "2027-07-15",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Parsifal",
+   "date": "2027-06-09",
+   "time": "12:00",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566704~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   },
   {
-   "theater": "stanford",
-   "title": "Monkey Business",
-   "date": "2027-07-15",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Major and the Minor",
-   "date": "2027-07-15",
-   "time": "21:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Major and the Minor",
-   "date": "2027-07-16",
-   "time": "17:40",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Monkey Business",
-   "date": "2027-07-16",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "The Major and the Minor",
-   "date": "2027-07-16",
-   "time": "21:20",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Gentlemen Prefer Blondes",
-   "date": "2027-07-17",
-   "time": "15:50",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Singin' in the Rain",
-   "date": "2027-07-17",
-   "time": "17:35",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Gentlemen Prefer Blondes",
-   "date": "2027-07-17",
-   "time": "19:30",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
-  },
-  {
-   "theater": "stanford",
-   "title": "Singin' in the Rain",
-   "date": "2027-07-17",
-   "time": "21:15",
-   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+   "theater": "lark",
+   "title": "Met Opera: Parsifal",
+   "date": "2027-06-09",
+   "time": "18:30",
+   "url": "https://prod1.agileticketing.net/websales/pages/ticketsearchcriteria.aspx?evtinfo=566705~93654fc6-c14e-40a7-812a-d5d2baa619e8&"
   }
  ]
 }

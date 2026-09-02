@@ -5,8 +5,9 @@
   --fog-deep: #E4E6E1;   /* recessed panels */
   --ink: #22272B;        /* charcoal-navy ink */
   --ink-soft: #5B6469;   /* secondary text */
-  --bridge: #DB4B1F;     /* international orange, the one accent */
-  --hairline: #C9CCC5;
+  --bridge: #DB4B1F;     /* international orange — large display + accents only */
+  --bridge-ink: #B23A12; /* text-safe orange, ≥4.5:1 on all light surfaces */
+  --hairline: #B4B8B0;
   --stub: #FAFAF7;       /* screening stub card */
 
   --display: "Big Shoulders", "Arial Narrow", sans-serif;
@@ -23,8 +24,8 @@ body {
   background: var(--fog);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 15px;
-  line-height: 1.45;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 a { color: inherit; }
@@ -80,14 +81,47 @@ button { font: inherit; color: inherit; cursor: pointer; }
   text-underline-offset: 2px;
 }
 
-.kudos a:hover { color: var(--bridge); }
+.kudos a:hover { color: var(--bridge-ink); }
 
 .updated {
   margin: 2px 0 0;
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 12.5px;
   color: var(--ink-soft);
 }
+
+.about {
+  margin-top: 8px;
+  max-width: 640px;
+}
+
+.about summary {
+  display: inline-block;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--bridge);
+  text-underline-offset: 2px;
+}
+
+.about summary:hover { color: var(--bridge-ink); }
+
+.about[open] summary { color: var(--bridge-ink); }
+
+.about p {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--bridge);
+  padding-left: 12px;
+}
+
+.about a { color: var(--ink); }
+
+.about a:hover { color: var(--bridge-ink); }
 
 /* ---------- day strip ---------- */
 
@@ -114,7 +148,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .day__dow {
   display: block;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
@@ -131,7 +165,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .day__count {
   display: block;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink-soft);
 }
 
@@ -145,7 +179,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .day.is-selected .day__count { color: #B9BFB8; }
 .day.is-selected .day__num { color: var(--fog); }
 
-.day.is-today .day__dow { color: var(--bridge); font-weight: 600; }
+.day.is-today .day__dow { color: var(--bridge-ink); font-weight: 600; }
 
 /* ---------- controls ---------- */
 
@@ -162,6 +196,38 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .theaters {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.regions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.region {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  padding: 3px 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+.region:hover { color: var(--ink); }
+
+.region.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--bridge);
+  font-weight: 600;
+}
+
+.chiprow {
+  display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
@@ -171,14 +237,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: var(--stub);
   border-radius: 2px;
   padding: 4px 10px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.3;
 }
 
 .chip small {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   color: var(--ink-soft);
   margin-left: 5px;
   text-transform: uppercase;
@@ -233,7 +299,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   top: 0;
   transform: translateX(-50%);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink-soft);
   white-space: nowrap;
 }
@@ -260,11 +326,36 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .trow__city {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink-soft);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+
+.trow__stale {
+  display: inline-block;
+  margin-top: 5px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--bridge-ink);
+  border: 1px solid var(--bridge-ink);
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+
+.nowline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--bridge);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.stub-link.is-past { opacity: 0.42; }
+
+.pillgroup.is-past { opacity: 0.42; }
 
 .trow__lanes {
   position: relative;
@@ -287,7 +378,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   display: inline-flex;
   align-items: baseline;
   gap: 7px;
-  max-width: 200px;
+  max-width: 240px;
   background: var(--stub);
   border: 1px solid var(--ink);
   border-left: 3px solid var(--bridge);
@@ -304,13 +395,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .stub__time {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
 }
 
 .stub__title {
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 500;
   line-height: 1.25;
   white-space: nowrap;
@@ -318,18 +409,54 @@ button { font: inherit; color: inherit; cursor: pointer; }
   text-overflow: ellipsis;
 }
 
-/* ---------- by film ---------- */
+.stub__badge,
+.fbadge {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bridge-ink);
+  border: 1px solid var(--bridge-ink);
+  border-radius: 2px;
+  padding: 0 4px;
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* ---------- by film / all films ---------- */
 
 .film {
   display: flex;
   gap: 18px;
-  padding: 14px 0;
+  padding: 16px 0;
   border-bottom: 1px solid var(--hairline);
   flex-wrap: wrap;
 }
 
+.film__thumb {
+  flex: 0 0 76px;
+  height: 110px;
+  background: var(--fog-deep);
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+}
+
+.film__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.film__head {
+  flex: 0 0 240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 6px 8px;
+}
+
 .film__title {
-  flex: 0 0 300px;
+  flex-basis: 100%;
   font-family: var(--display);
   font-weight: 700;
   font-size: 22px;
@@ -337,6 +464,33 @@ button { font: inherit; color: inherit; cursor: pointer; }
   text-transform: uppercase;
   margin: 2px 0 0;
 }
+
+.film__desc {
+  flex-basis: 100%;
+  margin: 2px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.filmlinks {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.filmlinks a {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  text-decoration-color: var(--hairline);
+  text-underline-offset: 2px;
+}
+
+.filmlinks a:hover { color: var(--bridge-ink); }
 
 .film__where {
   flex: 1;
@@ -354,7 +508,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 .film__venuename {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   min-width: 190px;
 }
@@ -362,29 +516,96 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .film__venuename small {
   font-family: var(--mono);
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--ink-soft);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-left: 5px;
 }
 
+.pillgroup {
+  display: inline-flex;
+}
+
 .timepill {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
   border: 1px solid var(--ink);
-  border-radius: 2px;
+  border-radius: 2px 0 0 2px;
   background: var(--stub);
   padding: 2px 8px;
   transition: background 120ms ease, color 120ms ease;
 }
 
 .timepill:hover {
-  background: var(--bridge);
-  border-color: var(--bridge);
+  background: var(--bridge-ink);
+  border-color: var(--bridge-ink);
   color: var(--stub);
+}
+
+.icsbtn {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid var(--ink);
+  border-left: 0;
+  border-radius: 0 2px 2px 0;
+  background: var(--fog-deep);
+  color: var(--ink-soft);
+  padding: 2px 7px;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.icsbtn:hover {
+  background: var(--ink);
+  color: var(--fog);
+}
+
+.allfilm__venue {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.allfilm__venue:first-child { margin-left: 0; }
+
+.searchrow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 0 4px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.searchlabel {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.searchbox {
+  flex: 1;
+  min-width: 220px;
+  max-width: 460px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--stub);
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  padding: 7px 12px;
+}
+
+.searchbox::placeholder { color: var(--ink-soft); }
+
+.allcount {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-soft);
 }
 
 /* ---------- misc ---------- */
@@ -413,7 +634,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   max-width: 1180px;
   margin: 0 auto;
   padding: 10px 20px;
-  font-size: 12.5px;
+  font-size: 13.5px;
   color: var(--ink-soft);
 }
 
@@ -447,7 +668,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
   .stub__title { white-space: normal; overflow: visible; }
 
-  .film__title { flex-basis: 100%; }
+  /* tap-first surfaces: grow toward the 44px touch minimum */
+  .timepill { padding: 8px 12px; }
+
+  .chip { padding: 8px 12px; }
+
+  .viewtoggle__btn { padding: 8px 16px; }
+
+  /* thumb + title share the first row; showtimes wrap below */
+  .film__head { flex: 1; min-width: 200px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

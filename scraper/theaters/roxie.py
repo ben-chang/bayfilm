@@ -20,13 +20,22 @@ def scrape() -> list[Screening]:
                 continue
             title = clean_text(title_el.get_text())
             url = title_el.get("href")
+            desc_el = strip.select_one(".film-strip__description")
+            desc = clean_text(desc_el.get_text()) if desc_el else None
+            img_el = strip.select_one(".film-strip__thumb img")
+            img = None
+            if img_el:
+                # lazyloaded images keep the real URL in data-src
+                cand = img_el.get("data-src") or img_el.get("src") or ""
+                if cand.startswith("http"):
+                    img = cand
             times = strip.select(".film-strip__showtimes p a")
             if not times:
-                screenings.append(Screening("roxie", title, iso_date, None, url))
+                screenings.append(Screening("roxie", title, iso_date, None, url, desc=desc, img=img))
             for a in times:
                 t = parse_time_12h(a.get_text())
                 if t:
                     screenings.append(
-                        Screening("roxie", title, iso_date, t, a.get("href") or url)
+                        Screening("roxie", title, iso_date, t, a.get("href") or url, desc=desc, img=img)
                     )
     return screenings

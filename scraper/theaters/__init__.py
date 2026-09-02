@@ -1,6 +1,6 @@
-from . import roxie, alamo, veezi, bampfa, grandlake, stanford
+from . import roxie, alamo, veezi, bampfa, grandlake, stanford, lark
 
-# Each entry: (theater_id or None if scraper tags its own, scrape function)
+# Each entry: (theater_id, scrape function)
 SCRAPERS = [
     ("roxie", roxie.scrape),
     ("newmission", alamo.scrape),
@@ -9,4 +9,5 @@ SCRAPERS = [
     ("bampfa", bampfa.scrape),
     ("grandlake", grandlake.scrape),
     ("stanford", stanford.scrape),
+    ("lark", lark.scrape),
 ]

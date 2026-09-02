@@ -14,8 +14,15 @@ def scrape() -> list[Screening]:
     cinema_ids = {cid for cid, c in cinemas.items() if c["slug"] == CINEMA_SLUG}
 
     titles: dict[str, str] = {}
+    descs: dict[str, str | None] = {}
+    imgs: dict[str, str | None] = {}
     for p in data["presentations"]:
         show_title = p["show"]["title"]
+        descs[p["slug"]] = p["show"].get("headline") or None
+        posters = p["show"].get("posterImages") or []
+        imgs[p["slug"]] = (posters[0].get("uri") if posters else None) or (
+            (p["show"].get("portraitHeroImage") or {}).get("uri")
+        )
         super_title = p.get("superTitle")
         # superTitle can be a plain string or {"superTitle", "type", "slug"};
         # skip COLLECTION badges like "Drafthouse Recommends" — they hide the
@@ -44,6 +51,8 @@ def scrape() -> list[Screening]:
                 date or s.get("businessDateClt", ""),
                 clock[:5] or None,
                 f"https://drafthouse.com/sf/show/{slug}",
+                desc=descs.get(slug),
+                img=imgs.get(slug),
             )
         )
     return [s for s in screenings if s.date]

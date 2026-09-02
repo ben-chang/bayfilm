@@ -16,9 +16,17 @@
 <header class="masthead">
   <div class="masthead__inner">
     <h1 class="wordmark">BAY<span>FILM</span></h1>
-    <p class="tagline">What's playing at the Bay's independent houses</p>
+    <p class="tagline">What's playing at San Francisco Bay Area independent movie theaters</p>
     <p class="kudos">See also <a href="https://www.spiralhwy.com/" target="_blank" rel="noopener">Spiral HWY</a>, an excellent film aggregation site.</p>
     <p class="updated" id="updated"></p>
+    <details class="about">
+      <summary>About BayFilm</summary>
+      <p>Thanks for using BayFilm! This website gathers showtimes from the San Francisco Bay Area's independent
+      movie theaters into one guide. Listings are indexed nightly
+      from each theater's calendar and linked to their box offices.
+      Be sure to check out events from <a href="https://sffilm.org/">SFFilm</a> and <a href="https://www.sfmoma.org/">SFMoMA</a> as well!
+      Thanks for using and hope you enjoy!
+    </details>
   </div>
 </header>
 
@@ -29,19 +37,37 @@
   <div class="viewtoggle" role="group" aria-label="View">
     <button id="viewBoard" class="viewtoggle__btn is-active" aria-pressed="true">Board</button>
     <button id="viewFilms" class="viewtoggle__btn" aria-pressed="false">By film</button>
+    <button id="viewAll" class="viewtoggle__btn" aria-pressed="false">All films</button>
   </div>
 </div>
 
 <main id="main">
   <section id="board" aria-label="Screenings by theater and time"></section>
   <section id="films" aria-label="Screenings by film" hidden></section>
+  <section id="allfilms" aria-label="All upcoming films" hidden>
+    <div class="searchrow">
+      <label class="searchlabel" for="filmSearch">Find a film</label>
+      <input id="filmSearch" class="searchbox" type="search"
+             placeholder="Title or format — try “70mm”" autocomplete="off">
+      <span id="allCount" class="allcount"></span>
+    </div>
+    <div id="allfilmsList"></div>
+  </section>
   <p id="empty" class="empty" hidden>No screenings match — try another day or turn theaters back on.</p>
   <p id="loaderror" class="empty" hidden>Couldn't load showtimes data. If you opened this file directly, serve the folder instead: <code>python3 -m http.server -d site</code></p>
 </main>
 
 <footer class="colophon">
-  <p>Listings scraped nightly from each theater's own calendar. Always confirm with the box office — programs change.</p>
+  <p>Listings indexed nightly from each theater's own calendar. Always confirm with the box office — programs change.</p>
   <p id="sources"></p>
+  <p>Also worth checking — these theaters are hard to index, so their listings aren't included here:
+    <a href="https://rafaelfilm.cafilm.org/" target="_blank" rel="noopener">Smith Rafael Film Center</a> (San Rafael) ·
+    <a href="https://thenewparkway.com/" target="_blank" rel="noopener">The New Parkway</a> (Oakland) ·
+    <a href="https://rialtocinemas.com/elmwood/" target="_blank" rel="noopener">Rialto Cinemas Elmwood</a> (Berkeley) ·
+    <a href="https://rialtocinemas.com/cerrito/" target="_blank" rel="noopener">Rialto Cinemas Cerrito</a> (El Cerrito)
+  </p>
+  <p>BayFilm doesn't sell anything and isn't affiliated with any theater</p>
+  <p>2026</p>
 </footer>
 
 <script src="app.js"></script>

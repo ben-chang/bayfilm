@@ -31,8 +31,16 @@ def _scrape_month(url: str) -> list[Screening]:
             href = title_el.get("href", "")
             if href.startswith("/"):
                 href = "https://bampfa.org" + href
+            # the event's image only appears in its popup twin, matched by id
+            img = None
+            title_div = ev.select_one(".title[data-id]")
+            if title_div:
+                img_el = td.select_one(
+                    f'.popupboxthing[data-popup="{title_div["data-id"]}"] .image img')
+                if img_el and (img_el.get("src") or "").startswith("http"):
+                    img = img_el["src"]
             screenings.append(
-                Screening("bampfa", clean_text(title_el.get_text()), iso, t, href)
+                Screening("bampfa", clean_text(title_el.get_text()), iso, t, href, img=img)
             )
     return screenings
 
