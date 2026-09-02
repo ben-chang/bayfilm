@@ -1,0 +1,441 @@
+/* BayFilm — fog, ink, and international orange */
+
+:root {
+  --fog: #F1F2EF;        /* page paper, cool fog white */
+  --fog-deep: #E4E6E1;   /* recessed panels */
+  --ink: #22272B;        /* charcoal-navy ink */
+  --ink-soft: #5B6469;   /* secondary text */
+  --bridge: #DB4B1F;     /* international orange, the one accent */
+  --hairline: #C9CCC5;
+  --stub: #FAFAF7;       /* screening stub card */
+
+  --display: "Big Shoulders", "Arial Narrow", sans-serif;
+  --body: "Archivo", system-ui, sans-serif;
+  --mono: "Spline Sans Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fog);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+a { color: inherit; }
+
+button { font: inherit; color: inherit; cursor: pointer; }
+
+:focus-visible {
+  outline: 2px solid var(--bridge);
+  outline-offset: 2px;
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  border-bottom: 2px solid var(--ink);
+  background: var(--fog);
+}
+
+.masthead__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 20px 18px;
+}
+
+.wordmark {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(52px, 9vw, 96px);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.wordmark span { color: var(--bridge); }
+
+.tagline {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.updated {
+  margin: 2px 0 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+/* ---------- day strip ---------- */
+
+.daystrip {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--ink);
+  background: var(--fog-deep);
+  padding: 0 max(20px, calc((100vw - 1180px) / 2));
+  scrollbar-width: thin;
+}
+
+.day {
+  flex: 0 0 auto;
+  border: 0;
+  border-right: 1px solid var(--hairline);
+  background: transparent;
+  padding: 10px 16px 8px;
+  text-align: left;
+  min-width: 86px;
+}
+
+.day__dow {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.day__num {
+  display: block;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.day__count {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.day:hover { background: var(--stub); }
+
+.day.is-selected {
+  background: var(--ink);
+  color: var(--fog);
+}
+.day.is-selected .day__dow,
+.day.is-selected .day__count { color: #B9BFB8; }
+.day.is-selected .day__num { color: var(--fog); }
+
+.day.is-today .day__dow { color: var(--bridge); font-weight: 600; }
+
+/* ---------- controls ---------- */
+
+.controls {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 14px 20px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.theaters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  border: 1px solid var(--ink);
+  background: var(--stub);
+  border-radius: 2px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.chip small {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-left: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chip.is-off {
+  border-color: var(--hairline);
+  color: var(--ink-soft);
+  background: transparent;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.viewtoggle {
+  display: flex;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.viewtoggle__btn {
+  border: 0;
+  background: var(--stub);
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.viewtoggle__btn.is-active {
+  background: var(--ink);
+  color: var(--fog);
+}
+
+/* ---------- board (the signature) ---------- */
+
+#main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px 20px 40px;
+}
+
+.axis {
+  position: relative;
+  height: 22px;
+  margin-left: 168px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.axis__tick {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.trow {
+  display: flex;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.trow__label {
+  flex: 0 0 168px;
+  padding: 12px 12px 12px 0;
+  border-right: 1px solid var(--ink);
+}
+
+.trow__name {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.trow__city {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.trow__lanes {
+  position: relative;
+  flex: 1;
+  min-height: 58px;
+  background:
+    repeating-linear-gradient(to right,
+      transparent 0, transparent calc(100% / var(--hours) - 1px),
+      var(--fog-deep) calc(100% / var(--hours) - 1px),
+      var(--fog-deep) calc(100% / var(--hours)));
+}
+
+.stub-link {
+  position: absolute;
+  text-decoration: none;
+  transform: translateX(-1px);
+}
+
+.stub {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  max-width: 200px;
+  background: var(--stub);
+  border: 1px solid var(--ink);
+  border-left: 3px solid var(--bridge);
+  border-radius: 2px;
+  padding: 4px 9px;
+  box-shadow: 1px 1px 0 var(--ink);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.stub-link:hover .stub {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.stub__time {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.stub__title {
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- by film ---------- */
+
+.film {
+  display: flex;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--hairline);
+  flex-wrap: wrap;
+}
+
+.film__title {
+  flex: 0 0 300px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin: 2px 0 0;
+}
+
+.film__where {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.film__venue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+}
+
+.film__venuename {
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 190px;
+}
+
+.film__venuename small {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 5px;
+}
+
+.timepill {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  background: var(--stub);
+  padding: 2px 8px;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.timepill:hover {
+  background: var(--bridge);
+  border-color: var(--bridge);
+  color: var(--stub);
+}
+
+/* ---------- misc ---------- */
+
+.empty {
+  padding: 60px 0;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+.empty code {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: var(--fog-deep);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.colophon {
+  border-top: 2px solid var(--ink);
+  background: var(--fog-deep);
+}
+
+.colophon p {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.colophon a { color: var(--ink); }
+
+/* ---------- mobile: board flows as a list ---------- */
+
+@media (max-width: 760px) {
+  .axis { display: none; }
+
+  .trow { flex-direction: column; }
+
+  .trow__label {
+    flex: none;
+    border-right: 0;
+    padding: 12px 0 2px;
+  }
+
+  .trow__lanes {
+    min-height: 0;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 0 14px;
+  }
+
+  .stub-link { position: static; transform: none; max-width: 100%; }
+
+  .stub { max-width: 100%; }
+
+  .stub__title { white-space: normal; overflow: visible; }
+
+  .film__title { flex-basis: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

@@ -1,0 +1,5339 @@
+{
+ "generated_at": "2026-09-02T17:28:12Z",
+ "theaters": {
+  "roxie": {
+   "id": "roxie",
+   "name": "Roxie Theater",
+   "city": "San Francisco",
+   "url": "https://roxie.com"
+  },
+  "balboa": {
+   "id": "balboa",
+   "name": "Balboa Theater",
+   "city": "San Francisco",
+   "url": "https://www.balboamovies.com"
+  },
+  "4star": {
+   "id": "4star",
+   "name": "4 Star Theater",
+   "city": "San Francisco",
+   "url": "https://www.4-star-movies.com"
+  },
+  "newmission": {
+   "id": "newmission",
+   "name": "Alamo Drafthouse New Mission",
+   "city": "San Francisco",
+   "url": "https://drafthouse.com/sf"
+  },
+  "bampfa": {
+   "id": "bampfa",
+   "name": "BAMPFA",
+   "city": "Berkeley",
+   "url": "https://bampfa.org"
+  },
+  "grandlake": {
+   "id": "grandlake",
+   "name": "Grand Lake Theatre",
+   "city": "Oakland",
+   "url": "https://renaissancerialto.com"
+  },
+  "stanford": {
+   "id": "stanford",
+   "name": "Stanford Theatre",
+   "city": "Palo Alto",
+   "url": "https://stanfordtheatre.org"
+  }
+ },
+ "screenings": [
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-02",
+   "time": "11:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-02",
+   "time": "11:10",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-02",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Butthole Surfers: The Hole Truth and Nothing Butt",
+   "date": "2026-09-02",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/butthole-surfers-the-hole-truth-and-nothing-butt"
+  },
+  {
+   "theater": "newmission",
+   "title": "Idiots",
+   "date": "2026-09-02",
+   "time": "13:00",
+   "url": "https://drafthouse.com/sf/show/idiots"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-02",
+   "time": "14:20",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-02",
+   "time": "14:30",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-02",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-02",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Idiots",
+   "date": "2026-09-02",
+   "time": "15:30",
+   "url": "https://drafthouse.com/sf/show/idiots"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-02",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-02",
+   "time": "15:45",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-02",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-02",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-02",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "roxie",
+   "title": "Colony",
+   "date": "2026-09-02",
+   "time": "18:00",
+   "url": "https://roxie.com/film/colony//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Samurai and the Prisoner",
+   "date": "2026-09-02",
+   "time": "18:00",
+   "url": "https://roxie.com/film/the-samurai-and-the-prisoner//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-02",
+   "time": "18:10",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-02",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-02",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-02",
+   "time": "18:45",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "balboa",
+   "title": "Dead Ringers",
+   "date": "2026-09-02",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19643?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-02",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Faust (1926)",
+   "date": "2026-09-02",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/live-score-faust-1926-w-invincible-czars"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-02",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "4star",
+   "title": "Copycat",
+   "date": "2026-09-02",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19403?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-02",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19644?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Giant",
+   "date": "2026-09-02",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-02",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #13",
+   "date": "2026-09-02",
+   "time": "20:35",
+   "url": "https://roxie.com/film/roxie-first-looks-13//#showtimes"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-02",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-02",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barrio triste",
+   "date": "2026-09-02",
+   "time": "21:00",
+   "url": "https://roxie.com/film/barrio-triste//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-02",
+   "time": "21:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "No Picnic",
+   "date": "2026-09-02",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/weird-wednesday-no-picnic"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-02",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-03",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-03",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-03",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-03",
+   "time": "12:45",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Butthole Surfers: The Hole Truth and Nothing Butt",
+   "date": "2026-09-03",
+   "time": "13:00",
+   "url": "https://drafthouse.com/sf/show/butthole-surfers-the-hole-truth-and-nothing-butt"
+  },
+  {
+   "theater": "newmission",
+   "title": "Butthole Surfers: The Hole Truth and Nothing Butt",
+   "date": "2026-09-03",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/butthole-surfers-the-hole-truth-and-nothing-butt"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-03",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-03",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-03",
+   "time": "15:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-03",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-03",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-03",
+   "time": "16:00",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #13",
+   "date": "2026-09-03",
+   "time": "16:10",
+   "url": "https://roxie.com/film/roxie-first-looks-13//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-03",
+   "time": "16:20",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-03",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "roxie",
+   "title": "American Doctor",
+   "date": "2026-09-03",
+   "time": "17:50",
+   "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Idiots",
+   "date": "2026-09-03",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/idiots"
+  },
+  {
+   "theater": "roxie",
+   "title": "Fantastic Planet",
+   "date": "2026-09-03",
+   "time": "18:00",
+   "url": "https://roxie.com/film/fantastic-planet//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-03",
+   "time": "18:10",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-03",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-03",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-03",
+   "time": "18:50",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "balboa",
+   "title": "Holy Motors",
+   "date": "2026-09-03",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19686?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Saint Omer",
+   "date": "2026-09-03",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/saint-omer"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-03",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-03",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-03",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19645?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Giant",
+   "date": "2026-09-03",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-03",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "roxie",
+   "title": "Colony",
+   "date": "2026-09-03",
+   "time": "19:50",
+   "url": "https://roxie.com/film/colony//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Samurai and the Prisoner",
+   "date": "2026-09-03",
+   "time": "19:50",
+   "url": "https://roxie.com/film/the-samurai-and-the-prisoner//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Ray Barbee & Thomas Campbell",
+   "date": "2026-09-03",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19607?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-03",
+   "time": "20:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-03",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-03",
+   "time": "20:50",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-03",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-03",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-03",
+   "time": "21:40",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-04",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-04",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-04",
+   "time": "12:45",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-04",
+   "time": "12:50",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek: The Motion Picture - The Director's Edition",
+   "date": "2026-09-04",
+   "time": "14:00",
+   "url": "https://drafthouse.com/sf/show/special-event-star-trek-the-motion-picture-directors-edition-the-changeling"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-04",
+   "time": "15:10",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-04",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-04",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-04",
+   "time": "15:40",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-04",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-04",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-04",
+   "time": "16:20",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-04",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19698?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-04",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "stanford",
+   "title": "Picnic",
+   "date": "2026-09-04",
+   "time": "17:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "cocoon – One Summer of Girlhood (Eng Sub)",
+   "date": "2026-09-04",
+   "time": "17:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19684?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-04",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-04",
+   "time": "18:00",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Hole (Newly Struck 35mm Print)",
+   "date": "2026-09-04",
+   "time": "18:00",
+   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-04",
+   "time": "18:15",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-04",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-04",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-04",
+   "time": "18:40",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "bampfa",
+   "title": "We",
+   "date": "2026-09-04",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/we"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-04",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-04",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "4star",
+   "title": "Dr. Cliff Kapono",
+   "date": "2026-09-04",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19609?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-04",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19646?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Bus Stop",
+   "date": "2026-09-04",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-04",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Creature from the Black Lagoon",
+   "date": "2026-09-04",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19687?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-04",
+   "time": "20:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "roxie",
+   "title": "Colony",
+   "date": "2026-09-04",
+   "time": "20:15",
+   "url": "https://roxie.com/film/colony//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-04",
+   "time": "20:15",
+   "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-04",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-04",
+   "time": "20:45",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-04",
+   "time": "20:50",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-04",
+   "time": "21:20",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "stanford",
+   "title": "Picnic",
+   "date": "2026-09-04",
+   "time": "21:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-04",
+   "time": "21:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Fog (1980)",
+   "date": "2026-09-04",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/guest-selects-the-fog-1980"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-05",
+   "time": "11:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-05",
+   "time": "11:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Boorman and the Devil",
+   "date": "2026-09-05",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/boorman-and-the-devil"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Fog (1980)",
+   "date": "2026-09-05",
+   "time": "12:15",
+   "url": "https://drafthouse.com/sf/show/guest-selects-the-fog-1980"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-05",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-05",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-05",
+   "time": "12:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "4star",
+   "title": "Jack Johnson: SURFILMUSIC",
+   "date": "2026-09-05",
+   "time": "13:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19606?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-05",
+   "time": "13:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-05",
+   "time": "13:10",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-05",
+   "time": "13:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19647?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "American Doctor",
+   "date": "2026-09-05",
+   "time": "13:50",
+   "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "CatVideoFest 2026",
+   "date": "2026-09-05",
+   "time": "13:50",
+   "url": "https://roxie.com/film/catvideofest-2026//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "cocoon – One Summer of Girlhood (Eng Sub)",
+   "date": "2026-09-05",
+   "time": "14:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19688?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-05",
+   "time": "14:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-05",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek II: The Wrath of Khan",
+   "date": "2026-09-05",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/special-event-star-trek-ii-the-wrath-of-khan-space-seed"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-05",
+   "time": "15:10",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-05",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-05",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "4star",
+   "title": "The Innermost Limits of Pure Fun",
+   "date": "2026-09-05",
+   "time": "15:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19610?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Mary Oliver: Saved by the Beauty of the World",
+   "date": "2026-09-05",
+   "time": "15:30",
+   "url": "https://roxie.com/film/mary-oliver-saved-by-the-beauty-of-the-world//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Bus Stop",
+   "date": "2026-09-05",
+   "time": "15:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-05",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-05",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-05",
+   "time": "16:00",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Hole (Newly Struck 35mm Print)",
+   "date": "2026-09-05",
+   "time": "16:00",
+   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-05",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19649?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Breathless",
+   "date": "2026-09-05",
+   "time": "16:30",
+   "url": "https://bampfa.org/event/breathless"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-05",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "stanford",
+   "title": "Picnic",
+   "date": "2026-09-05",
+   "time": "17:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "American Doctor",
+   "date": "2026-09-05",
+   "time": "17:35",
+   "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-05",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-05",
+   "time": "18:10",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-05",
+   "time": "18:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-05",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-05",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-05",
+   "time": "18:50",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Mean Streets",
+   "date": "2026-09-05",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/mean-streets"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-05",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dire Duplicity",
+   "date": "2026-09-05",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/dire-duplicity"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-05",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "stanford",
+   "title": "Bus Stop",
+   "date": "2026-09-05",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-05",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Samurai and the Prisoner",
+   "date": "2026-09-05",
+   "time": "19:40",
+   "url": "https://roxie.com/film/the-samurai-and-the-prisoner//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "Chris Malloy Films with LIVE SCORE and Q&A",
+   "date": "2026-09-05",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19611?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Sleepbomb Presents: Frankenstein",
+   "date": "2026-09-05",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19393?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-05",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-05",
+   "time": "20:50",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "roxie",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-05",
+   "time": "21:05",
+   "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-05",
+   "time": "21:10",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "stanford",
+   "title": "Picnic",
+   "date": "2026-09-05",
+   "time": "21:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-05",
+   "time": "21:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-05",
+   "time": "21:40",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-05",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-05",
+   "time": "22:00",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "balboa",
+   "title": "The Room",
+   "date": "2026-09-05",
+   "time": "23:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19639?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-06",
+   "time": "11:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-06",
+   "time": "11:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Butthole Surfers: The Hole Truth and Nothing Butt",
+   "date": "2026-09-06",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/butthole-surfers-the-hole-truth-and-nothing-butt"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-06",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-06",
+   "time": "12:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-06",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-06",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-06",
+   "time": "13:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19652?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-06",
+   "time": "13:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-06",
+   "time": "13:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "roxie",
+   "title": "Sholay: The Final Cut (4K Restoration)",
+   "date": "2026-09-06",
+   "time": "13:00",
+   "url": "https://roxie.com/film/sholay-the-final-cut-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Iron Giant",
+   "date": "2026-09-06",
+   "time": "13:00",
+   "url": "https://roxie.com/film/the-iron-giant//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "cocoon – One Summer of Girlhood (Eng Sub)",
+   "date": "2026-09-06",
+   "time": "13:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19690?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-06",
+   "time": "14:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek III: The Search for Spock",
+   "date": "2026-09-06",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/special-event-star-trek-iii-the-search-for-spock-amok-time"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-06",
+   "time": "15:00",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-06",
+   "time": "15:10",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-06",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-06",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-06",
+   "time": "15:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "stanford",
+   "title": "Bus Stop",
+   "date": "2026-09-06",
+   "time": "15:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-06",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Basic Instinct",
+   "date": "2026-09-06",
+   "time": "16:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19656?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-06",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-06",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19653?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "A Woman Is a Woman",
+   "date": "2026-09-06",
+   "time": "16:30",
+   "url": "https://bampfa.org/event/woman-woman"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-06",
+   "time": "16:30",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-06",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "roxie",
+   "title": "Stanley Kwan’s Center Stage (4K Restoration)",
+   "date": "2026-09-06",
+   "time": "17:20",
+   "url": "https://roxie.com/film/stanley-kwans-center-stage-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Samurai and the Prisoner",
+   "date": "2026-09-06",
+   "time": "17:20",
+   "url": "https://roxie.com/film/the-samurai-and-the-prisoner//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Picnic",
+   "date": "2026-09-06",
+   "time": "17:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-06",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-06",
+   "time": "18:10",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-06",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-06",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-06",
+   "time": "18:50",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "4star",
+   "title": "Big Wave Women (A Work-in-Progress Screening)",
+   "date": "2026-09-06",
+   "time": "19:00"
+  },
+  {
+   "theater": "balboa",
+   "title": "Basic Instinct",
+   "date": "2026-09-06",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19655?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Alice Doesn’t Live Here Anymore",
+   "date": "2026-09-06",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/alice-doesnt-live-here-anymore"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-06",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-06",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-06",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19654?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Bus Stop",
+   "date": "2026-09-06",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-06",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-06",
+   "time": "20:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-06",
+   "time": "20:30",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-06",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-06",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek III: The Search for Spock",
+   "date": "2026-09-06",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/special-event-star-trek-iii-the-search-for-spock-amok-time"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-06",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "stanford",
+   "title": "Picnic",
+   "date": "2026-09-06",
+   "time": "21:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-06",
+   "time": "21:40",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-07",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-07",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-07",
+   "time": "12:20",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-07",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-07",
+   "time": "12:45",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-07",
+   "time": "13:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19700?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "cocoon – One Summer of Girlhood (Eng Sub)",
+   "date": "2026-09-07",
+   "time": "14:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19699?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek IV: The Voyage Home",
+   "date": "2026-09-07",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/special-event-star-trek-iv-the-voyage-home-the-city-on-the-edge-of-forever"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-07",
+   "time": "15:10",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-07",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-07",
+   "time": "15:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-07",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-07",
+   "time": "15:30",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-07",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-07",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-07",
+   "time": "16:00",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-07",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19657?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "cocoon – One Summer of Girlhood (Eng Sub)",
+   "date": "2026-09-07",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19691?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-07",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-07",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/advance-screening-hope-2026-hdr-by-barco-early-access"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-07",
+   "time": "18:10",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-07",
+   "time": "18:15",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "roxie",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-07",
+   "time": "18:15",
+   "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-07",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Creature from the Black Lagoon",
+   "date": "2026-09-07",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19702?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-07",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Breaking Bad Day",
+   "date": "2026-09-07",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/free-victory-screening-breaking-bad-day-free-tv-party-screening"
+  },
+  {
+   "theater": "newmission",
+   "title": "Breaking Bad Day",
+   "date": "2026-09-07",
+   "time": "19:10",
+   "url": "https://drafthouse.com/sf/show/free-victory-screening-breaking-bad-day-free-tv-party-screening"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-07",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-07",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19658?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-07",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Dead Set 805",
+   "date": "2026-09-07",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19696?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-07",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek IV: The Voyage Home",
+   "date": "2026-09-07",
+   "time": "20:50",
+   "url": "https://drafthouse.com/sf/show/special-event-star-trek-iv-the-voyage-home-the-city-on-the-edge-of-forever"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-07",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-07",
+   "time": "21:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-07",
+   "time": "21:25",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-07",
+   "time": "21:55",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-08",
+   "time": "11:30",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Star Trek: The Genesis Trilogy",
+   "date": "2026-09-08",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/star-trek-the-genesis-trilogy"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-08",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-08",
+   "time": "12:30",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-08",
+   "time": "12:50",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-08",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-08",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-08",
+   "time": "15:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-08",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-08",
+   "time": "15:40",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-08",
+   "time": "15:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-08",
+   "time": "16:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Anatomy Of A Fall",
+   "date": "2026-09-08",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19756?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-08",
+   "time": "16:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "cocoon – One Summer of Girlhood (Eng Sub)",
+   "date": "2026-09-08",
+   "time": "17:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19755?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-08",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "roxie",
+   "title": "American Doctor",
+   "date": "2026-09-08",
+   "time": "18:00",
+   "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-08",
+   "time": "18:00",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-08",
+   "time": "18:10",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-08",
+   "time": "18:30",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Boorman and the Devil",
+   "date": "2026-09-08",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/boorman-and-the-devil"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-08",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Odyssey in 70MM",
+   "date": "2026-09-08",
+   "time": "19:00",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-08",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "grandlake",
+   "title": "The Dog Stars",
+   "date": "2026-09-08",
+   "time": "19:15",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-08",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19659?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "grandlake",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-08",
+   "time": "19:35",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "balboa",
+   "title": "Exorcist II: The Heretic",
+   "date": "2026-09-08",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19757?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Union County",
+   "date": "2026-09-08",
+   "time": "20:05",
+   "url": "https://roxie.com/film/union-county//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Hole (Newly Struck 35mm Print)",
+   "date": "2026-09-08",
+   "time": "20:15",
+   "url": "https://roxie.com/film/the-hole-newly-struck-35mm-print//#showtimes"
+  },
+  {
+   "theater": "grandlake",
+   "title": "TONY",
+   "date": "2026-09-08",
+   "time": "20:45",
+   "url": "http://73279.formovietickets.com:2235/"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spider-Man: Brand New Day",
+   "date": "2026-09-08",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/spider-man-brand-new-day"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-08",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Der Fan",
+   "date": "2026-09-08",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/terror-tuesday-der-fan"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-08",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-08",
+   "time": "21:35",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-09",
+   "time": "12:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "It Ends",
+   "date": "2026-09-09",
+   "time": "12:45",
+   "url": "https://drafthouse.com/sf/show/it-ends"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-09",
+   "time": "12:50",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-09",
+   "time": "13:00",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-09",
+   "time": "13:30",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-09",
+   "time": "15:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-09",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-09",
+   "time": "15:50",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-09",
+   "time": "17:30",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-09",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "roxie",
+   "title": "Arthouse 50: Freeway",
+   "date": "2026-09-09",
+   "time": "18:00",
+   "url": "https://roxie.com/film/arthouse-50-freeway//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Mary Oliver: Saved by the Beauty of the World",
+   "date": "2026-09-09",
+   "time": "18:00",
+   "url": "https://roxie.com/film/mary-oliver-saved-by-the-beauty-of-the-world//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-09",
+   "time": "18:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-09",
+   "time": "18:40",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "4star",
+   "title": "Stop Making Sense",
+   "date": "2026-09-09",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19554?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-09",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19661?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Push Buttons and AI",
+   "date": "2026-09-09",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/push-buttons-and-ai"
+  },
+  {
+   "theater": "balboa",
+   "title": "Boorman and the Devil",
+   "date": "2026-09-09",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19603?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Colony",
+   "date": "2026-09-09",
+   "time": "20:05",
+   "url": "https://roxie.com/film/colony//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Cycle of Love",
+   "date": "2026-09-09",
+   "time": "20:30",
+   "url": "https://roxie.com/film/the-cycle-of-love//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-09",
+   "time": "20:40",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Onslaught",
+   "date": "2026-09-09",
+   "time": "20:40",
+   "url": "https://drafthouse.com/sf/show/onslaught"
+  },
+  {
+   "theater": "newmission",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-09",
+   "time": "21:15",
+   "url": "https://drafthouse.com/sf/show/teenage-sex-and-death-at-camp-miasma"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spike of Bensonhurst",
+   "date": "2026-09-09",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/weird-wednesday-spike-of-bensonhurst"
+  },
+  {
+   "theater": "newmission",
+   "title": "Tony",
+   "date": "2026-09-09",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/tony"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-10",
+   "time": "14:00",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-10",
+   "time": "15:40",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "roxie",
+   "title": "Fantastic Planet",
+   "date": "2026-09-10",
+   "time": "16:10",
+   "url": "https://roxie.com/film/fantastic-planet//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Practical Magic 2",
+   "date": "2026-09-10",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/practical-magic-2"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-10",
+   "time": "18:00",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "American Doctor",
+   "date": "2026-09-10",
+   "time": "18:05",
+   "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-10",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19663?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "On Call",
+   "date": "2026-09-10",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/on-call"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dire Duplicity",
+   "date": "2026-09-10",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/dire-duplicity"
+  },
+  {
+   "theater": "4star",
+   "title": "FUGS FILM! with Live Fugs Tribute Set and Q&A",
+   "date": "2026-09-10",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19679?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "The Mummy",
+   "date": "2026-09-10",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19701?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barrio triste",
+   "date": "2026-09-10",
+   "time": "20:10",
+   "url": "https://roxie.com/film/barrio-triste//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-10",
+   "time": "20:10",
+   "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-10",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-11",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-11",
+   "time": "15:10",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #14",
+   "date": "2026-09-11",
+   "time": "15:50",
+   "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-11",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19733?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Tin Pan Alley",
+   "date": "2026-09-11",
+   "time": "17:45",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 1, EP. 1 (Northwest Passage)",
+   "date": "2026-09-11",
+   "time": "18:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19777?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Practical Magic 2",
+   "date": "2026-09-11",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/practical-magic-2"
+  },
+  {
+   "theater": "roxie",
+   "title": "Gandahar (4K Restoration)",
+   "date": "2026-09-11",
+   "time": "18:00",
+   "url": "https://roxie.com/film/gandahar-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Cycle of Love",
+   "date": "2026-09-11",
+   "time": "18:00",
+   "url": "https://roxie.com/film/the-cycle-of-love//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-11",
+   "time": "18:20",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: The Return, EP. 1 & 2",
+   "date": "2026-09-11",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19779?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Vivre sa vie",
+   "date": "2026-09-11",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/vivre-sa-vie"
+  },
+  {
+   "theater": "stanford",
+   "title": "Alexander's Ragtime Band",
+   "date": "2026-09-11",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 1, EP. 2 & 3",
+   "date": "2026-09-11",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19778?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-11",
+   "time": "20:10",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-11",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-11",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "stanford",
+   "title": "Tin Pan Alley",
+   "date": "2026-09-11",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks Fest (Fri. Pass)",
+   "date": "2026-09-11",
+   "time": "22:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19780?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-12",
+   "time": "12:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19737?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 1, EP. 4 & 5",
+   "date": "2026-09-12",
+   "time": "13:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19781?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #14",
+   "date": "2026-09-12",
+   "time": "13:00",
+   "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-12",
+   "time": "13:25",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 1, EP. 1 (Northwest Passage)",
+   "date": "2026-09-12",
+   "time": "14:45",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19785?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 1, EP. 6, 7, & 8",
+   "date": "2026-09-12",
+   "time": "15:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19782?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-12",
+   "time": "15:20",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "roxie",
+   "title": "American Doctor",
+   "date": "2026-09-12",
+   "time": "15:30",
+   "url": "https://roxie.com/film/american-doctor//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "MAQUILÁPOLIS",
+   "date": "2026-09-12",
+   "time": "15:45",
+   "url": "https://roxie.com/film/maquilapolis//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Alexander's Ragtime Band",
+   "date": "2026-09-12",
+   "time": "15:45",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Modern Times",
+   "date": "2026-09-12",
+   "time": "16:00",
+   "url": "https://bampfa.org/event/modern-times"
+  },
+  {
+   "theater": "newmission",
+   "title": "First Blood",
+   "date": "2026-09-12",
+   "time": "16:00",
+   "url": "https://drafthouse.com/sf/show/first-blood"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: The Return, EP. 1 & 2",
+   "date": "2026-09-12",
+   "time": "16:45",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19786?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Cycle of Love",
+   "date": "2026-09-12",
+   "time": "17:35",
+   "url": "https://roxie.com/film/the-cycle-of-love//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Tin Pan Alley",
+   "date": "2026-09-12",
+   "time": "17:45",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 2, EP. 1",
+   "date": "2026-09-12",
+   "time": "18:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19783?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Practical Magic 2",
+   "date": "2026-09-12",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/practical-magic-2"
+  },
+  {
+   "theater": "roxie",
+   "title": "Gandahar (4K Restoration)",
+   "date": "2026-09-12",
+   "time": "18:10",
+   "url": "https://roxie.com/film/gandahar-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-12",
+   "time": "18:30",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "balboa",
+   "title": "Music of the Red Room (Performed by Marc Capelle)",
+   "date": "2026-09-12",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19787?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Taxi Driver",
+   "date": "2026-09-12",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/taxi-driver"
+  },
+  {
+   "theater": "stanford",
+   "title": "Alexander's Ragtime Band",
+   "date": "2026-09-12",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "4star",
+   "title": "KEXP VINELANDS LIVE: Mild Universe & more",
+   "date": "2026-09-12",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19608?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: Fire Walk With Me",
+   "date": "2026-09-12",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19738?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: The Return, EP. 8 (Gotta Light)",
+   "date": "2026-09-12",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19784?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Mysterious Skin (4K Restoration)",
+   "date": "2026-09-12",
+   "time": "20:15",
+   "url": "https://roxie.com/film/mysterious-skin-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-12",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-12",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "stanford",
+   "title": "Tin Pan Alley",
+   "date": "2026-09-12",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks Fest (Sat. Pass)",
+   "date": "2026-09-12",
+   "time": "22:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19788?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-13",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Big Cheese",
+   "date": "2026-09-13",
+   "time": "12:45",
+   "url": "https://roxie.com/film/the-big-cheese//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 2, EP. 6 & 7",
+   "date": "2026-09-13",
+   "time": "14:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19789?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-13",
+   "time": "14:00",
+   "url": "https://drafthouse.com/sf/show/hope-2026"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-13",
+   "time": "15:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19740?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-13",
+   "time": "15:10",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Cycle of Love",
+   "date": "2026-09-13",
+   "time": "15:10",
+   "url": "https://roxie.com/film/the-cycle-of-love//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-13",
+   "time": "15:25",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Danton’s Death",
+   "date": "2026-09-13",
+   "time": "15:30",
+   "url": "https://bampfa.org/event/dantons-death"
+  },
+  {
+   "theater": "stanford",
+   "title": "Alexander's Ragtime Band",
+   "date": "2026-09-13",
+   "time": "15:45",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 2, EP. 8 & 9",
+   "date": "2026-09-13",
+   "time": "16:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19790?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Samurai and the Prisoner",
+   "date": "2026-09-13",
+   "time": "17:20",
+   "url": "https://roxie.com/film/the-samurai-and-the-prisoner//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Mysterious Skin (4K Restoration)",
+   "date": "2026-09-13",
+   "time": "17:45",
+   "url": "https://roxie.com/film/mysterious-skin-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Tin Pan Alley",
+   "date": "2026-09-13",
+   "time": "17:45",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: Fire Walk With Me",
+   "date": "2026-09-13",
+   "time": "18:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19741?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: The Return, EP. 1, 2, & 8",
+   "date": "2026-09-13",
+   "time": "18:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19794?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Practical Magic 2",
+   "date": "2026-09-13",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/practical-magic-2"
+  },
+  {
+   "theater": "newmission",
+   "title": "Oasis: Don't Look Back in Anger",
+   "date": "2026-09-13",
+   "time": "18:20",
+   "url": "https://drafthouse.com/sf/show/oasis-dont-look-back-in-anger"
+  },
+  {
+   "theater": "bampfa",
+   "title": "New York, New York",
+   "date": "2026-09-13",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/new-york-new-york"
+  },
+  {
+   "theater": "newmission",
+   "title": "Twilight (2008)",
+   "date": "2026-09-13",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/the-twilight-saga-twilight-2008-fan-event"
+  },
+  {
+   "theater": "stanford",
+   "title": "Alexander's Ragtime Band",
+   "date": "2026-09-13",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #14",
+   "date": "2026-09-13",
+   "time": "20:20",
+   "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 2, EP. 22",
+   "date": "2026-09-13",
+   "time": "20:45",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19791?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Tin Pan Alley",
+   "date": "2026-09-13",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks Fest (Sun. Pass)",
+   "date": "2026-09-13",
+   "time": "22:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19792?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks Fest (Weekend Pass)",
+   "date": "2026-09-13",
+   "time": "23:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19793?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #14",
+   "date": "2026-09-14",
+   "time": "15:50",
+   "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Akira",
+   "date": "2026-09-14",
+   "time": "17:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19761?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twin Peaks: SEASON 1, EP. 1 (Northwest Passage)",
+   "date": "2026-09-14",
+   "time": "17:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19758?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Letty Lynton",
+   "date": "2026-09-14",
+   "time": "18:00",
+   "url": "https://roxie.com/film/letty-lynton//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Cycle of Love",
+   "date": "2026-09-14",
+   "time": "18:00",
+   "url": "https://roxie.com/film/the-cycle-of-love//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Doors",
+   "date": "2026-09-14",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/the-doors"
+  },
+  {
+   "theater": "balboa",
+   "title": "McQueen",
+   "date": "2026-09-14",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19760?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Streetwise",
+   "date": "2026-09-14",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19759?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Arthouse 50: Freeway",
+   "date": "2026-09-14",
+   "time": "20:10",
+   "url": "https://roxie.com/film/arthouse-50-freeway//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #14",
+   "date": "2026-09-15",
+   "time": "15:50",
+   "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Hope (2026)",
+   "date": "2026-09-15",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/live-q-a-hope-2026-hdr-by-barco"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-15",
+   "time": "18:00",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Gandahar (4K Restoration)",
+   "date": "2026-09-15",
+   "time": "18:15",
+   "url": "https://roxie.com/film/gandahar-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "L'eclisse",
+   "date": "2026-09-15",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19762?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Legend of the Stardust Brothers",
+   "date": "2026-09-15",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19763?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-15",
+   "time": "20:10",
+   "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Mysterious Skin (4K Restoration)",
+   "date": "2026-09-15",
+   "time": "20:20",
+   "url": "https://roxie.com/film/mysterious-skin-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Angel Heart",
+   "date": "2026-09-15",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/terror-tuesday-angel-heart"
+  },
+  {
+   "theater": "newmission",
+   "title": "Castration Movie Anthology ii. the best of both worlds",
+   "date": "2026-09-16",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/weird-wednesday-castration-movie-anthology-ii-the-best-of-both-worlds"
+  },
+  {
+   "theater": "roxie",
+   "title": "The American Astronaut (35mm)",
+   "date": "2026-09-16",
+   "time": "18:00",
+   "url": "https://roxie.com/film/the-american-astronaut//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Super Shangri-La Show",
+   "date": "2026-09-16",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19665?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Barbara Forever",
+   "date": "2026-09-16",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/barbara-forever"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twilight",
+   "date": "2026-09-16",
+   "time": "19:30"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Croz Boyce, Jas Stade",
+   "date": "2026-09-16",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19190?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-16",
+   "time": "20:10",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Letty Lynton",
+   "date": "2026-09-17",
+   "time": "15:30",
+   "url": "https://roxie.com/film/letty-lynton//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-17",
+   "time": "15:45",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-17",
+   "time": "17:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19628?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Weight",
+   "date": "2026-09-17",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/livestream-q-a-the-weight"
+  },
+  {
+   "theater": "roxie",
+   "title": "ZYZZYVA Movie Night with Ingrid Rojas Contreras: Songs of Earth",
+   "date": "2026-09-17",
+   "time": "18:00",
+   "url": "https://roxie.com/film/zyzzyva-movie-night-with-ingrid-rojas-contreras-songs-of-earth//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Cycle of Love",
+   "date": "2026-09-17",
+   "time": "18:20",
+   "url": "https://roxie.com/film/the-cycle-of-love//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-17",
+   "time": "18:45",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "balboa",
+   "title": "Barbara Forever",
+   "date": "2026-09-17",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19622?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "4star",
+   "title": "COMEDY: Honey Pluton & Spike Einbinder",
+   "date": "2026-09-17",
+   "time": "20:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19583?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Roxie First Looks #14",
+   "date": "2026-09-17",
+   "time": "20:30",
+   "url": "https://roxie.com/film/roxie-first-looks-14//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-17",
+   "time": "21:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19629?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Teenage Sex and Death at Camp Miasma",
+   "date": "2026-09-17",
+   "time": "21:05",
+   "url": "https://roxie.com/film/teenage-sex-and-death-at-camp-miasma//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-17",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-18",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-18",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "stanford",
+   "title": "Down Argentine Way",
+   "date": "2026-09-18",
+   "time": "17:50",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-18",
+   "time": "18:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19640?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-18",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barbara Forever",
+   "date": "2026-09-18",
+   "time": "18:00",
+   "url": "https://roxie.com/film/barbara-forever//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Senegalese Meet Sene-Gallic",
+   "date": "2026-09-18",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/senegalese-meet-sene-gallic"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: The Rock",
+   "date": "2026-09-18",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-the-rock-2//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "My Sassy Girl",
+   "date": "2026-09-18",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19612?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Moon Over Miami",
+   "date": "2026-09-18",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Spencer Noble, Peña, Cilantro",
+   "date": "2026-09-18",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19680?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-18",
+   "time": "20:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19614?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-18",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Ghost in the Shell: 30th Anniversary Remaster",
+   "date": "2026-09-18",
+   "time": "21:00",
+   "url": "https://roxie.com/film/ghost-in-the-shell-30th-anniversary-remaster//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Down Argentine Way",
+   "date": "2026-09-18",
+   "time": "21:15",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-19",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "newmission",
+   "title": "Spy Kids",
+   "date": "2026-09-19",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/movie-party-spy-kids"
+  },
+  {
+   "theater": "roxie",
+   "title": "Larry Reed: A Life in Light and Shadow",
+   "date": "2026-09-19",
+   "time": "13:15",
+   "url": "https://roxie.com/film/larry-reed-a-life-in-light-and-shadow//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-19",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Filipiñana",
+   "date": "2026-09-19",
+   "time": "15:10",
+   "url": "https://roxie.com/film/filipinana//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-19",
+   "time": "16:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19616?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "SF Lost Neon Landscapes: Chinatown",
+   "date": "2026-09-19",
+   "time": "16:00",
+   "url": "https://roxie.com/film/sf-lost-neon-landscapes-chinatown//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Moon Over Miami",
+   "date": "2026-09-19",
+   "time": "16:05",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "4star",
+   "title": "Los Video Nasties 2026 (Short Film Tour)",
+   "date": "2026-09-19",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19754?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "My Sassy Girl",
+   "date": "2026-09-19",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19621?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Contempt",
+   "date": "2026-09-19",
+   "time": "16:30",
+   "url": "https://bampfa.org/event/contempt"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barbara Forever",
+   "date": "2026-09-19",
+   "time": "17:20",
+   "url": "https://roxie.com/film/barbara-forever//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Down Argentine Way",
+   "date": "2026-09-19",
+   "time": "17:50",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-19",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Ghost in the Shell: 30th Anniversary Remaster",
+   "date": "2026-09-19",
+   "time": "18:00",
+   "url": "https://roxie.com/film/ghost-in-the-shell-30th-anniversary-remaster//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-19",
+   "time": "18:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19617?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "The Hole",
+   "date": "2026-09-19",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/hole"
+  },
+  {
+   "theater": "stanford",
+   "title": "Moon Over Miami",
+   "date": "2026-09-19",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "4star",
+   "title": "I Lost it Over: Body Heat (with Joan Chen)",
+   "date": "2026-09-19",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19752?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Comedy At The Balboa: Scott Capurro",
+   "date": "2026-09-19",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19619?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Kwaidan (4K Restoration)",
+   "date": "2026-09-19",
+   "time": "20:05",
+   "url": "https://roxie.com/film/kwaidan-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-19",
+   "time": "21:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19618?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-19",
+   "time": "21:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "stanford",
+   "title": "Down Argentine Way",
+   "date": "2026-09-19",
+   "time": "21:15",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-20",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Brailled It",
+   "date": "2026-09-20",
+   "time": "12:30",
+   "url": "https://roxie.com/film/brailled-it//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Oldest Person In The World",
+   "date": "2026-09-20",
+   "time": "12:30",
+   "url": "https://roxie.com/film/the-oldest-person-in-the-world//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-20",
+   "time": "14:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19623?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-20",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barbara Forever",
+   "date": "2026-09-20",
+   "time": "15:00",
+   "url": "https://roxie.com/film/barbara-forever//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Oldest Person In The World",
+   "date": "2026-09-20",
+   "time": "15:10",
+   "url": "https://roxie.com/film/the-oldest-person-in-the-world//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Moon Over Miami",
+   "date": "2026-09-20",
+   "time": "16:05",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "GHOST IN THE SHELL (SUBTITLED)",
+   "date": "2026-09-20",
+   "time": "16:20",
+   "url": "https://drafthouse.com/sf/show/ghost-in-the-shell-subtitled"
+  },
+  {
+   "theater": "balboa",
+   "title": "My Sassy Girl",
+   "date": "2026-09-20",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19627?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Bellissima",
+   "date": "2026-09-20",
+   "time": "16:30",
+   "url": "https://bampfa.org/event/bellissima"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-20",
+   "time": "16:45",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19624?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Kwaidan (4K Restoration)",
+   "date": "2026-09-20",
+   "time": "17:50",
+   "url": "https://roxie.com/film/kwaidan-4k-restoration//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Down Argentine Way",
+   "date": "2026-09-20",
+   "time": "17:50",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Resident Evil (2026)",
+   "date": "2026-09-20",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/resident-evil-2026"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-20",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19625?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "The Last Waltz",
+   "date": "2026-09-20",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/last-waltz"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Twilight Saga: New Moon",
+   "date": "2026-09-20",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/the-twilight-saga-the-twilight-saga-new-moon-fan-screening"
+  },
+  {
+   "theater": "4star",
+   "title": "Media Meltdown Movie Madhouse: Ace Attorney",
+   "date": "2026-09-20",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19693?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "The Last Picture Shows",
+   "date": "2026-09-20",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19626?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Moon Over Miami",
+   "date": "2026-09-20",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Down Argentine Way",
+   "date": "2026-09-20",
+   "time": "21:15",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barbara Forever",
+   "date": "2026-09-21",
+   "time": "18:00",
+   "url": "https://roxie.com/film/barbara-forever//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Batch ’81",
+   "date": "2026-09-21",
+   "time": "18:00",
+   "url": "https://roxie.com/film/batch-81//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "The Last Picture Shows",
+   "date": "2026-09-21",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19630?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Crunchyroll Anime Night Sneak Peek (9/21/2026)",
+   "date": "2026-09-21",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/crunchyroll-anime-night-sneak-peek-9-21-2026"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-21",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19631?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "GHOST IN THE SHELL (SUBTITLED)",
+   "date": "2026-09-22",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/ghost-in-the-shell-subtitled"
+  },
+  {
+   "theater": "roxie",
+   "title": "Barbara Forever",
+   "date": "2026-09-22",
+   "time": "18:00",
+   "url": "https://roxie.com/film/barbara-forever//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Oldest Person In The World",
+   "date": "2026-09-22",
+   "time": "18:00",
+   "url": "https://roxie.com/film/the-oldest-person-in-the-world//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Ghost Dog: Way of the Samurai",
+   "date": "2026-09-22",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19776?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Chronovisor",
+   "date": "2026-09-22",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/chronovisor"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-22",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19633?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Event Horizon",
+   "date": "2026-09-22",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/terror-tuesday-event-horizon"
+  },
+  {
+   "theater": "newmission",
+   "title": "Basic Instinct",
+   "date": "2026-09-23",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/basic-instinct"
+  },
+  {
+   "theater": "roxie",
+   "title": "Ghost in the Shell: 30th Anniversary Remaster",
+   "date": "2026-09-23",
+   "time": "18:00",
+   "url": "https://roxie.com/film/ghost-in-the-shell-30th-anniversary-remaster//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "It Will Be Better Before and Temo Re",
+   "date": "2026-09-23",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/it-will-be-better-and-temo-re"
+  },
+  {
+   "theater": "4star",
+   "title": "My Neighbor Totoro (Subtitled)",
+   "date": "2026-09-23",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19748?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-23",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19634?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Capone Cries A Lot",
+   "date": "2026-09-23",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/weird-wednesday-capone-cries-a-lot"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Blackbird Blackbird Blackberry",
+   "date": "2026-09-24",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/blackbird-blackbird-blackberry"
+  },
+  {
+   "theater": "newmission",
+   "title": "Pulp: What Do You Do for an Encore?",
+   "date": "2026-09-24",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/pulp-what-do-you-do-for-an-encore"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: My Name Ain’t Suzie",
+   "date": "2026-09-24",
+   "time": "19:00",
+   "url": "https://roxie.com/film/revision-my-name-aint-suzie//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-24",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19635?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Tom Conneely & BoP, My Dog Jack",
+   "date": "2026-09-24",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19744?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "bampfa",
+   "title": "A Tunnel",
+   "date": "2026-09-25",
+   "time": "15:00",
+   "url": "https://bampfa.org/event/tunnel"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Valley of the Bees",
+   "date": "2026-09-25",
+   "time": "15:00",
+   "url": "https://roxie.com/film/revision-valley-of-the-bees//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Orchestra Wives",
+   "date": "2026-09-25",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Dakan",
+   "date": "2026-09-25",
+   "time": "17:45",
+   "url": "https://roxie.com/film/revision-dakan//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Taming the Garden",
+   "date": "2026-09-25",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/taming-garden"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Bullitt",
+   "date": "2026-09-25",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-bullitt//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "The History of Concrete",
+   "date": "2026-09-25",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19638?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Sun Valley Serenade",
+   "date": "2026-09-25",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-25",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19637?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: The Outcasts",
+   "date": "2026-09-25",
+   "time": "20:30",
+   "url": "https://roxie.com/film/revision-the-outcasts//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Orchestra Wives",
+   "date": "2026-09-25",
+   "time": "21:10",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "newmission",
+   "title": "Mystery Voyage",
+   "date": "2026-09-25",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/agfadrome-mystery-voyage-september-2026"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: I Am With A Monk",
+   "date": "2026-09-26",
+   "time": "11:00",
+   "url": "https://roxie.com/film/revision-i-am-with-a-monk//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Georgian Cinema Now Symposium—Activism in Authoritarian Times: The Republic of Georgia as a Case Study",
+   "date": "2026-09-26",
+   "time": "11:30",
+   "url": "https://bampfa.org/event/georgian-cinema-now-symposium"
+  },
+  {
+   "theater": "4star",
+   "title": "My Neighbor Totoro (Subtitled)",
+   "date": "2026-09-26",
+   "time": "12:15",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19749?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Araya",
+   "date": "2026-09-26",
+   "time": "14:00",
+   "url": "https://roxie.com/film/revision-araya//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Sun Valley Serenade",
+   "date": "2026-09-26",
+   "time": "16:00",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: The Dislocation of Amber",
+   "date": "2026-09-26",
+   "time": "16:20",
+   "url": "https://roxie.com/film/revision-the-dislocation-of-amber//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "The History of Concrete",
+   "date": "2026-09-26",
+   "time": "17:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19670?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-26",
+   "time": "17:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19666?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Orchestra Wives",
+   "date": "2026-09-26",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Gehenu Lamai (The Girls)",
+   "date": "2026-09-26",
+   "time": "18:00",
+   "url": "https://roxie.com/film/revision-gehenu-lamai-the-girls//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "The History of Concrete",
+   "date": "2026-09-26",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19671?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Crossing",
+   "date": "2026-09-26",
+   "time": "19:30",
+   "url": "https://bampfa.org/event/crossing"
+  },
+  {
+   "theater": "stanford",
+   "title": "Sun Valley Serenade",
+   "date": "2026-09-26",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-26",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19669?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Lepers & Sex AKA Santo vs The Riders of Terror",
+   "date": "2026-09-26",
+   "time": "21:00",
+   "url": "https://roxie.com/film/revision-lepers-sex-aka-santo-vs-the-riders-of-terror//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Orchestra Wives",
+   "date": "2026-09-26",
+   "time": "21:10",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "The Rocky Horror Picture Show",
+   "date": "2026-09-26",
+   "time": "23:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19668?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Tri",
+   "date": "2026-09-27",
+   "time": "11:00",
+   "url": "https://roxie.com/film/revision-tri//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Destroy All Monsters",
+   "date": "2026-09-27",
+   "time": "12:00",
+   "url": "https://drafthouse.com/sf/show/destroy-all-monsters"
+  },
+  {
+   "theater": "4star",
+   "title": "My Neighbor Totoro (Dubbed)",
+   "date": "2026-09-27",
+   "time": "12:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19676?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: The Waiting Room",
+   "date": "2026-09-27",
+   "time": "13:20",
+   "url": "https://roxie.com/film/revision-the-waiting-room//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "English Teacher and Bakhmaro 2050",
+   "date": "2026-09-27",
+   "time": "13:30",
+   "url": "https://bampfa.org/event/english-teacher-and-bakhmaro-2050"
+  },
+  {
+   "theater": "balboa",
+   "title": "The History of Concrete",
+   "date": "2026-09-27",
+   "time": "14:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19767?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-27",
+   "time": "14:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19768?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Nacho Libre",
+   "date": "2026-09-27",
+   "time": "14:45",
+   "url": "https://drafthouse.com/sf/show/movie-party-nacho-libre"
+  },
+  {
+   "theater": "4star",
+   "title": "My Neighbor Totoro (Subtitled)",
+   "date": "2026-09-27",
+   "time": "15:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19677?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: The Garden of Eden",
+   "date": "2026-09-27",
+   "time": "15:40",
+   "url": "https://roxie.com/film/revision-the-garden-of-eden//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Sun Valley Serenade",
+   "date": "2026-09-27",
+   "time": "16:00",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "balboa",
+   "title": "The History of Concrete",
+   "date": "2026-09-27",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19766?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "An Incomplete Day in the History of Georgia 10.06.93.",
+   "date": "2026-09-27",
+   "time": "16:30",
+   "url": "https://bampfa.org/event/incomplete-day-history-georgia-100693"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-27",
+   "time": "17:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19769?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Orchestra Wives",
+   "date": "2026-09-27",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: 8 Girls in a Boat",
+   "date": "2026-09-27",
+   "time": "18:10",
+   "url": "https://roxie.com/film/revision-8-girls-in-a-boat//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Samurai Rebellion",
+   "date": "2026-09-27",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19765?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-27",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19764?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "stanford",
+   "title": "Sun Valley Serenade",
+   "date": "2026-09-27",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Fog Lamp, Eraser, Blue Zero",
+   "date": "2026-09-27",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19359?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Re:Vision: Melody of Murder",
+   "date": "2026-09-27",
+   "time": "20:40",
+   "url": "https://roxie.com/film/revision-melody-of-murder//#showtimes"
+  },
+  {
+   "theater": "stanford",
+   "title": "Orchestra Wives",
+   "date": "2026-09-27",
+   "time": "21:10",
+   "url": "https://stanfordtheatre.org/calendars/Fox Musicals 2026.html"
+  },
+  {
+   "theater": "roxie",
+   "title": "Memorizing Alison",
+   "date": "2026-09-28",
+   "time": "18:00",
+   "url": "https://roxie.com/film/memorizing-alison//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "The History of Concrete",
+   "date": "2026-09-28",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19770?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Birdcage",
+   "date": "2026-09-28",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/queer-film-theory-101-the-birdcage"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-28",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19771?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Staff Pick: A Welcome Distraction",
+   "date": "2026-09-28",
+   "time": "20:40",
+   "url": "https://roxie.com/film/staff-pick-a-welcome-distraction//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-29",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19773?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Deathgasm 2: Goremageddon",
+   "date": "2026-09-29",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/deathgasm-2-goremageddon"
+  },
+  {
+   "theater": "balboa",
+   "title": "House on Haunted Hill",
+   "date": "2026-09-29",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19772?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Ice Cream Man (1995)",
+   "date": "2026-09-29",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/terror-tuesday-ice-cream-man-1995"
+  },
+  {
+   "theater": "roxie",
+   "title": "D.E.B.S.",
+   "date": "2026-09-30",
+   "time": "18:00",
+   "url": "https://roxie.com/film/d-e-b-s//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Mean Girls",
+   "date": "2026-09-30",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19703?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Self-Portrait Along the Borderline",
+   "date": "2026-09-30",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/self-portrait-along-borderline"
+  },
+  {
+   "theater": "balboa",
+   "title": "Resident Evil",
+   "date": "2026-09-30",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19798?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Prime Cut",
+   "date": "2026-09-30",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/weird-wednesday-prime-cut"
+  },
+  {
+   "theater": "roxie",
+   "title": "Black Swan",
+   "date": "2026-10-01",
+   "time": "18:30",
+   "url": "https://roxie.com/film/black-swan//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Black Swan + Perfect Blue",
+   "date": "2026-10-01",
+   "time": "18:30",
+   "url": "https://roxie.com/film/black-swan-perfect-blue//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Italianamerican and American Boy: A Profile of Steven Prince",
+   "date": "2026-10-01",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/italianamerican-and-american-boy-profile-steven-prince"
+  },
+  {
+   "theater": "roxie",
+   "title": "Perfect Blue",
+   "date": "2026-10-01",
+   "time": "20:50",
+   "url": "https://roxie.com/film/perfect-blue//#showtimes"
+  },
+  {
+   "theater": "bampfa",
+   "title": "Wet Sand",
+   "date": "2026-10-02",
+   "time": "19:00",
+   "url": "https://bampfa.org/event/wet-sand"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Jaws",
+   "date": "2026-10-02",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-jaws-2//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Ashima",
+   "date": "2026-10-03",
+   "time": "12:30",
+   "url": "https://roxie.com/film/ashima//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Fred Frith, The Sleeves",
+   "date": "2026-10-03",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/18098?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "The Healing WELL Fundraiser: Figaro Up, Figaro Down",
+   "date": "2026-10-04",
+   "time": "12:30",
+   "url": "https://roxie.com/film/the-healing-well-fundraiser-figaro-up-figaro-down//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Color Green",
+   "date": "2026-10-04",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19692?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "newmission",
+   "title": "The Silence of the Lambs",
+   "date": "2026-10-06",
+   "time": "21:30",
+   "url": "https://drafthouse.com/sf/show/terror-tuesday-the-silence-of-the-lambs-35mm"
+  },
+  {
+   "theater": "roxie",
+   "title": "Zoé Presents: Memorex + Rexsexex y Más",
+   "date": "2026-10-07",
+   "time": "18:00",
+   "url": "https://roxie.com/film/zoe-presents-memorex-rexsexex-y-mas//#showtimes"
+  },
+  {
+   "theater": "balboa",
+   "title": "Queen Budapest",
+   "date": "2026-10-07",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19774?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Top Gun",
+   "date": "2026-10-09",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-top-gun-2//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dismember the Alamo 2026 - New Mission",
+   "date": "2026-10-10",
+   "time": "15:00",
+   "url": "https://drafthouse.com/sf/show/dismember-the-alamo-2026-new-mission"
+  },
+  {
+   "theater": "balboa",
+   "title": "Queen Budapest",
+   "date": "2026-10-10",
+   "time": "19:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19775?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "balboa",
+   "title": "Bea Arthur: The Documentary",
+   "date": "2026-10-12",
+   "time": "19:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19742?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "newmission",
+   "title": "Ken Russell's The Devils",
+   "date": "2026-10-15",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/ken-russells-the-devils"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: The Game",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-the-game//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "ZYZZYVA Movie Matinee with Ingrid Rojas Contreras: Amarcord (35mm)",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "url": "https://roxie.com/film/zyzzyva-movie-matinee-with-ingrid-rojas-contreras-amarcord//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Dr. Jekyll and Mr. Hyde (1931)",
+   "date": "2026-10-20",
+   "time": "18:00",
+   "url": "https://roxie.com/film/dr-jekyll-and-mr-hyde-1931//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Hocus Pocus",
+   "date": "2026-10-23",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-hocus-pocus-2//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "MUSIC: Nosferatu with Paz Lenchantin & Dallas Acid",
+   "date": "2026-10-23",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19681?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "balboa",
+   "title": "LIVE MUSIC: Izaak Opatz and Joe Kaplow",
+   "date": "2026-10-23",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19672?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
+  },
+  {
+   "theater": "roxie",
+   "title": "Rewind Presents: The Craft",
+   "date": "2026-10-27",
+   "time": "21:15",
+   "url": "https://roxie.com/film/rewind-presents-the-craft//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: The Wildwoods",
+   "date": "2026-10-28",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19286?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Us",
+   "date": "2026-10-30",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-us//#showtimes"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Pacific Heights",
+   "date": "2026-11-06",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-pacific-heights//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: IDAHO",
+   "date": "2026-11-07",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19695?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: Friday the 13th",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "url": "https://roxie.com/film/floating-features-friday-the-13th//#showtimes"
+  },
+  {
+   "theater": "4star",
+   "title": "LIVE MUSIC: Todd Day Wait",
+   "date": "2026-11-15",
+   "time": "20:00",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19575?siteToken=d2atbcege5knqsavntt91g1250"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: National Lampoon’s Christmas Vacation",
+   "date": "2026-12-12",
+   "time": "18:30",
+   "url": "https://roxie.com/film/floating-features-national-lampoons-christmas-vacation//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-15",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/advance-screening-dune-part-three-hdr-by-barco-insider-screening"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-17",
+   "time": "14:00",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-17",
+   "time": "14:00",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-17",
+   "time": "19:00",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-17",
+   "time": "22:00",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-18",
+   "time": "10:00",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-18",
+   "time": "14:10",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-18",
+   "time": "14:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-18",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-18",
+   "time": "18:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-18",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-19",
+   "time": "10:00",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-19",
+   "time": "14:10",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-19",
+   "time": "14:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-19",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "roxie",
+   "title": "Floating Features: A Christmas Story",
+   "date": "2026-12-19",
+   "time": "18:30",
+   "url": "https://roxie.com/film/floating-features-a-christmas-story-1983//#showtimes"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-19",
+   "time": "18:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-19",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-20",
+   "time": "10:00",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-20",
+   "time": "14:10",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-20",
+   "time": "14:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Dune: Part Three",
+   "date": "2026-12-20",
+   "time": "18:00",
+   "url": "https://drafthouse.com/sf/show/dune-part-three"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-20",
+   "time": "18:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "newmission",
+   "title": "Avengers: Doomsday",
+   "date": "2026-12-20",
+   "time": "21:45",
+   "url": "https://drafthouse.com/sf/show/avengers-doomsday"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-03",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-03",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-03",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-04",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-04",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-04",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-05",
+   "time": "15:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-05",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-05",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-05",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-06",
+   "time": "15:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-06",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-06",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-06",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-07",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Big Sleep",
+   "date": "2027-06-07",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "To Have and Have Not",
+   "date": "2027-06-07",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-10",
+   "time": "17:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-10",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-10",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-11",
+   "time": "17:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-11",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-11",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-12",
+   "time": "15:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-12",
+   "time": "17:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-12",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-12",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-13",
+   "time": "15:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-13",
+   "time": "17:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-13",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-13",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-14",
+   "time": "17:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Key Largo",
+   "date": "2027-06-14",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Dark Passage",
+   "date": "2027-06-14",
+   "time": "21:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-17",
+   "time": "17:15",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-17",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-17",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-18",
+   "time": "17:15",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-18",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-18",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-19",
+   "time": "15:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-19",
+   "time": "17:15",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-19",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-19",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-20",
+   "time": "15:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-20",
+   "time": "17:15",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-20",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-20",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-21",
+   "time": "17:15",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Seven Year Itch",
+   "date": "2027-06-21",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Some Like It Hot",
+   "date": "2027-06-21",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Clash By Night",
+   "date": "2027-06-24",
+   "time": "17:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Asphalt Jungle",
+   "date": "2027-06-24",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Clash By Night",
+   "date": "2027-06-24",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Clash By Night",
+   "date": "2027-06-25",
+   "time": "17:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Asphalt Jungle",
+   "date": "2027-06-25",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Clash By Night",
+   "date": "2027-06-25",
+   "time": "21:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Casablanca",
+   "date": "2027-06-26",
+   "time": "15:45",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Maltese Falcon",
+   "date": "2027-06-26",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Casablanca",
+   "date": "2027-06-26",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Maltese Falcon",
+   "date": "2027-06-26",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Casablanca",
+   "date": "2027-06-27",
+   "time": "15:45",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Maltese Falcon",
+   "date": "2027-06-27",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Casablanca",
+   "date": "2027-06-27",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Maltese Falcon",
+   "date": "2027-06-27",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Maltese Falcon",
+   "date": "2027-06-28",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Casablanca",
+   "date": "2027-06-28",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Maltese Falcon",
+   "date": "2027-06-28",
+   "time": "21:25",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Working Man",
+   "date": "2027-07-01",
+   "time": "18:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "As Young As You Feel",
+   "date": "2027-07-01",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Working Man",
+   "date": "2027-07-01",
+   "time": "21:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Working Man",
+   "date": "2027-07-02",
+   "time": "18:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "As Young As You Feel",
+   "date": "2027-07-02",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Working Man",
+   "date": "2027-07-02",
+   "time": "21:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Bad and the Beautiful",
+   "date": "2027-07-03",
+   "time": "10:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "All About Eve",
+   "date": "2027-07-03",
+   "time": "14:50",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Bad and the Beautiful",
+   "date": "2027-07-03",
+   "time": "17:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "All About Eve",
+   "date": "2027-07-03",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Bad and the Beautiful",
+   "date": "2027-07-04",
+   "time": "10:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "All About Eve",
+   "date": "2027-07-04",
+   "time": "14:50",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Bad and the Beautiful",
+   "date": "2027-07-04",
+   "time": "17:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "All About Eve",
+   "date": "2027-07-04",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Bad and the Beautiful",
+   "date": "2027-07-05",
+   "time": "10:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Bad and the Beautiful",
+   "date": "2027-07-05",
+   "time": "17:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "All About Eve",
+   "date": "2027-07-05",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Palm Beach Story",
+   "date": "2027-07-08",
+   "time": "17:50",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Let's Make It Legal",
+   "date": "2027-07-08",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Palm Beach Story",
+   "date": "2027-07-08",
+   "time": "21:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Palm Beach Story",
+   "date": "2027-07-09",
+   "time": "17:50",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Let's Make It Legal",
+   "date": "2027-07-09",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Palm Beach Story",
+   "date": "2027-07-09",
+   "time": "21:00",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Major and the Minor",
+   "date": "2027-07-15",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Monkey Business",
+   "date": "2027-07-15",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Major and the Minor",
+   "date": "2027-07-15",
+   "time": "21:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Major and the Minor",
+   "date": "2027-07-16",
+   "time": "17:40",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Monkey Business",
+   "date": "2027-07-16",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "The Major and the Minor",
+   "date": "2027-07-16",
+   "time": "21:20",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Gentlemen Prefer Blondes",
+   "date": "2027-07-17",
+   "time": "15:50",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Singin' in the Rain",
+   "date": "2027-07-17",
+   "time": "17:35",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Gentlemen Prefer Blondes",
+   "date": "2027-07-17",
+   "time": "19:30",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  },
+  {
+   "theater": "stanford",
+   "title": "Singin' in the Rain",
+   "date": "2027-07-17",
+   "time": "21:15",
+   "url": "https://stanfordtheatre.org/calendars/Summer 2026.html"
+  }
+ ]
+}
