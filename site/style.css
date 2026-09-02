@@ -68,6 +68,20 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font-weight: 500;
 }
 
+.kudos {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.kudos a {
+  color: var(--ink);
+  text-decoration-color: var(--bridge);
+  text-underline-offset: 2px;
+}
+
+.kudos a:hover { color: var(--bridge); }
+
 .updated {
   margin: 2px 0 0;
   font-family: var(--mono);
