@@ -8,6 +8,7 @@ const state = {
   off: new Set(),        // disabled theater ids
   view: "board",         // board | films | all
   query: "",
+  chipsOpen: false,      // mobile: theater list expanded
 };
 
 const LANE_H = 40;
@@ -19,8 +20,6 @@ const SHORT_NAMES = {
   roxie: "Roxie", balboa: "Balboa", "4star": "4 Star", newmission: "Alamo",
   bampfa: "BAMPFA", grandlake: "Grand Lake", stanford: "Stanford", lark: "Lark",
 };
-
-let autoScrollPending = true;  // scroll to "now" once, on first today render
 
 function isoToday() {
   const d = new Date();
@@ -218,8 +217,22 @@ function renderChips() {
   }
   wrap.appendChild(regionRow);
 
+  // mobile: the theater list collapses behind this toggle
+  const total = Object.keys(state.data.theaters).length;
+  const on = total - state.off.size;
+  const toggle = document.createElement("button");
+  toggle.className = "chiptoggle";
+  toggle.setAttribute("aria-expanded", String(state.chipsOpen));
+  toggle.innerHTML =
+    `Theaters · ${on} of ${total} <span class="chiptoggle__arrow">${state.chipsOpen ? "▴" : "▾"}</span>`;
+  toggle.addEventListener("click", () => {
+    state.chipsOpen = !state.chipsOpen;
+    renderChips();
+  });
+  wrap.appendChild(toggle);
+
   const chipRow = document.createElement("div");
-  chipRow.className = "chiprow";
+  chipRow.className = "chiprow" + (state.chipsOpen ? " is-open" : "");
   for (const [id, t] of Object.entries(state.data.theaters)) {
     const btn = document.createElement("button");
     btn.className = "chip" + (state.off.has(id) ? " is-off" : "");
@@ -398,12 +411,6 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
   }
   if (!nowPlaced) parts.push(nowDividerHtml(nowMin));
   board.innerHTML = `<div class="tl">${parts.join("")}</div>`;
-
-  if (autoScrollPending && isToday) {
-    const divider = board.querySelector(".tl__now");
-    if (divider) divider.scrollIntoView({ block: "center" });
-  }
-  autoScrollPending = false;
 }
 
 // Nudge the now-line and past-dimming along without rebuilding the board —

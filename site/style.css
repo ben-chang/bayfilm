@@ -237,6 +237,9 @@ a, button, input, summary { touch-action: manipulation; }
   gap: 6px;
 }
 
+/* desktop: chips always visible, no toggle */
+.chiptoggle { display: none; }
+
 .chip {
   border: 1px solid var(--ink);
   background: var(--stub);
@@ -767,6 +770,26 @@ a, button, input, summary { touch-action: manipulation; }
   .chip { padding: 8px 12px; }
 
   .viewtoggle__btn { padding: 8px 16px; }
+
+  /* theater chips collapse behind a dropdown toggle */
+  .chiptoggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    align-self: flex-start;
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    background: var(--stub);
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .chiptoggle__arrow { color: var(--bridge-ink); }
+
+  .chiprow { display: none; }
+
+  .chiprow.is-open { display: flex; }
 
   /* thumb + title share the first row; showtimes wrap below */
   .film__head { flex: 1; min-width: 200px; }
