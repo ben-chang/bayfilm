@@ -267,13 +267,10 @@ function renderBoard() {
   }
 
   const timed = shows.filter((s) => s.time);
-  let startH = 12, endH = 24;
+  let startH = 12;
+  const endH = 25;  // axis always runs to 1am the next day
   if (timed.length) {
     startH = Math.min(12, Math.floor(minutes(timed[0].time) / 60));
-    endH = Math.max(
-      startH + 8,
-      Math.ceil(Math.max(...timed.map((s) => minutes(s.time))) / 60) + 1
-    );
   }
   const span = (endH - startH) * 60;
   const desktop = window.matchMedia("(min-width: 761px)").matches;
