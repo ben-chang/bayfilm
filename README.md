@@ -156,6 +156,13 @@ Pages. To use it, push this repo to GitHub and set Pages → Source →
 
 ## Caveats
 
+- **BAMPFA and Stanford block datacenter IPs** (Cloudflare), so the GitHub
+  Actions scrape gets a 403 from them. The scraper degrades gracefully: a
+  failed theater keeps its still-upcoming screenings from the committed
+  `showtimes.json` instead of vanishing. To refresh those two, run
+  `python -m scraper.main` locally (home IPs work fine) and push the updated
+  JSON — the push triggers a deploy.
+
 - Listings are only as accurate as the theaters' own calendars; programs
   change, so confirm with the box office for anything important.
 - Scrapers are polite (one or two requests per theater per run), but sites

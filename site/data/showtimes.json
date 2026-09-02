@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-02T17:28:12Z",
+ "generated_at": "2026-09-02T18:19:43Z",
  "theaters": {
   "roxie": {
    "id": "roxie",
@@ -3053,6 +3053,13 @@
    "date": "2026-09-15",
    "time": "21:30",
    "url": "https://drafthouse.com/sf/show/terror-tuesday-angel-heart"
+  },
+  {
+   "theater": "balboa",
+   "title": "Twilight",
+   "date": "2026-09-16",
+   "time": "16:30",
+   "url": "https://ticketing.uswest.veezi.com/purchase/19799?siteToken=52wkfzmjpwjjfpz3ye7tz8wscg"
   },
   {
    "theater": "newmission",
