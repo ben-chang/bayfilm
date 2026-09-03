@@ -5,23 +5,19 @@ Francisco Bay Area independent movie theaters.
 
 ## What is this?
 
-If you love the Bay Area's independent movie houses, you know the ritual:
-eight browser tabs, eight different calendar layouts, trying to figure out
-what's playing tonight and whether you can make the 7:00 at the Roxie or
-should cross the bridge for 70mm at the Grand Lake. BayFilm collapses all of
-that into one page.
+BayFilm is an aggregation website for San Francisco Bay Area independent movie theaters.
 
-Every night, BayFilm reads the calendars that eight theaters publish on
-their own websites — from San Francisco to Berkeley, Oakland, Palo Alto, and
-Larkspur — and lays the showtimes out side by side. You can see the whole
+Every night, BayFilm reads the calendars that theaters publish on
+their own websites, from San Francisco to Berkeley, Oakland, Palo Alto, and
+Larkspur, and lays the showtimes out side by side. You can see the whole
 day at a glance on a time grid, look up a specific film and every place it's
 playing, search for special presentations like 70mm or live scores, and jump
 straight to each theater's box office to buy tickets. It works in light or
 dark mode, on your phone or your laptop, and every screening has an
 add-to-calendar button.
 
-BayFilm sells nothing, shows no ads, and isn't affiliated with any theater —
-it's a fan project that just wants you to see more movies on real screens.
+BayFilm sells nothing, shows no ads, and isn't affiliated with any theater.
+It's a fan project that just wants you to see more movies on real screens.
 Everything below this line is for people who want to run or modify it.
 
 ---
