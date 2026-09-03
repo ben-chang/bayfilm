@@ -19,6 +19,10 @@ const STORAGE_KEY = "bayfilm.hidden";
 const SHORT_NAMES = {
   roxie: "Roxie", balboa: "Balboa", "4star": "4 Star", newmission: "Alamo",
   bampfa: "BAMPFA", grandlake: "Grand Lake", stanford: "Stanford", lark: "Lark",
+  alamomv: "Alamo MV", vogue: "Vogue", marina: "Marina", presidio: "Presidio",
+  operaplaza: "Opera Plaza", piedmont: "Piedmont", aquarius: "Aquarius",
+  vine: "Vine", almaden: "CineLux", pruneyard: "Pruneyard", santanarow: "Santana Row",
+  rafael: "Rafael", sequoia: "Sequoia", cinelounge: "Cinelounge",
 };
 
 function isoToday() {
@@ -303,7 +307,8 @@ function renderBoard() {
     const row = document.createElement("div");
     row.className = "trow";
     row.innerHTML =
-      `<div class="trow__label"><div class="trow__name">${t.name}</div>` +
+      `<div class="trow__label"><div class="trow__name">` +
+      `<a href="${escapeHtml(t.url)}" target="_blank" rel="noopener">${t.name}</a></div>` +
       `<div class="trow__city">${t.city}</div>` +
       (stale ? `<div class="trow__stale">${stale}</div>` : "") +
       `</div>`;
@@ -644,6 +649,23 @@ function initTheme() {
   });
 }
 
+function initMastPanels() {
+  // masthead disclosure links; one panel open at a time, below the link row
+  const links = [...document.querySelectorAll(".mastlink[aria-controls]")];
+  for (const btn of links) {
+    btn.addEventListener("click", () => {
+      const panel = $("#" + btn.getAttribute("aria-controls"));
+      const willOpen = panel.hidden;
+      for (const other of links) {
+        $("#" + other.getAttribute("aria-controls")).hidden = true;
+        other.setAttribute("aria-expanded", "false");
+      }
+      panel.hidden = !willOpen;
+      btn.setAttribute("aria-expanded", String(willOpen));
+    });
+  }
+}
+
 function syncHash() {
   const suffix = state.view === "films" ? "/films" : state.view === "all" ? "/all" : "";
   history.replaceState(null, "", "#" + state.date + suffix);
@@ -666,6 +688,7 @@ function render() {
 
 async function init() {
   initTheme();
+  initMastPanels();
   try {
     const resp = await fetch("data/showtimes.json");
     if (!resp.ok) throw new Error(resp.status);

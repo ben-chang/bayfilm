@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BayFilm — San Francisco Bay Area independent movie theater showtimes</title>
-<meta name="description" content="One guide to what's playing at San Francisco Bay Area independent movie theaters: Roxie, Balboa, 4 Star, Alamo New Mission, BAMPFA, Grand Lake, Stanford Theatre, and the Lark. Updated nightly.">
+<meta name="description" content="One guide to what's playing at San Francisco Bay Area independent movie theaters: Roxie, Balboa, Alamo Drafthouse, BAMPFA, Grand Lake, Stanford Theatre, Smith Rafael, Landmark, and more — 22 theaters from SF to the South Bay. Updated nightly.">
 <link rel="canonical" href="https://bayfilm.net/">
 <meta name="theme-color" content="#F1F2EF">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BayFilm">
 <meta property="og:title" content="BayFilm — Bay Area independent movie theater showtimes">
-<meta property="og:description" content="What's playing at San Francisco Bay Area independent movie theaters — Roxie, Balboa, 4 Star, Alamo New Mission, BAMPFA, Grand Lake, Stanford Theatre, and the Lark. Updated nightly.">
+<meta property="og:description" content="What's playing at San Francisco Bay Area independent movie theaters — Roxie, Balboa, Alamo Drafthouse, BAMPFA, Grand Lake, Stanford Theatre, Smith Rafael, Landmark, and more. Updated nightly.">
 <meta property="og:url" content="https://bayfilm.net/">
 <meta property="og:image" content="https://bayfilm.net/og.png">
 <meta property="og:image:width" content="1200">
@@ -39,7 +39,21 @@
     {"@type": "MovieTheater", "name": "BAMPFA", "address": "Berkeley, CA", "sameAs": "https://bampfa.org"},
     {"@type": "MovieTheater", "name": "Grand Lake Theatre", "address": "Oakland, CA", "sameAs": "https://renaissancerialto.com"},
     {"@type": "MovieTheater", "name": "Stanford Theatre", "address": "Palo Alto, CA", "sameAs": "https://stanfordtheatre.org"},
-    {"@type": "MovieTheater", "name": "Lark Theater", "address": "Larkspur, CA", "sameAs": "https://larktheater.net"}
+    {"@type": "MovieTheater", "name": "Lark Theater", "address": "Larkspur, CA", "sameAs": "https://larktheater.net"},
+    {"@type": "MovieTheater", "name": "Vogue Theater", "address": "San Francisco, CA", "sameAs": "https://www.voguemovies.com"},
+    {"@type": "MovieTheater", "name": "Marina Theatre", "address": "San Francisco, CA", "sameAs": "https://www.lntsf.com"},
+    {"@type": "MovieTheater", "name": "Presidio Theatre", "address": "San Francisco, CA", "sameAs": "https://www.lntsf.com"},
+    {"@type": "MovieTheater", "name": "Landmark Opera Plaza", "address": "San Francisco, CA", "sameAs": "https://www.landmarktheatres.com/theaters/x00u8-landmark-opera-plaza-cinema-san-francisco/"},
+    {"@type": "MovieTheater", "name": "Landmark Piedmont", "address": "Oakland, CA", "sameAs": "https://www.landmarktheatres.com/theaters/x00y7-landmark-piedmont-theatre-oakland/"},
+    {"@type": "MovieTheater", "name": "Landmark Aquarius", "address": "Palo Alto, CA", "sameAs": "https://www.landmarktheatres.com/theaters/x00tm-landmark-aquarius-theatre-palo-alto/"},
+    {"@type": "MovieTheater", "name": "Alamo Drafthouse Mountain View", "address": "Mountain View, CA", "sameAs": "https://drafthouse.com/sf"},
+    {"@type": "MovieTheater", "name": "Vine Cinema & Alehouse", "address": "Livermore, CA", "sameAs": "https://www.vinecinema.com"},
+    {"@type": "MovieTheater", "name": "Smith Rafael Film Center", "address": "San Rafael, CA", "sameAs": "https://cinema.cafilm.org"},
+    {"@type": "MovieTheater", "name": "Sequoia Cinema", "address": "Mill Valley, CA", "sameAs": "https://cinema.cafilm.org"},
+    {"@type": "MovieTheater", "name": "Cinelounge Tiburon", "address": "Tiburon, CA", "sameAs": "https://www.cineloungefilm.com"},
+    {"@type": "MovieTheater", "name": "CineLux Almaden", "address": "San Jose, CA", "sameAs": "https://www.cineluxtheatres.com/cinelux-almaden-cafe-lounge"},
+    {"@type": "MovieTheater", "name": "Pruneyard Cinemas", "address": "Campbell, CA", "sameAs": "https://www.pruneyardcinemas.com"},
+    {"@type": "MovieTheater", "name": "CinéArts Santana Row", "address": "San Jose, CA", "sameAs": "https://www.cinemark.com/theatres/ca-san-jose/cinemark-cinearts-santana-row"}
   ]
 }
 </script>
@@ -68,16 +82,32 @@
     <h1 class="wordmark">BAY<span>FILM</span></h1>
     <p class="tagline">What's playing at San Francisco Bay Area independent movie theaters</p>
     <p class="updated" id="updated"></p>
-    <button class="themetoggle" id="themeToggle" aria-live="polite"></button>
-    <details class="about">
-      <summary>About BayFilm</summary>
+    <div class="mastlinks">
+      <button class="themetoggle" id="themeToggle" aria-live="polite"></button>
+      <button class="mastlink" aria-expanded="false" aria-controls="aboutPanel">About BayFilm</button>
+      <button class="mastlink" aria-expanded="false" aria-controls="addlPanel">Additional theaters</button>
+    </div>
+    <div class="mastpanel" id="aboutPanel" hidden>
       <p>BayFilm gathers showtimes from the San Francisco Bay Area's independent
       movie theaters into one guide. Listings are indexed nightly
       from each theater's calendar and linked to their box offices.
       Be sure to check out events from <a href="https://sffilm.org/">SFFilm</a> and <a href="https://www.sfmoma.org/">SFMoMA</a> as well!
       See also <a href="https://www.spiralhwy.com/" target="_blank" rel="noopener">Spiral HWY</a>, an excellent film aggregation site.
       Thanks for using and hope you enjoy!</p>
-    </details>
+    </div>
+    <div class="mastpanel" id="addlPanel" hidden>
+      <p>A few theaters are hard to index, so their listings aren't included
+      here. Please check their websites directly:
+        <a href="https://thenewparkway.com/" target="_blank" rel="noopener">The New Parkway</a> (Oakland) ·
+        <a href="https://rialtocinemas.com/elmwood/" target="_blank" rel="noopener">Rialto Cinemas Elmwood</a> (Berkeley) ·
+        <a href="https://rialtocinemas.com/cerrito/" target="_blank" rel="noopener">Rialto Cinemas Cerrito</a> (El Cerrito)
+      </p>
+      <p>Some theaters, including the Stanford Theatre and BAMPFA, block
+      automated indexing, so their listings refresh less often than the
+      nightly update. When a theater's listings are more than a day old,
+      they're marked with a "listings from" badge, so double-check those
+      with the box office.</p>
+    </div>
   </div>
 </header>
 
@@ -111,12 +141,6 @@
 <footer class="colophon">
   <p>Listings are indexed nightly from each theater's own calendar. Always check with the official box office since programs change.</p>
   <p id="sources"></p>
-  <p>Also worth checking, these theaters are hard to index, so their listings aren't included here:
-    <a href="https://rafaelfilm.cafilm.org/" target="_blank" rel="noopener">Smith Rafael Film Center</a> (San Rafael) ·
-    <a href="https://thenewparkway.com/" target="_blank" rel="noopener">The New Parkway</a> (Oakland) ·
-    <a href="https://rialtocinemas.com/elmwood/" target="_blank" rel="noopener">Rialto Cinemas Elmwood</a> (Berkeley) ·
-    <a href="https://rialtocinemas.com/cerrito/" target="_blank" rel="noopener">Rialto Cinemas Cerrito</a> (El Cerrito)
-  </p>
   <p>BayFilm doesn't sell anything and isn't affiliated with any theater</p>
   <p>2026</p>
   <div class="colophon__ghost" aria-hidden="true">BAYFILM</div>

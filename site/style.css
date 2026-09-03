@@ -100,13 +100,22 @@ a, button, input, summary { touch-action: manipulation; }
   color: var(--ink-soft);
 }
 
-.about {
+/* one baseline-aligned row of toggle links; the open panel renders below
+   the whole row, so both panels appear in the same place */
+.mastlinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 14px;
   margin-top: 8px;
-  max-width: 640px;
 }
 
-.about summary {
-  display: inline-block;
+.mastlinks .themetoggle { margin: 0; }
+
+.mastlink {
+  border: 0;
+  padding: 0;
+  background: transparent;
   cursor: pointer;
   font-family: var(--mono);
   font-size: 12.5px;
@@ -116,11 +125,15 @@ a, button, input, summary { touch-action: manipulation; }
   text-underline-offset: 2px;
 }
 
-.about summary:hover { color: var(--bridge-ink); }
+.mastlink:hover { color: var(--bridge-ink); }
 
-.about[open] summary { color: var(--bridge-ink); }
+.mastlink[aria-expanded="true"] { color: var(--bridge-ink); }
 
-.about p {
+.mastpanel {
+  max-width: 640px;
+}
+
+.mastpanel p {
   margin: 8px 0 0;
   font-family: var(--serif);
   font-size: 16px;
@@ -146,9 +159,9 @@ a, button, input, summary { touch-action: manipulation; }
 
 .themetoggle:hover { color: var(--bridge-ink); }
 
-.about a { color: var(--ink); }
+.mastpanel a { color: var(--ink); }
 
-.about a:hover { color: var(--bridge-ink); }
+.mastpanel a:hover { color: var(--bridge-ink); }
 
 /* ---------- day strip ---------- */
 
@@ -354,6 +367,17 @@ a, button, input, summary { touch-action: manipulation; }
   line-height: 1.05;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+}
+
+.trow__name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.trow__name a:hover {
+  color: var(--bridge-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--bridge);
 }
 
 .trow__city {
