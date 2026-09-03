@@ -113,6 +113,8 @@
   </div>
 </header>
 
+<div class="ticker" id="ticker" aria-hidden="true" hidden></div>
+
 <nav class="daystrip" id="daystrip" aria-label="Choose a day"></nav>
 
 <div class="controls">
@@ -136,8 +138,8 @@
     </div>
     <div id="allfilmsList"></div>
   </section>
-  <p id="empty" class="empty" hidden>No screenings match, try another day or turn theaters back on.</p>
-  <p id="loaderror" class="empty" hidden>Couldn't load showtimes data. If you opened this file directly, serve the folder instead: <code>python3 -m http.server -d site</code></p>
+  <p id="empty" class="empty" hidden>Nothing on the marquee. Try another day, or turn some theaters back on. ✦</p>
+  <p id="loaderror" class="empty" hidden>The projector jammed: couldn't load showtimes data. If you opened this file directly, serve the folder instead: <code>python3 -m http.server -d site</code></p>
 </main>
 
 <footer class="colophon">
@@ -145,6 +147,7 @@
   <p id="sources"></p>
   <p>BayFilm doesn't sell anything and isn't affiliated with any theater</p>
   <p>2026</p>
+  <p class="colophon__signoff" aria-hidden="true">✦ SUPPORT LOCAL THEATERS ✦</p>
   <div class="colophon__ghost" aria-hidden="true">BAYFILM</div>
 </footer>
 

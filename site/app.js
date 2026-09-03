@@ -755,6 +755,36 @@ function syncHash() {
   history.replaceState(null, "", "#" + state.date + suffix);
 }
 
+// now-playing marquee under the masthead; decorative (aria-hidden), built once
+function buildTicker() {
+  const el = $("#ticker");
+  if (!el) return;
+  const today = isoToday();
+  const now = nowHHMM();
+  let prefix = "NOW PLAYING";
+  let items = state.data.screenings.filter(
+    (s) => s.date === today && s.time && s.time >= now);
+  if (items.length < 3) {
+    const nextDate = [...new Set(state.data.screenings.map((s) => s.date))]
+      .sort().find((d) => d > today);
+    if (nextDate) {
+      prefix = "COMING UP";
+      items = state.data.screenings.filter((s) => s.date === nextDate && s.time);
+    }
+  }
+  items = items.slice(0, 24);
+  if (!items.length) return;
+  const half = `${prefix} ✦ ` + items.map((s) =>
+    `${s.title} ${fmtTime(s.time)} ${SHORT_NAMES[s.theater] || ""}`.trim()
+  ).join(" ✦ ") + " ✦ ";
+  const track = document.createElement("div");
+  track.className = "ticker__track";
+  track.textContent = half + half; // two copies = seamless -50% loop
+  el.style.setProperty("--ticker-dur", Math.max(45, items.length * 5) + "s");
+  el.appendChild(track);
+  el.hidden = false;
+}
+
 function setStickyOffsets() {
   // sticky axis / hour headers pin just below the sticky day strip
   const strip = $("#daystrip");
@@ -810,6 +840,14 @@ async function init() {
     new Date(state.data.generated_at).toLocaleString("en-US", {
       month: "short", day: "numeric", hour: "numeric", minute: "2-digit",
     });
+
+  buildTicker();
+
+  console.log(
+    "%cBAYFILM",
+    "font: 800 22px 'Big Shoulders', sans-serif; color: #DB4B1F;",
+    "· the data lives at /data/showtimes.json · see more movies on real screens ✦"
+  );
 
   $("#sources").innerHTML =
     "Sources: " +

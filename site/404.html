@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BayFilm — missing reel</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,800&family=Archivo:wght@400;500&family=Spline+Sans+Mono:wght@500&family=Instrument+Serif&display=swap" rel="stylesheet">
+<script>
+  // set the theme before first paint to avoid a flash of the wrong scheme
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("bayfilm.theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") {
+      t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23DB4B1F'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='Arial Black' fill='%23FAFAF7'>B</text></svg>">
+<style>
+  .lost {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .lost__code {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(120px, 30vw, 340px);
+    line-height: 0.85;
+    color: var(--ink);
+    opacity: 0.09;
+    user-select: none;
+  }
+  .lost__line {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 21px;
+    color: var(--ink);
+  }
+  .lost__line a {
+    font-family: var(--mono);
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: var(--bridge);
+    text-underline-offset: 3px;
+  }
+  .lost__line a:hover { color: var(--bridge-ink); }
+</style>
+</head>
+<body>
+<main class="lost">
+  <div class="lost__code" aria-hidden="true">404</div>
+  <p class="lost__line">This reel is missing. <a href="/">☞ Back to the marquee</a></p>
+</main>
+</body>
+</html>
