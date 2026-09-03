@@ -760,6 +760,17 @@ function setStickyOffsets() {
   const strip = $("#daystrip");
   document.documentElement.style.setProperty(
     "--daystrip-h", (strip ? strip.offsetHeight : 0) + "px");
+  updateStuckShade();
+}
+
+// while the day strip is pinned, a solid cover extends above it so board
+// content can't peek out the top during mobile toolbar/overscroll shifts
+function updateStuckShade() {
+  const strip = $("#daystrip");
+  if (strip) {
+    // pinned position can land on a subpixel just above 0
+    strip.classList.toggle("is-stuck", strip.getBoundingClientRect().top <= 1);
+  }
 }
 
 function render() {
@@ -857,6 +868,7 @@ async function init() {
     requestAnimationFrame(() => {
       jumpTick = false;
       updateNowJump();
+      updateStuckShade();
     });
   }, { passive: true });
 

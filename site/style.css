@@ -12,7 +12,6 @@
   --edge: #22272B;       /* component outlines (= ink in light) */
   --shadow: #22272B;     /* hard offset shadows */
   --on-ink-soft: #B9BFB8; /* muted text on inverted (ink-bg) chips */
-  --grain-opacity: 0.035; /* film-grain overlay strength */
 
   --display: "Big Shoulders", "Arial Narrow", sans-serif;
   --body: "Archivo", system-ui, sans-serif;
@@ -33,7 +32,6 @@
   --edge: #565B5E;
   --shadow: #000000;
   --on-ink-soft: #4C5256;
-  --grain-opacity: 0.05;
 }
 
 * { box-sizing: border-box; }
@@ -167,7 +165,7 @@ a, button, input, summary { touch-action: manipulation; }
 
 /* ---------- day strip ---------- */
 
-/* z-scale: grain 50 > daystrip 40 > nowjump 30 > board axis 20 > timeline hour 10 */
+/* sticky z-scale: daystrip 40 > nowjump 30 > board axis 20 > timeline hour 10 */
 .daystrip {
   position: sticky;
   top: 0;
@@ -181,6 +179,13 @@ a, button, input, summary { touch-action: manipulation; }
   background: var(--fog-deep);
   padding: 0 max(20px, calc((100vw - 1180px) / 2));
   scrollbar-width: thin;
+}
+
+/* solid cover above the pinned strip (spread shadow — the strip's own
+   overflow-x would clip a ::before); only while stuck, so the masthead
+   isn't covered at the top of the page */
+.daystrip.is-stuck {
+  box-shadow: 0 -60px 0 60px var(--fog-deep);
 }
 
 .day {
@@ -642,13 +647,12 @@ a, button, input, summary { touch-action: manipulation; }
   border-radius: 2px;
   padding: 4px 9px;
   box-shadow: 1px 1px 0 var(--shadow);
-  transition: transform 120ms ease, box-shadow 120ms ease, rotate 120ms ease;
+  transition: transform 120ms ease, box-shadow 120ms ease;
 }
 
 .stub-link:hover .stub {
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0 var(--shadow);
-  rotate: 0deg;
 }
 
 .stub__time {
@@ -982,28 +986,6 @@ a, button, input, summary { touch-action: manipulation; }
   background-size: 100% 100%;
   color: var(--stub);
 }
-
-/* film-grain overlay: paper in light, projector grain in dark */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  pointer-events: none;
-  opacity: var(--grain-opacity);
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-/* hand-placed sticker tilts; hover straightens (desktop stubs) */
-.trow__lanes .stub-link:nth-of-type(4n+1) .stub { rotate: -0.5deg; }
-.trow__lanes .stub-link:nth-of-type(4n+2) .stub { rotate: 0.4deg; }
-.trow__lanes .stub-link:nth-of-type(4n+3) .stub { rotate: -0.3deg; }
-.trow__lanes .stub-link:nth-of-type(4n)   .stub { rotate: 0.55deg; }
-
-.tl .tl__row:nth-of-type(4n+1) .tl__thumb { rotate: -1.1deg; }
-.tl .tl__row:nth-of-type(4n+2) .tl__thumb { rotate: 0.9deg; }
-.tl .tl__row:nth-of-type(4n+3) .tl__thumb { rotate: -0.7deg; }
-.tl .tl__row:nth-of-type(4n)   .tl__thumb { rotate: 1.2deg; }
 
 /* projector-lamp pulse on the now markers */
 @keyframes lamp-pulse {
