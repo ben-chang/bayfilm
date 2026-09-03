@@ -165,7 +165,11 @@ a, button, input, summary { touch-action: manipulation; }
 
 /* ---------- day strip ---------- */
 
+/* sticky z-scale: daystrip 40 > nowjump 30 > board axis 20 > timeline hour 10 */
 .daystrip {
+  position: sticky;
+  top: 0;
+  z-index: 40;
   display: flex;
   gap: 0;
   overflow-x: auto;
@@ -268,14 +272,30 @@ a, button, input, summary { touch-action: manipulation; }
   font-weight: 600;
 }
 
+/* per-theater chips collapse behind the toggle at every width; the region
+   row stays visible as the primary filter */
 .chiprow {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-/* desktop: chips always visible, no toggle */
-.chiptoggle { display: none; }
+.chiprow.is-open { display: flex; }
+
+.chiptoggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  border: 1px solid var(--edge);
+  border-radius: 2px;
+  background: var(--stub);
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chiptoggle__arrow { color: var(--bridge-ink); }
 
 .chip {
   border: 1px solid var(--edge);
@@ -332,9 +352,19 @@ a, button, input, summary { touch-action: manipulation; }
   padding: 10px 20px 40px;
 }
 
+/* the sticky bar spans full width so lane labels can't scroll through the
+   label gutter; the ticks live in an inner box aligned with the lanes */
 .axis {
-  position: relative;
+  position: sticky;
+  top: var(--daystrip-h, 0px);
+  z-index: 20;
+  background: var(--fog);
   height: 22px;
+}
+
+.axis__inner {
+  position: relative;
+  height: 100%;
   margin-left: 168px;
   border-bottom: 1px solid var(--edge);
 }
@@ -409,6 +439,18 @@ a, button, input, summary { touch-action: manipulation; }
   z-index: 1;
 }
 
+/* desktop lanes group by region; the tag sits in the label column above the
+   first theater of each region so the grid runs unbroken under the axis */
+.trow__regiontag {
+  margin-bottom: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
 .stub-link.is-past { opacity: 0.42; }
 
 .pillgroup.is-past { opacity: 0.42; }
@@ -425,16 +467,68 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .tl__hour {
+  position: sticky;
+  top: var(--daystrip-h, 0px);
+  z-index: 10;
+  background: var(--fog);
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 14px;
+  padding: 4px 0;
   font-family: var(--mono);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
 }
+
+/* fold for today's already-finished screenings */
+.tl__earlier {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 10px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+.tl__earlier::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px dashed var(--hairline);
+}
+
+.tl__earlier:hover { color: var(--ink); }
+
+/* floating jump-to-now (mobile timeline, today only) */
+.nowjump {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 30;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--edge);
+  border-radius: 2px;
+  background: var(--ink);
+  color: var(--fog);
+  box-shadow: 3px 3px 0 var(--shadow);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.nowjump[hidden] { display: none; }
 
 .tl__hour::after {
   content: "";
@@ -837,26 +931,6 @@ a, button, input, summary { touch-action: manipulation; }
   .chip { padding: 8px 12px; }
 
   .viewtoggle__btn { padding: 8px 16px; }
-
-  /* theater chips collapse behind a dropdown toggle */
-  .chiptoggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    align-self: flex-start;
-    border: 1px solid var(--edge);
-    border-radius: 2px;
-    background: var(--stub);
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .chiptoggle__arrow { color: var(--bridge-ink); }
-
-  .chiprow { display: none; }
-
-  .chiprow.is-open { display: flex; }
 
   /* thumb + title share the first row; showtimes wrap below */
   .film__head { flex: 1; min-width: 200px; }

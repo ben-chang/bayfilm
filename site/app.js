@@ -8,12 +8,16 @@ const state = {
   off: new Set(),        // disabled theater ids
   view: "board",         // board | films | all
   query: "",
-  chipsOpen: false,      // mobile: theater list expanded
+  chipsOpen: false,      // theater list expanded (collapsed by default)
+  scrollToNow: false,    // one-shot: scroll the mobile timeline to "now"
 };
 
 const LANE_H = 40;
 const STUB_EST_PX = 230;  // rough rendered stub width, for lane collision
 const STORAGE_KEY = "bayfilm.hidden";
+
+// board lanes group under these region headers, in this order
+const REGION_ORDER = ["SF", "East Bay", "North Bay", "Peninsula", "South Bay"];
 
 // compact venue tags for the mobile timeline
 const SHORT_NAMES = {
@@ -169,6 +173,7 @@ function renderDaystrip() {
       `<span class="day__count">${counts[iso]} shows</span>`;
     btn.addEventListener("click", () => {
       state.date = iso;
+      state.scrollToNow = iso === isoToday();
       if (state.view === "all") state.view = "board";
       syncHash();
       render();
@@ -267,8 +272,10 @@ function renderBoard() {
 
   if (!desktopMq) {
     renderMobileTimeline(board, shows, isToday, nowMin);
+    setupNowJump(board, isToday);
     return;
   }
+  state.scrollToNow = false;
 
   const timed = shows.filter((s) => s.time);
   let startH = 12;
@@ -286,28 +293,43 @@ function renderBoard() {
 
   const axis = document.createElement("div");
   axis.className = "axis";
+  const axisInner = document.createElement("div");
+  axisInner.className = "axis__inner";
+  axis.appendChild(axisInner);
   const step = endH - startH > 10 ? 2 : 1;
   for (let h = startH; h <= endH; h += step) {
     const tick = document.createElement("span");
     tick.className = "axis__tick";
     tick.style.left = (((h - startH) * 60) / span) * 100 + "%";
     tick.textContent = fmtHour(h);
-    axis.appendChild(tick);
+    axisInner.appendChild(tick);
   }
   board.appendChild(axis);
 
-  for (const [id, t] of Object.entries(state.data.theaters)) {
+  // lanes group by region (stable sort keeps model order within a region)
+  const regionRank = (r) =>
+    REGION_ORDER.indexOf(r) === -1 ? REGION_ORDER.length : REGION_ORDER.indexOf(r);
+  const ordered = Object.entries(state.data.theaters)
+    .sort((a, b) => regionRank(a[1].region) - regionRank(b[1].region));
+
+  let lastRegion = null;
+  for (const [id, t] of ordered) {
     if (state.off.has(id)) continue;
     const mine = shows
       .filter((s) => s.theater === id)
       .sort((a, b) => (a.time || "").localeCompare(b.time || ""));
     if (!mine.length) continue;
 
+    // region tag rides in the label column so the grid stays continuous
+    const regionTag = t.region !== lastRegion
+      ? `<div class="trow__regiontag">${t.region}</div>` : "";
+    lastRegion = t.region;
+
     const stale = staleLabel(t);
     const row = document.createElement("div");
     row.className = "trow";
     row.innerHTML =
-      `<div class="trow__label"><div class="trow__name">` +
+      `<div class="trow__label">` + regionTag + `<div class="trow__name">` +
       `<a href="${escapeHtml(t.url)}" target="_blank" rel="noopener">${t.name}</a></div>` +
       `<div class="trow__city">${t.city}</div>` +
       (stale ? `<div class="trow__stale">${stale}</div>` : "") +
@@ -381,26 +403,28 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
       return label ? `${SHORT_NAMES[s.theater] || t.name} ${label}` : null;
     }).filter(Boolean))];
 
-  const parts = [];
-  if (staleNotes.length) {
-    parts.push(`<p class="tl__stale">${staleNotes.join(" · ")}</p>`);
-  }
+  // rows before "now" collect separately so today can fold them away
+  const upcoming = [];
+  const earlier = [];
+  let earlierCount = 0;
   let lastHour = null;
   let nowPlaced = !isToday;
   for (const s of sorted) {
     const m = s.time ? minutes(s.time) : null;
     if (!nowPlaced && m !== null && m >= nowMin) {
-      parts.push(nowDividerHtml(nowMin));
       nowPlaced = true;
+      lastHour = null; // first upcoming hour repeats its header after the fold
     }
+    const bucket = nowPlaced ? upcoming : earlier;
     const hour = m === null ? "TBA" : fmtHour(Math.floor(m / 60)).toUpperCase();
     if (hour !== lastHour) {
-      parts.push(`<div class="tl__hour">${hour === "TBA" ? "TBA" : hour + "M"}</div>`);
+      bucket.push(`<div class="tl__hour">${hour === "TBA" ? "TBA" : hour + "M"}</div>`);
       lastHour = hour;
     }
     const t = state.data.theaters[s.theater];
     const past = isToday && m !== null && m < nowMin;
-    parts.push(
+    if (!nowPlaced) earlierCount++;
+    bucket.push(
       `<a class="tl__row${past ? " is-past" : ""}" href="${s.url || "#"}"` +
       (isToday && s.time ? ` data-time="${s.time}"` : "") +
       ` target="_blank" rel="noopener">` +
@@ -411,8 +435,70 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
       `<span class="tl__venue">${SHORT_NAMES[s.theater] || t.name}</span>` +
       `</a>`);
   }
-  if (!nowPlaced) parts.push(nowDividerHtml(nowMin));
+
+  const parts = [];
+  if (staleNotes.length) {
+    parts.push(`<p class="tl__stale">${staleNotes.join(" · ")}</p>`);
+  }
+  if (earlier.length && earlierCount > 5) {
+    parts.push(
+      `<button class="tl__earlier" aria-expanded="false" data-count="${earlierCount}">` +
+      `▸ ${earlierCount} earlier screenings</button>`,
+      `<div class="tl__past" hidden>${earlier.join("")}</div>`);
+  } else {
+    parts.push(...earlier);
+  }
+  // the divider stays outside the fold so updateBoardClock can slide it
+  if (isToday) parts.push(nowDividerHtml(nowMin));
+  parts.push(...upcoming);
   board.innerHTML = `<div class="tl">${parts.join("")}</div>`;
+
+  const fold = board.querySelector(".tl__earlier");
+  if (fold) {
+    fold.addEventListener("click", () => {
+      const wrap = board.querySelector(".tl__past");
+      wrap.hidden = !wrap.hidden;
+      fold.setAttribute("aria-expanded", String(!wrap.hidden));
+      fold.textContent =
+        `${wrap.hidden ? "▸" : "▾"} ${fold.dataset.count} earlier screenings`;
+    });
+  }
+}
+
+// floating "now" button + one-shot auto-scroll for today's mobile timeline
+let nowDivider = null;
+
+function updateNowJump() {
+  const jump = $("#nowJump");
+  if (!jump) return;
+  if (state.view !== "board" || !nowDivider || !nowDivider.isConnected) {
+    jump.hidden = true;
+    return;
+  }
+  const r = nowDivider.getBoundingClientRect();
+  const onScreen = r.bottom > 0 && r.top < window.innerHeight;
+  jump.hidden = onScreen;
+  if (!onScreen) jump.textContent = r.top <= 0 ? "now ↑" : "now ↓";
+}
+
+function setupNowJump(board, isToday) {
+  const jump = $("#nowJump");
+  if (!jump) return;
+  nowDivider = isToday ? board.querySelector(".tl__now") : null;
+  if (!nowDivider) {
+    jump.hidden = true;
+    state.scrollToNow = false;
+    return;
+  }
+  const scrollNow = (smooth) => nowDivider.scrollIntoView({
+    block: "center",
+    behavior: smooth && !matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "smooth" : "auto",
+  });
+  jump.onclick = () => scrollNow(true);
+  if (state.scrollToNow) scrollNow(false);
+  state.scrollToNow = false;
+  updateNowJump();
 }
 
 // Nudge the now-line and past-dimming along without rebuilding the board —
@@ -671,9 +757,18 @@ function syncHash() {
   history.replaceState(null, "", "#" + state.date + suffix);
 }
 
+function setStickyOffsets() {
+  // sticky axis / hour headers pin just below the sticky day strip
+  const strip = $("#daystrip");
+  document.documentElement.style.setProperty(
+    "--daystrip-h", (strip ? strip.offsetHeight : 0) + "px");
+}
+
 function render() {
   renderDaystrip();
   renderChips();
+  setStickyOffsets();
+  $("#nowJump").hidden = true; // board render re-shows it when applicable
   $("#board").hidden = state.view !== "board";
   $("#films").hidden = state.view !== "films";
   $("#allfilms").hidden = state.view !== "all";
@@ -742,6 +837,7 @@ async function init() {
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
+      setStickyOffsets();
       if (state.view === "board") renderBoard();
     }, 150);
   });
@@ -749,6 +845,18 @@ async function init() {
   // keep the now-line and past-dimming honest while the tab stays open
   setInterval(updateBoardClock, 60 * 1000);
 
+  // show/hide the floating "now" button as the divider leaves the viewport
+  let jumpTick = false;
+  window.addEventListener("scroll", () => {
+    if (jumpTick) return;
+    jumpTick = true;
+    requestAnimationFrame(() => {
+      jumpTick = false;
+      updateNowJump();
+    });
+  }, { passive: true });
+
+  state.scrollToNow = state.date === today;
   render();
 }
 

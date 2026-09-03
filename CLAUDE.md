@@ -118,9 +118,19 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
 - **Never rebuild board DOM on a timer** — the minute tick goes through
   `updateBoardClock()` which moves the now-line/divider and toggles
   `is-past` in place. Full re-renders mid-scroll kill mobile momentum
-  scrolling (this was a real user-reported bug).
+  scrolling (this was a real user-reported bug). The mobile "earlier
+  screenings" fold is render-time only for the same reason.
+- Sticky chrome (day strip, desktop axis, mobile hour headers) pins via
+  `--daystrip-h`, set from JS in `setStickyOffsets()` on render/resize;
+  z-scale is documented at the `.daystrip` rule (40/30/20/10). The floating
+  `#nowJump` button toggles from a rAF-throttled scroll listener (an
+  IntersectionObserver never fired under headless virtual-time, so it was
+  swapped out — and don't verify it with `--dump-dom`, which runs no render
+  frames; use `--screenshot`).
 - Mobile (<761px) board is a chronological timeline (`renderMobileTimeline`),
-  not the lane grid; theater chips collapse behind a dropdown; venue tags
+  not the lane grid; theater chips collapse behind a dropdown at every width
+  (the region row is the primary filter); desktop lanes group under
+  `REGION_ORDER` headers; venue tags
   come from `SHORT_NAMES` in `app.js` (add new theaters there too).
 - Type floor is 12px; inputs ≥16px (iOS zoom); tap targets ≥44px on mobile.
 

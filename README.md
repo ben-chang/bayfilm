@@ -155,15 +155,21 @@ bayfilm/
 - **Day strip** — the next 14 days that have screenings, with show counts.
 - **Region + theater filters** — Everywhere/SF/East Bay/Peninsula/North Bay
   quick toggles plus per-theater chips; selections persist in localStorage.
-  On mobile the chips collapse behind a "Theaters · N of M" dropdown.
-- **Board view (desktop)** — one row per theater; each screening is a stub
-  positioned on a shared time axis that always runs to 1am. Overlapping
-  stubs stack into lanes. On today's board, past showtimes are dimmed and an
-  orange line marks the current time (updated in place each minute — no
-  DOM rebuild, so scrolling is never interrupted).
+  The per-theater chips collapse behind a "Theaters · N of M" dropdown at
+  every width; the region row stays visible as the primary filter.
+- **Board view (desktop)** — one row per theater, grouped under region
+  headers (SF, East Bay, …); each screening is a stub positioned on a
+  shared time axis that always runs to 1am. The day strip and time axis
+  stay pinned while you scroll the lanes. Overlapping stubs stack into
+  lanes. On today's board, past showtimes are dimmed and an orange line
+  marks the current time (updated in place each minute — no DOM rebuild,
+  so scrolling is never interrupted).
 - **Board view (mobile, below 761px)** — a chronological timeline for the
-  day: hour markers, one row per screening (time / title / venue tag), and
-  an orange "now" divider that slides forward.
+  day: sticky hour markers, one row per screening (time / title / venue
+  tag), and an orange "now" divider that slides forward. Today's view
+  opens scrolled to "now", folds finished screenings behind an "N earlier
+  screenings" toggle, and shows a floating "now" button whenever the
+  divider is off-screen.
 - **By-film view** — the same day grouped by title, with poster thumbnails,
   blurbs, and Letterboxd/IMDb links.
 - **All films view** — every upcoming film across dates with a search box
