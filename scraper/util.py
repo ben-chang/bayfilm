@@ -36,14 +36,20 @@ def fetch_json(url: str, timeout: int = 30) -> dict:
     return resp.json()
 
 
+def post_json(url: str, body: dict, timeout: int = 30) -> dict:
+    resp = requests.post(url, json=body, headers={"User-Agent": USER_AGENT}, timeout=timeout)
+    resp.raise_for_status()
+    return resp.json()
+
+
 def parse_time_12h(text: str) -> str | None:
-    """'6:00 pm' / '7 PM' / '11:30am' -> 'HH:MM' 24-hour."""
-    m = re.search(r"(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)", text, re.I)
+    """'6:00 pm' / '7 PM' / '11:30am' / '12:30p' -> 'HH:MM' 24-hour."""
+    m = re.search(r"(\d{1,2})(?::(\d{2}))?\s*([ap])\.?m?\.?\b", text, re.I)
     if not m:
         return None
     hour = int(m.group(1)) % 12
     minute = int(m.group(2) or 0)
-    if m.group(3).lower().startswith("p"):
+    if m.group(3).lower() == "p":
         hour += 12
     return f"{hour:02d}:{minute:02d}"
 
@@ -116,3 +122,21 @@ def expand_day_tokens(token: str, today: date, horizon: int = 7) -> list[date]:
 
 def clean_text(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
+
+
+_SMALL_WORDS = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "or", "the", "to", "vs", "with"}
+
+
+def uncaps(s: str) -> str:
+    """Title-case ALL-CAPS chain-site titles ('SPIDER MAN BRAND NEW DAY').
+    Leaves mixed-case input alone."""
+    if not s.isupper():
+        return s
+    words = s.lower().split()
+    out = []
+    for i, w in enumerate(words):
+        if 0 < i < len(words) - 1 and w.rstrip(".") in _SMALL_WORDS:
+            out.append(w)
+        else:
+            out.append(w[:1].upper() + w[1:])
+    return " ".join(out)

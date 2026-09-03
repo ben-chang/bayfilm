@@ -73,16 +73,25 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
   shows a stale badge past 24h). `--only X` re-runs one scraper and keeps
   everyone else's data.
 - **BAMPFA and Stanford 403 on GitHub Actions** (datacenter IP blocks) —
-  expected; they refresh only from local (residential) scrapes. Vogue is
-  dead/unreachable; Rafael is Cloudflare-blocked; New Parkway and Rialto
-  Elmwood/Cerrito are JS-only with no accessible feed.
+  expected; they refresh only from local (residential) scrapes. Fandango
+  (Marina/Presidio) and Cinemark (Santana Row) may be blocked the same way —
+  watch the first CI runs. New Parkway and Rialto Elmwood/Cerrito are
+  JS-only with no accessible feed.
 - Per-theater quirks (details in README "Scraper notes"): bare times are
   10:00–11:59=AM / <10=PM; Grand Lake day-of-week expansion; Stanford year
   must come from the calendar banner (never `infer_year` — past dates jump a
   year) and its HTML has unclosed `<td>`s (use `recursive=False`); Alamo
   `superTitle` can be a dict, COLLECTION badges dropped; BAMPFA filters to
   "Film" tag, images live in popup twins matched by `data-id`; Veezi dates
-  lack a year.
+  (Balboa, 4 Star, Vogue) lack a year.
+- Newer platforms (2026-09): Landmark ×3 + Vine = Webedia API (`webedia.py`;
+  Landmark's CDN caches POSTs loosely — always request all three IDs in one
+  memoized call); Marina/Presidio = Fandango napi (`fandango.py`, needs
+  browsery headers or the WAF 403s); Rafael + Sequoia share one
+  cinema.cafilm.org crawl (`cafilm.py`, venue codes RAF*/Sequoia*, memoized);
+  Cinelounge Tiburon = GraphQL (`site-id: 173` header, UTC times →
+  Pacific); CineLux/Cinemark/Pruneyard = server-rendered day pages looped
+  7 days. ALL-CAPS chain titles go through `util.uncaps()`.
 - Lark feed: `prod1.agileticketing.net/websales/feed.ashx?guid=fb90deda-…&showslist=true&format=json`.
 - Format badges (`70mm`, `live score`, `Q&A`, …) are detected from titles in
   `FORMAT_PATTERNS` (`scraper/main.py`) and stored on `Screening.note`.
@@ -117,8 +126,8 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
 
 ## Deployment
 
-- GitHub Pages via `.github/workflows/scrape.yml`: on push + every 3 days
-  (`0 13 */3 * *`). Custom domain bayfilm.net is set in Pages settings (the
+- GitHub Pages via `.github/workflows/scrape.yml`: on push + nightly
+  (`0 13 * * *`). Custom domain bayfilm.net is set in Pages settings (the
   github.io URL 301s to it — use bayfilm.net when curling live data).
 - **Never "re-run" a failed Pages run** — the retry sees two `github-pages`
   artifacts and fails. Trigger a fresh run instead (`gh workflow run scrape.yml`).

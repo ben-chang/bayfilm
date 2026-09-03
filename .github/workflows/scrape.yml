@@ -2,7 +2,7 @@ name: Scrape showtimes and deploy
 
 on:
   schedule:
-    - cron: "0 13 */3 * *"   # every 3 days at 6am Pacific (13:00 UTC during PDT)
+    - cron: "0 13 * * *"   # nightly at 6am Pacific (13:00 UTC during PDT)
   push:
     branches: [main]
   workflow_dispatch:

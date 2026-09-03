@@ -10,7 +10,7 @@ class Theater:
     name: str
     city: str
     url: str
-    region: str = "SF"  # SF | East Bay | North Bay | Peninsula
+    region: str = "SF"  # SF | East Bay | North Bay | Peninsula | South Bay
 
 
 @dataclass
@@ -38,9 +38,23 @@ THEATERS: dict[str, Theater] = {
         Theater("balboa", "Balboa Theater", "San Francisco", "https://www.balboamovies.com", "SF"),
         Theater("4star", "4 Star Theater", "San Francisco", "https://www.4-star-movies.com", "SF"),
         Theater("newmission", "Alamo Drafthouse New Mission", "San Francisco", "https://drafthouse.com/sf", "SF"),
+        Theater("alamomv", "Alamo Drafthouse Mountain View", "Mountain View", "https://drafthouse.com/sf", "Peninsula"),
         Theater("bampfa", "BAMPFA", "Berkeley", "https://bampfa.org", "East Bay"),
         Theater("grandlake", "Grand Lake Theatre", "Oakland", "https://renaissancerialto.com", "East Bay"),
         Theater("stanford", "Stanford Theatre", "Palo Alto", "https://stanfordtheatre.org", "Peninsula"),
+        Theater("vogue", "Vogue Theater", "San Francisco", "https://www.voguemovies.com", "SF"),
+        Theater("marina", "Marina Theatre", "San Francisco", "https://www.lntsf.com", "SF"),
+        Theater("presidio", "Presidio Theatre", "San Francisco", "https://www.lntsf.com", "SF"),
         Theater("lark", "Lark Theater", "Larkspur", "https://larktheater.net", "North Bay"),
+        Theater("rafael", "Smith Rafael Film Center", "San Rafael", "https://cinema.cafilm.org", "North Bay"),
+        Theater("sequoia", "Sequoia Cinema", "Mill Valley", "https://cinema.cafilm.org", "North Bay"),
+        Theater("cinelounge", "Cinelounge Tiburon", "Tiburon", "https://www.cineloungefilm.com", "North Bay"),
+        Theater("vine", "Vine Cinema & Alehouse", "Livermore", "https://www.vinecinema.com", "East Bay"),
+        Theater("operaplaza", "Landmark Opera Plaza", "San Francisco", "https://www.landmarktheatres.com/theaters/x00u8-landmark-opera-plaza-cinema-san-francisco/", "SF"),
+        Theater("piedmont", "Landmark Piedmont", "Oakland", "https://www.landmarktheatres.com/theaters/x00y7-landmark-piedmont-theatre-oakland/", "East Bay"),
+        Theater("aquarius", "Landmark Aquarius", "Palo Alto", "https://www.landmarktheatres.com/theaters/x00tm-landmark-aquarius-theatre-palo-alto/", "Peninsula"),
+        Theater("almaden", "CineLux Almaden", "San Jose", "https://www.cineluxtheatres.com/cinelux-almaden-cafe-lounge", "South Bay"),
+        Theater("pruneyard", "Pruneyard Cinemas", "Campbell", "https://www.pruneyardcinemas.com", "South Bay"),
+        Theater("santanarow", "CinéArts Santana Row", "San Jose", "https://www.cinemark.com/theatres/ca-san-jose/cinemark-cinearts-santana-row", "South Bay"),
     ]
 }

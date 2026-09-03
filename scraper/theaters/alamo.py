@@ -1,17 +1,16 @@
-"""Alamo Drafthouse New Mission (San Francisco) — official JSON schedule API."""
+"""Alamo Drafthouse (SF market: New Mission, Mountain View) — official JSON schedule API."""
 from __future__ import annotations
 
 from ..model import Screening
 from ..util import fetch_json
 
 API_URL = "https://drafthouse.com/s/mother/v2/schedule/market/sf"
-CINEMA_SLUG = "new-mission"
 
 
-def scrape() -> list[Screening]:
+def scrape(theater_id: str, cinema_slug: str) -> list[Screening]:
     data = fetch_json(API_URL)["data"]
     cinemas = {c["id"]: c for m in data["market"] for c in m["cinemas"]}
-    cinema_ids = {cid for cid, c in cinemas.items() if c["slug"] == CINEMA_SLUG}
+    cinema_ids = {cid for cid, c in cinemas.items() if c["slug"] == cinema_slug}
 
     titles: dict[str, str] = {}
     descs: dict[str, str | None] = {}
@@ -46,7 +45,7 @@ def scrape() -> list[Screening]:
         date, _, clock = show_time.partition("T")
         screenings.append(
             Screening(
-                "newmission",
+                theater_id,
                 title,
                 date or s.get("businessDateClt", ""),
                 clock[:5] or None,

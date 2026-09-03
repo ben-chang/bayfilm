@@ -8,8 +8,8 @@ Francisco Bay Area independent movie theaters.
 BayFilm is an aggregation website for San Francisco Bay Area independent movie theaters.
 
 Every night, BayFilm reads the calendars that theaters publish on
-their own websites, from San Francisco to Berkeley, Oakland, Palo Alto, and
-Larkspur, and lays the showtimes out side by side. You can see the whole
+their own websites — from San Francisco across the East Bay, Marin, the
+Peninsula, and the South Bay — and lays the showtimes out side by side. You can see the whole
 day at a glance on a time grid, look up a specific film and every place it's
 playing, search for special presentations like 70mm or live scores, and jump
 straight to each theater's box office to buy tickets. It works in light or
@@ -40,16 +40,28 @@ theater calendars ──> scraper/ ──> site/data/showtimes.json ──> site
 | Roxie Theater | San Francisco | roxie.com calendar (server-rendered HTML) |
 | Balboa Theater | San Francisco | Veezi ticketing feed (HTML) |
 | 4 Star Theater | San Francisco | Veezi ticketing feed (HTML) |
+| Vogue Theater | San Francisco | Veezi ticketing feed (HTML) |
 | Alamo Drafthouse New Mission | San Francisco | drafthouse.com JSON schedule API |
+| Alamo Drafthouse Mountain View | Mountain View | drafthouse.com JSON schedule API (same SF-market feed) |
+| Marina Theatre | San Francisco | Fandango napi JSON (lntsf.com has no showtimes) |
+| Presidio Theatre | San Francisco | Fandango napi JSON (lntsf.com has no showtimes) |
+| Landmark Opera Plaza | San Francisco | landmarktheatres.com Boxoffice/Webedia JSON API |
+| Landmark Piedmont | Oakland | landmarktheatres.com Boxoffice/Webedia JSON API |
+| Landmark Aquarius | Palo Alto | landmarktheatres.com Boxoffice/Webedia JSON API |
 | BAMPFA | Berkeley | bampfa.org calendar (HTML, "Film" events only) |
 | Grand Lake Theatre | Oakland | renaissancerialto.com homepage (HTML) |
+| Vine Cinema & Alehouse | Livermore | vinecinema.com Boxoffice/Webedia JSON API |
 | Stanford Theatre | Palo Alto | stanfordtheatre.org festival calendars (HTML) |
 | Lark Theater | Larkspur | Agile Ticketing public JSON feed |
+| Smith Rafael Film Center | San Rafael | cinema.cafilm.org film pages (HTML, shared with Sequoia) |
+| Sequoia Cinema | Mill Valley | cinema.cafilm.org film pages (HTML, shared with Rafael) |
+| Cinelounge Tiburon | Tiburon | cineloungefilm.com GraphQL API (Indy Cinema Group) |
+| CineLux Almaden | San Jose | cineluxtheatres.com day pages (server-rendered HTML) |
+| Pruneyard Cinemas | Campbell | pruneyardcinemas.com nowplaying partial (Theater Toolkit HTML) |
+| CinéArts Santana Row | San Jose | cinemark.com theater day pages (server-rendered HTML) |
 
-**Not covered (yet):** Vogue (site was unreachable when built — may have
-closed), Smith Rafael Film Center (Cloudflare-blocked to scripts), New
-Parkway (JS-only app with no accessible feed), Rialto Cinemas
-Elmwood/Cerrito (showtimes JS-injected, no accessible feed).
+**Not covered (yet):** New Parkway (JS-only app with no accessible feed),
+Rialto Cinemas Elmwood/Cerrito (showtimes JS-injected, no accessible feed).
 
 ## Quick start
 
@@ -191,8 +203,42 @@ Things the parsers rely on, so you know where to look when one breaks:
 - **BAMPFA** lists museum events alongside films; only events tagged "Film"
   are kept. Current and next month are both fetched. Event images hide in a
   popup twin of each calendar entry, matched by ID.
-- **Veezi** (Balboa, 4 Star) dates come as "Wednesday 2, September" with no
-  year; the scraper infers the closest sensible year.
+- **Veezi** (Balboa, 4 Star, Vogue) dates come as "Wednesday 2, September"
+  with no year; the scraper infers the closest sensible year.
+- **Webedia/Boxoffice API** (Landmark ×3, Vine) — `POST /api/gatsby-source-boxofficeapi/schedule`
+  then `GET …/movies?ids=…` on the theater's own domain. Landmark's CDN
+  caches schedule POSTs loosely across differing bodies, so the scraper
+  always requests all three Landmark IDs in one call (memoized) and slices
+  per theater. Theater IDs must be UPPERCASE (`X00U8`/`X00Y7`/`X00TM`;
+  Vine `X018Q`). `startsAt` is naive local Pacific. Display titles are
+  editorialized ("EMPIRE WEEK…: Star Wars…"); `originalTitle` is substituted
+  only when the display title contains it (and a trailing "(originalTitle)"
+  parenthetical is stripped — "Hope (Hopeu)" → "Hope"), so foreign-language
+  originals aren't swapped in.
+- **Fandango napi** (Marina, Presidio — lntsf.com publishes no showtimes):
+  `theaterCalendar/{tid}` for dates, then `theaterMovieShowtimes/{tid}?startDate=`
+  per day (tids `AAUVR`/`AACFS`). The WAF 403s bare requests — the scraper
+  sends Referer/X-Requested-With/Accept-Language. Titles carry a "(2026)"
+  year suffix (stripped). Possibly datacenter-blocked on Actions; the
+  stale-fallback covers it.
+- **CAFilm** (Smith Rafael + Sequoia share cinema.cafilm.org): `/schedule`
+  enumerates film slugs, each `/film/{slug}` page has every showing with an
+  explicit `cal_date`, AM/PM time button, and per-showing venue code
+  (`RAF1-3` vs `Sequoia1-2` — one film can play both houses). One crawl
+  (~26 pages, memoized) serves both theaters. The old Cloudflare block on
+  rafaelfilm.cafilm.org is gone; never fetch tix.cafilm.org (Imperva).
+- **Cinelounge Tiburon** — public GraphQL at cineloungefilm.com/graphql with
+  `site-id: 173` + `client-type: consumer` headers; `showingsForDate` per
+  date from `datesWithShowing`. Showtime `time` is UTC and is converted to
+  Pacific; showings crossing midnight UTC are deduped by id.
+- **CineLux** (Almaden) and **Cinemark** (CinéArts Santana Row) are
+  server-rendered day pages (`?date=` / `?showDate=`), looped 7 days out.
+  Cinemark date+time come from the ticket link's `Showtime=` ISO param;
+  it's Cloudflare-fronted so may 403 from Actions (stale-fallback).
+- **Pruneyard** (Theater Toolkit platform) — `/theater/nowplaying?locationKey=Pruneyard&date=M/D/YYYY`
+  returns an HTML partial per day; ticket URLs are parsed out of button
+  `onclick` handlers. CineLux/Pruneyard titles arrive ALL-CAPS and go
+  through `util.uncaps()`.
 
 Debugging one parser without re-scraping everything:
 
@@ -219,7 +265,7 @@ the mobile timeline (it falls back to the full name).
 
 The live site is GitHub Pages behind the custom domain **bayfilm.net** (set
 in the repo's Pages settings; the github.io URL 301s there).
-`.github/workflows/scrape.yml` re-scrapes every 3 days at 6am Pacific (and
+`.github/workflows/scrape.yml` re-scrapes nightly at 6am Pacific (and
 on every push) and publishes `site/`. To reproduce the setup: push to
 GitHub, set Pages → Source → "GitHub Actions", and add a `TMDB_API_KEY`
 repository secret for poster lookups.
