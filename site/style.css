@@ -540,9 +540,26 @@ a, button, input, summary { touch-action: manipulation; }
   display: flex;
   align-items: baseline;
   gap: 12px;
-  padding: 15px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--fog-deep);
   text-decoration: none;
+}
+
+/* poster thumb rides between time and title; empty box when no art */
+.tl__thumb {
+  flex: 0 0 32px;
+  align-self: center;
+  height: 48px;
+  background: var(--fog-deep);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.tl__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tl__row.is-past { opacity: 0.42; }

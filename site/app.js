@@ -9,7 +9,6 @@ const state = {
   view: "board",         // board | films | all
   query: "",
   chipsOpen: false,      // theater list expanded (collapsed by default)
-  scrollToNow: false,    // one-shot: scroll the mobile timeline to "now"
 };
 
 const LANE_H = 40;
@@ -173,7 +172,6 @@ function renderDaystrip() {
       `<span class="day__count">${counts[iso]} shows</span>`;
     btn.addEventListener("click", () => {
       state.date = iso;
-      state.scrollToNow = iso === isoToday();
       if (state.view === "all") state.view = "board";
       syncHash();
       render();
@@ -275,7 +273,6 @@ function renderBoard() {
     setupNowJump(board, isToday);
     return;
   }
-  state.scrollToNow = false;
 
   const timed = shows.filter((s) => s.time);
   let startH = 12;
@@ -424,11 +421,16 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
     const t = state.data.theaters[s.theater];
     const past = isToday && m !== null && m < nowMin;
     if (!nowPlaced) earlierCount++;
+    const img = (state.data.films[s.title.toLowerCase()] || {}).img;
     bucket.push(
       `<a class="tl__row${past ? " is-past" : ""}" href="${s.url || "#"}"` +
       (isToday && s.time ? ` data-time="${s.time}"` : "") +
       ` target="_blank" rel="noopener">` +
       `<span class="tl__time">${fmtTime(s.time)}</span>` +
+      `<span class="tl__thumb">` +
+      (img ? `<img src="${img.replace(/"/g, "&quot;")}" alt="" loading="lazy"` +
+             ` decoding="async" onerror="this.remove()">` : "") +
+      `</span>` +
       `<span class="tl__title">${escapeHtml(s.title)}` +
       (s.note ? ` <span class="fbadge">${escapeHtml(s.note)}</span>` : "") +
       `</span>` +
@@ -487,17 +489,13 @@ function setupNowJump(board, isToday) {
   nowDivider = isToday ? board.querySelector(".tl__now") : null;
   if (!nowDivider) {
     jump.hidden = true;
-    state.scrollToNow = false;
     return;
   }
-  const scrollNow = (smooth) => nowDivider.scrollIntoView({
+  jump.onclick = () => nowDivider.scrollIntoView({
     block: "center",
-    behavior: smooth && !matchMedia("(prefers-reduced-motion: reduce)").matches
-      ? "smooth" : "auto",
+    behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "auto" : "smooth",
   });
-  jump.onclick = () => scrollNow(true);
-  if (state.scrollToNow) scrollNow(false);
-  state.scrollToNow = false;
   updateNowJump();
 }
 
@@ -856,7 +854,6 @@ async function init() {
     });
   }, { passive: true });
 
-  state.scrollToNow = state.date === today;
   render();
 }
 
