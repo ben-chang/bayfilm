@@ -994,33 +994,6 @@ body::after {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* now-playing marquee ticker */
-.ticker {
-  overflow: hidden;
-  background: var(--fog-deep);
-  border-bottom: 1px solid var(--edge);
-}
-
-.ticker__track {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 7px 0;
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink);
-  animation: ticker-scroll var(--ticker-dur, 90s) linear infinite;
-  will-change: transform;
-}
-
-.ticker:hover .ticker__track { animation-play-state: paused; }
-
-@keyframes ticker-scroll {
-  to { transform: translateX(-50%); }
-}
-
 /* hand-placed sticker tilts; hover straightens (desktop stubs) */
 .trow__lanes .stub-link:nth-of-type(4n+1) .stub { rotate: -0.5deg; }
 .trow__lanes .stub-link:nth-of-type(4n+2) .stub { rotate: 0.4deg; }
