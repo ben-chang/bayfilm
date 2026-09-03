@@ -74,9 +74,9 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
   everyone else's data.
 - **BAMPFA and Stanford 403 on GitHub Actions** (datacenter IP blocks) —
   expected; they refresh only from local (residential) scrapes. Fandango
-  (Marina/Presidio) and Cinemark (Santana Row) may be blocked the same way —
-  watch the first CI runs. New Parkway and Rialto Elmwood/Cerrito are
-  JS-only with no accessible feed.
+  (Marina/Presidio) and Cinemark (Santana Row) were feared blocked too but
+  work fine from Actions (verified 2026-09-03). New Parkway and Rialto
+  Elmwood/Cerrito are JS-only with no accessible feed.
 - Per-theater quirks (details in README "Scraper notes"): bare times are
   10:00–11:59=AM / <10=PM; Grand Lake day-of-week expansion; Stanford year
   must come from the calendar banner (never `infer_year` — past dates jump a
