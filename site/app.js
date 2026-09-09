@@ -9,6 +9,9 @@ const state = {
   view: "board",         // board | films | all
   query: "",
   chipsOpen: false,      // theater list expanded (collapsed by default)
+  filtersOpen: false,    // mobile: film-filter row expanded
+  era: "all",            // all | new (recent releases) | rep (revivals)
+  onfilm: false,         // only 35/70/16mm screenings
 };
 
 const LANE_H = 40;
@@ -17,6 +20,9 @@ const STORAGE_KEY = "bayfilm.hidden";
 
 // board lanes group under these region headers, in this order
 const REGION_ORDER = ["SF", "East Bay", "North Bay", "Peninsula", "South Bay"];
+
+const regionRank = (r) =>
+  REGION_ORDER.indexOf(r) === -1 ? REGION_ORDER.length : REGION_ORDER.indexOf(r);
 
 // compact venue tags for the mobile timeline
 const SHORT_NAMES = {
@@ -77,12 +83,54 @@ function fmtDate(iso) {
 
 function screeningsOn(date) {
   return state.data.screenings.filter(
-    (s) => s.date === date && !state.off.has(s.theater)
+    (s) => s.date === date && !state.off.has(s.theater) && passesFilters(s)
   );
+}
+
+/* ---------- film filters (release era + on-film) ---------- */
+
+const FILTERS_KEY = "bayfilm.filmFilters";
+const ON_FILM_RE = /\b(70|35|16)mm\b/i;
+
+// "new" = released this year or last (release years come from the films map,
+// filled by TMDb / a year in the title). Unknown years pass both era filters.
+function eraOf(title) {
+  const y = (state.data.films[title.toLowerCase()] || {}).year;
+  if (!y) return null;
+  return y >= new Date().getFullYear() - 1 ? "new" : "rep";
+}
+
+function passesFilters(s) {
+  if (state.onfilm && !(s.note && ON_FILM_RE.test(s.note))) return false;
+  if (state.era !== "all") {
+    const era = eraOf(s.title);
+    if (era && era !== state.era) return false;
+  }
+  return true;
+}
+
+function saveFilmFilters() {
+  try {
+    localStorage.setItem(FILTERS_KEY,
+      JSON.stringify({ era: state.era, onfilm: state.onfilm }));
+  } catch (e) { /* private mode */ }
+}
+
+// when the filters leave a day empty, point at the reset next to #empty
+function updateEmptyFilters() {
+  $("#emptyFilters").hidden =
+    $("#empty").hidden || (state.era === "all" && !state.onfilm);
 }
 
 function filmDesc(title) {
   return (state.data.films[title.toLowerCase()] || {}).desc || null;
+}
+
+function filmYearHtml(title) {
+  const y = (state.data.films[title.toLowerCase()] || {}).year;
+  // skip when the title already carries the year ("The Fog (1980)")
+  if (!y || title.includes(String(y))) return "";
+  return ` <span class="film__year">${y}</span>`;
 }
 
 function filmThumb(title) {
@@ -224,33 +272,104 @@ function renderChips() {
   }
   wrap.appendChild(regionRow);
 
-  // mobile: the theater list collapses behind this toggle
+  // one toggle bar for both collapsible sections; on mobile they behave as
+  // an accordion (opening one closes the other) to keep the stack short
+  const togglebar = document.createElement("div");
+  togglebar.className = "togglebar";
+
+  // film filters collapse behind this toggle on mobile (hidden on desktop)
+  const filterToggle = document.createElement("button");
+  filterToggle.className = "filtertoggle";
+  filterToggle.setAttribute("aria-expanded", String(state.filtersOpen));
+  const filtersOn = (state.era !== "all" ? 1 : 0) + (state.onfilm ? 1 : 0);
+  filterToggle.innerHTML =
+    `Film filters${filtersOn ? ` <span class="togglecount">· ${filtersOn} on</span>` : ""} ` +
+    `<span class="chiptoggle__arrow">${state.filtersOpen ? "▴" : "▾"}</span>`;
+  filterToggle.addEventListener("click", () => {
+    state.filtersOpen = !state.filtersOpen;
+    if (state.filtersOpen) state.chipsOpen = false;
+    renderChips();
+  });
+  togglebar.appendChild(filterToggle);
+
+  // the theater list collapses behind this toggle at every width
   const total = Object.keys(state.data.theaters).length;
   const on = total - state.off.size;
   const toggle = document.createElement("button");
   toggle.className = "chiptoggle";
   toggle.setAttribute("aria-expanded", String(state.chipsOpen));
   toggle.innerHTML =
-    `Theaters · ${on} of ${total} <span class="chiptoggle__arrow">${state.chipsOpen ? "▴" : "▾"}</span>`;
+    `Theaters <span class="togglecount${state.off.size ? "" : " is-quiet"}">· ${on}/${total}</span> ` +
+    `<span class="chiptoggle__arrow">${state.chipsOpen ? "▴" : "▾"}</span>`;
   toggle.addEventListener("click", () => {
     state.chipsOpen = !state.chipsOpen;
+    if (state.chipsOpen) state.filtersOpen = false;
     renderChips();
   });
-  wrap.appendChild(toggle);
+  togglebar.appendChild(toggle);
+  wrap.appendChild(togglebar);
 
-  const chipRow = document.createElement("div");
-  chipRow.className = "chiprow" + (state.chipsOpen ? " is-open" : "");
-  for (const [id, t] of Object.entries(state.data.theaters)) {
+  const filterRow = document.createElement("div");
+  filterRow.className = "filmfilters" + (state.filtersOpen ? " is-open" : "");
+  filterRow.setAttribute("role", "group");
+  filterRow.setAttribute("aria-label", "Filter films");
+  for (const [val, label] of
+       [["all", "Everything"], ["new", "New releases"], ["rep", "Revivals"]]) {
     const btn = document.createElement("button");
-    btn.className = "chip" + (state.off.has(id) ? " is-off" : "");
-    btn.setAttribute("aria-pressed", String(!state.off.has(id)));
-    btn.innerHTML = `${t.name}<small>${t.city}</small>`;
+    btn.className = "region" + (state.era === val ? " is-active" : "");
+    btn.textContent = label;
     btn.addEventListener("click", () => {
-      state.off.has(id) ? state.off.delete(id) : state.off.add(id);
-      saveFilters();
+      state.era = val;
+      saveFilmFilters();
       render();
     });
-    chipRow.appendChild(btn);
+    filterRow.appendChild(btn);
+  }
+  const sep = document.createElement("span");
+  sep.className = "filmfilters__sep";
+  sep.textContent = "·";
+  filterRow.appendChild(sep);
+  const onfilmBtn = document.createElement("button");
+  onfilmBtn.className = "region" + (state.onfilm ? " is-active" : "");
+  onfilmBtn.setAttribute("aria-pressed", String(state.onfilm));
+  onfilmBtn.textContent = "On film ✦";
+  onfilmBtn.title = "Only 35mm / 70mm / 16mm screenings";
+  onfilmBtn.addEventListener("click", () => {
+    state.onfilm = !state.onfilm;
+    saveFilmFilters();
+    render();
+  });
+  filterRow.appendChild(onfilmBtn);
+  wrap.appendChild(filterRow);
+
+  // theater chips group under region headers, mirroring the board
+  const chipRow = document.createElement("div");
+  chipRow.className = "chiprow" + (state.chipsOpen ? " is-open" : "");
+  const byRegion = new Map();
+  for (const entry of Object.entries(state.data.theaters)) {
+    const r = entry[1].region;
+    if (!byRegion.has(r)) byRegion.set(r, []);
+    byRegion.get(r).push(entry);
+  }
+  for (const r of [...byRegion.keys()].sort((a, b) => regionRank(a) - regionRank(b))) {
+    const head = document.createElement("div");
+    head.className = "chiprow__region";
+    head.textContent = r;
+    chipRow.appendChild(head);
+    for (const [id, t] of byRegion.get(r)) {
+      const off = state.off.has(id);
+      const btn = document.createElement("button");
+      btn.className = "chip" + (off ? " is-off" : "");
+      btn.setAttribute("aria-pressed", String(!off));
+      btn.innerHTML = (off ? "" : `<span class="chip__check">✓</span> `) +
+        `${t.name}<small>${t.city}</small>`;
+      btn.addEventListener("click", () => {
+        off ? state.off.delete(id) : state.off.add(id);
+        saveFilters();
+        render();
+      });
+      chipRow.appendChild(btn);
+    }
   }
   wrap.appendChild(chipRow);
 }
@@ -304,8 +423,6 @@ function renderBoard() {
   board.appendChild(axis);
 
   // lanes group by region (stable sort keeps model order within a region)
-  const regionRank = (r) =>
-    REGION_ORDER.indexOf(r) === -1 ? REGION_ORDER.length : REGION_ORDER.indexOf(r);
   const ordered = Object.entries(state.data.theaters)
     .sort((a, b) => regionRank(a[1].region) - regionRank(b[1].region));
 
@@ -614,14 +731,15 @@ function renderFilms() {
         list.sort((a, b) => (a.time || "").localeCompare(b.time || ""));
         ordered.push(...list);
         const pills = list.map(pillGroup).join("");
-        return `<div class="film__venue"><span class="film__venuename">${t.name}` +
+        return `<div class="film__venue"><span class="film__venuename">` +
+               `<a href="${escapeHtml(t.url)}" target="_blank" rel="noopener">${t.name}</a>` +
                `<small>${t.city}</small></span>${pills}</div>`;
       })
       .join("");
     const desc = filmDesc(f.title);
     div.innerHTML =
       filmThumb(f.title) +
-      `<div class="film__head"><h2 class="film__title">${escapeHtml(f.title)}</h2>` +
+      `<div class="film__head"><h2 class="film__title">${escapeHtml(f.title)}${filmYearHtml(f.title)}</h2>` +
       badgeHtml(f.notes) + filmLinks(f.title) +
       (desc ? `<p class="film__desc">${escapeHtml(desc)}</p>` : "") +
       `</div>` +
@@ -642,7 +760,7 @@ function renderAll() {
 
   const byFilm = new Map();
   for (const s of state.data.screenings) {
-    if (s.date < today || state.off.has(s.theater)) continue;
+    if (s.date < today || state.off.has(s.theater) || !passesFilters(s)) continue;
     if (q && !(s.title.toLowerCase().includes(q) ||
                (s.note || "").toLowerCase().includes(q))) continue;
     const key = s.title.toLowerCase();
@@ -675,7 +793,10 @@ function renderAll() {
         }
         const parts = [...byTheater.entries()].map(([tid, ss]) => {
           ordered.push(...ss);
-          return `<span class="allfilm__venue">${state.data.theaters[tid].name}</span>` +
+          const t = state.data.theaters[tid];
+          return `<span class="allfilm__venue">` +
+                 `<a href="${escapeHtml(t.url)}" target="_blank" rel="noopener">${t.name}</a>` +
+                 `</span>` +
                  ss.map(pillGroup).join("");
         }).join("");
         return `<div class="film__venue"><span class="film__venuename">` +
@@ -685,7 +806,7 @@ function renderAll() {
     const desc = filmDesc(f.title);
     div.innerHTML =
       filmThumb(f.title) +
-      `<div class="film__head"><h2 class="film__title">${escapeHtml(f.title)}</h2>` +
+      `<div class="film__head"><h2 class="film__title">${escapeHtml(f.title)}${filmYearHtml(f.title)}</h2>` +
       badgeHtml(f.notes) + filmLinks(f.title) +
       (desc ? `<p class="film__desc">${escapeHtml(desc)}</p>` : "") +
       `</div>` +
@@ -788,6 +909,7 @@ function render() {
   if (state.view === "board") renderBoard();
   else if (state.view === "films") renderFilms();
   else renderAll();
+  updateEmptyFilters();
 }
 
 async function init() {
@@ -806,6 +928,12 @@ async function init() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
     state.off = new Set(saved.filter((id) => id in state.data.theaters));
+  } catch (e) { /* ignore bad storage */ }
+
+  try {
+    const f = JSON.parse(localStorage.getItem(FILTERS_KEY) || "{}");
+    if (f.era === "new" || f.era === "rep") state.era = f.era;
+    state.onfilm = !!f.onfilm;
   } catch (e) { /* ignore bad storage */ }
 
   const today = isoToday();
@@ -846,6 +974,14 @@ async function init() {
   $("#filmSearch").addEventListener("input", (e) => {
     state.query = e.target.value;
     renderAll();
+    updateEmptyFilters();
+  });
+
+  $("#clearFilters").addEventListener("click", () => {
+    state.era = "all";
+    state.onfilm = false;
+    saveFilmFilters();
+    render();
   });
 
   let resizeTimer;

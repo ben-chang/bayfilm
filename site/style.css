@@ -49,7 +49,7 @@ body {
 
 a { color: inherit; }
 
-button { font: inherit; color: inherit; cursor: pointer; }
+button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
 
 /* removes the 300ms tap delay and double-tap zoom on interactive elements */
 a, button, input, summary { touch-action: manipulation; }
@@ -257,6 +257,7 @@ a, button, input, summary { touch-action: manipulation; }
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  order: -2;  /* always the first row, ahead of the desktop-lifted filmfilters */
 }
 
 .region {
@@ -279,6 +280,51 @@ a, button, input, summary { touch-action: manipulation; }
   font-weight: 600;
 }
 
+/* toggles for the two collapsible sections share this row */
+.togglebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 20px;
+}
+
+/* count on a toggle lights up while its section is filtering something */
+.togglecount { color: var(--bridge-ink); font-weight: 600; }
+
+.togglecount.is-quiet { color: inherit; font-weight: inherit; }
+
+/* mobile-only disclosure for the film-filter row (hidden on desktop, where
+   the row is always visible) — plain text, matching the region row */
+.filtertoggle {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: none;
+  padding: 8px;  /* 8px left inset lines the text up with the region row */
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+/* release-era + on-film filter row, styled like the region row. On desktop
+   it renders above the theaters toggle (order flips back on mobile, where
+   the row must open below the toggle bar that reveals it) */
+.filmfilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  order: -1;
+}
+
+.filmfilters__sep {
+  font-family: var(--mono);
+  color: var(--ink-soft);
+}
+
 /* per-theater chips collapse behind the toggle at every width; the region
    row stays visible as the primary filter */
 .chiprow {
@@ -288,6 +334,22 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .chiprow.is-open { display: flex; }
+
+/* full-width region headers inside the chip list, mirroring the board */
+.chiprow__region {
+  flex-basis: 100%;
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.chiprow__region:first-child { margin-top: 0; }
+
+.chip__check { color: var(--bridge-ink); }
 
 .chiptoggle {
   display: inline-flex;
@@ -336,6 +398,18 @@ a, button, input, summary { touch-action: manipulation; }
   border: 1px solid var(--edge);
   border-radius: 2px;
   overflow: hidden;
+}
+
+/* desktop: pin the view toggle top-right so opening the theater list
+   (which makes the left column full-width) can't push it below the chips */
+@media (min-width: 761px) {
+  .controls { position: relative; }
+
+  .viewtoggle {
+    position: absolute;
+    top: 14px;    /* matches .controls padding */
+    right: 20px;
+  }
 }
 
 .viewtoggle__btn {
@@ -770,6 +844,30 @@ a, button, input, summary { touch-action: manipulation; }
   gap: 6px 10px;
 }
 
+/* release year riding along the serif title */
+.film__year {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* venue names link to the theater's own site, quiet like the board labels */
+.film__venuename a,
+.allfilm__venue a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.film__venuename a:hover,
+.allfilm__venue a:hover {
+  color: var(--bridge-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--bridge);
+}
+
 .film__venuename {
   font-size: 14px;
   font-weight: 600;
@@ -882,6 +980,23 @@ a, button, input, summary { touch-action: manipulation; }
   font-size: 19px;
 }
 
+/* rides directly under #empty when the film filters caused the blank day */
+.empty--filters {
+  padding: 0 0 60px;
+  margin-top: -44px;
+  font-size: 16px;
+}
+
+.linkbtn {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--bridge-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .empty code {
   font-family: var(--mono);
   font-size: 13px;
@@ -948,6 +1063,34 @@ a, button, input, summary { touch-action: manipulation; }
   .stub { max-width: 100%; }
 
   .stub__title { white-space: normal; overflow: visible; }
+
+  .filtertoggle { display: inline-flex; }
+
+  .filmfilters { display: none; order: 0; }
+
+  .filmfilters.is-open { display: flex; }
+
+  /* the theaters toggle drops its box to match the film-filters toggle */
+  .chiptoggle {
+    border: 0;
+    background: none;
+    padding: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+  }
+
+  /* touch-friendly but dense filter rows: ~34px targets, 8px column gaps */
+  .regions, .filmfilters { gap: 4px 8px; }
+
+  .region { padding: 8px; }
+
+  .chiprow { gap: 8px; }
+
+  .chip { min-height: 44px; }
 
   /* tap-first surfaces: grow toward the 44px touch minimum */
   .timepill { padding: 8px 12px; }
