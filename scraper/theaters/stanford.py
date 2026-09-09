@@ -113,5 +113,8 @@ def scrape() -> list[Screening]:
         key = (s.title, s.date, s.time)
         if key not in seen:
             seen.add(key)
+            # the Stanford runs a film-print house — everything is 35mm even
+            # though the calendar never says so (the on-film filter reads it)
+            s.note = "35mm" if not s.note else f"{s.note}, 35mm"
             out.append(s)
     return out
