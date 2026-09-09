@@ -107,9 +107,17 @@ def main() -> int:
             if s.img and "img" not in info:
                 info["img"] = s.img
 
-    # canonical posters from TMDb override theater images where available
+    # canonical posters + release years from TMDb where available
     from . import tmdb
     tmdb.enrich({s.title for s in all_screenings}, films)
+
+    # a year in the title itself ("Angel Heart (1987)") beats a missing one
+    for s in all_screenings:
+        k = s.title.lower()
+        if "year" not in films.get(k, {}):
+            year = tmdb.clean_title(s.title)[1]
+            if year:
+                films.setdefault(k, {})["year"] = int(year)
 
     all_screenings.sort(key=lambda s: (s.date, s.time or "99:99", s.theater, s.title))
 
