@@ -80,7 +80,9 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
 - Per-theater quirks (details in README "Scraper notes"): bare times are
   10:00–11:59=AM / <10=PM; Grand Lake day-of-week expansion; Stanford year
   must come from the calendar banner (never `infer_year` — past dates jump a
-  year) and its HTML has unclosed `<td>`s (use `recursive=False`); Alamo
+  year), its HTML has unclosed `<td>`s (use `recursive=False`), and every
+  Stanford screening is badged `35mm` in its scraper (film-print house,
+  never labeled on the calendar); Alamo
   `superTitle` can be a dict, COLLECTION badges dropped; BAMPFA filters to
   "Film" tag, images live in popup twins matched by `data-id`; Veezi dates
   (Balboa, 4 Star, Vogue) lack a year.
@@ -96,16 +98,21 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
 - Format badges (`70mm`, `live score`, `Q&A`, …) are detected from titles in
   `FORMAT_PATTERNS` (`scraper/main.py`) and stored on `Screening.note`.
 - `desc`/`img` on screenings get lifted into the top-level `films` map
-  (keyed by lowercased title) and stripped from screening dicts.
-- Wrong TMDb poster? Delete that title's line from `scraper/tmdb_cache.json`
-  and re-scrape (first-search-result matching; misses cached permanently).
+  (keyed by lowercased title) and stripped from screening dicts. The map
+  also carries `year` (TMDb release year, else a year parsed from the
+  title) — the frontend's new-releases/revivals filter reads it.
+- Wrong TMDb poster or year? Delete that title's line from
+  `scraper/tmdb_cache.json` and re-scrape (year-hint-nearest result
+  matching; misses cached permanently). Cache values are
+  `{"img": …, "year": …}`, one title per line; legacy bare-URL values
+  still load and get a year on the next keyed run.
 
 ## Frontend conventions
 
 - Vanilla JS, no build. All user text through `escapeHtml()`. State lives in
   the `state` object + URL hash (`#date`, `#date/films`, `#date/all`);
   filters and theme persist in localStorage (`bayfilm.hidden`,
-  `bayfilm.theme`).
+  `bayfilm.theme`, `bayfilm.filmFilters` — era + on-film toggles).
 - **Theming is token-driven** — never hardcode a hex in a component rule.
   Light + dark palettes live in `:root` / `:root[data-theme="dark"]` at the
   top of `style.css`. Key tokens: `--bridge` (display orange, ≥3:1 only —
@@ -129,10 +136,19 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
   frames; use `--screenshot`).
 - Mobile (<761px) board is a chronological timeline (`renderMobileTimeline`),
   not the lane grid; theater chips collapse behind a dropdown at every width
-  (the region row is the primary filter); desktop lanes group under
+  (region-grouped, the region row is the primary filter); the film-filter
+  row (era/on-film) folds behind a "Film filters" toggle on mobile only —
+  the two toggles share `.togglebar` and act as an accordion there; on
+  desktop the view toggle is absolutely pinned top-right of `.controls`
+  (so the open chip list can't wrap it below) and `.filmfilters` uses
+  `order: -1` to sit above the theaters toggle (reset on mobile); desktop lanes group under
   `REGION_ORDER` headers; venue tags
   come from `SHORT_NAMES` in `app.js` (add new theaters there too).
-- Type floor is 12px; inputs ≥16px (iOS zoom); tap targets ≥44px on mobile.
+- Type floor is 12px; inputs ≥16px (iOS zoom); tap targets ≥44px on mobile —
+  except the mono filter/control text rows (regions, film filters, the
+  `.togglebar` toggles), which the user prefers dense: ~34px targets (8px
+  vertical padding, 4px row gap) with the 8px column gap kept. Don't "fix"
+  them back up to 44px.
 
 ## Deployment
 

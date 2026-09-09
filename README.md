@@ -124,7 +124,7 @@ bayfilm/
               "scraped_at": "2026-09-02T17:28:12Z"}
   },
   "films": {
-    "colony": {"desc": "…", "img": "https://image.tmdb.org/t/p/w342/…"}
+    "colony": {"desc": "…", "img": "https://image.tmdb.org/t/p/w342/…", "year": 2026}
   },
   "screenings": [
     {"theater": "roxie", "title": "Colony", "date": "2026-09-02",
@@ -136,13 +136,16 @@ bayfilm/
 - `date` is `YYYY-MM-DD`, `time` is 24-hour `HH:MM` local (absent if the
   source doesn't list one). Screenings may carry a `note` (format badges
   like `70mm`, detected from titles via `FORMAT_PATTERNS` in `main.py`).
-- The `films` map (lowercased title → `{desc, img}`) holds blurbs and poster
-  URLs so they aren't repeated on every screening. Posters come from TMDb
-  when a title matches (`scraper/tmdb.py`, needs `TMDB_API_KEY` — set as a
-  GitHub Actions secret for CI), falling back to the theater's own image.
+- The `films` map (lowercased title → `{desc, img, year}`) holds blurbs,
+  poster URLs, and release years so they aren't repeated on every screening.
+  Posters and years come from TMDb when a title matches (`scraper/tmdb.py`,
+  needs `TMDB_API_KEY` — set as a GitHub Actions secret for CI), falling
+  back to the theater's own image and to a year in the title itself
+  ("Angel Heart (1987)"; "30th Anniversary" also becomes a year hint).
   Lookups (including misses) are cached in the committed
-  `scraper/tmdb_cache.json`, so repeat runs make few API calls and CI keeps
-  posters even without the key.
+  `scraper/tmdb_cache.json` as `{"img": …, "year": …}` — one title per
+  line — so repeat runs make few API calls and CI keeps posters even
+  without the key.
 - Theater entries carry `scraped_at` so the frontend can flag stale rows.
 - `main.py` drops past dates, sorts by date/time, and writes the file.
   Screenings are already filtered to today-forward, so the frontend does no
@@ -155,8 +158,18 @@ bayfilm/
 - **Day strip** — the next 14 days that have screenings, with show counts.
 - **Region + theater filters** — Everywhere/SF/East Bay/Peninsula/North Bay
   quick toggles plus per-theater chips; selections persist in localStorage.
-  The per-theater chips collapse behind a "Theaters · N of M" dropdown at
-  every width; the region row stays visible as the primary filter.
+  The per-theater chips collapse behind a "Theaters · N/M" dropdown at
+  every width and group under region headers mirroring the board; the
+  region row stays visible as the primary filter.
+- **Film filters** — Everything/New releases/Revivals ("new" = released
+  this year or last, from the `films` map's `year`; unknown years pass both)
+  plus an "On film" toggle that keeps only 35/70/16mm screenings (matched
+  from the format badge on each screening's `note`). Persisted in
+  localStorage (`bayfilm.filmFilters`); when the filters empty a day out, a
+  "show everything" reset appears under the empty-marquee message. On
+  mobile the row collapses behind a "Film filters" toggle that sits on one
+  line with the theaters toggle (opening one closes the other); both
+  toggles show an orange count while their section is filtering.
 - **Board view (desktop)** — one row per theater, grouped under region
   headers (SF, East Bay, …); each screening is a stub positioned on a
   shared time axis that always runs to 1am. The day strip and time axis
@@ -203,7 +216,10 @@ Things the parsers rely on, so you know where to look when one breaks:
   ("September 11-13") and matinee notes ("plus 3:45 Sat/Sun"). Its HTML has
   unclosed `<td>` tags, so the parser only reads each cell's direct
   children, and the year comes from the calendar banner (never inferred —
-  past summer dates would jump a year forward).
+  past summer dates would jump a year forward). Every screening gets a
+  `35mm` note — the Stanford is a film-print house, even though its
+  calendar never says so — which puts it under the frontend's "On film"
+  filter.
 - **Alamo**'s API `superTitle` is sometimes a dict; COLLECTION badges (e.g.
   "Drafthouse Recommends") are dropped so titles stay readable.
 - **BAMPFA** lists museum events alongside films; only events tagged "Film"
@@ -297,6 +313,7 @@ Two operational notes:
 - Scrapers are polite (one or two requests per theater per run), but sites
   change their markup. If a theater's count drops to zero in the scrape
   output, its parser probably needs a look.
-- TMDb title matching takes the first search result; a generic title can
-  occasionally get the wrong poster. Delete that title's line from
+- TMDb title matching takes the first search result (nudged toward a year
+  parsed from the title, when there is one); a generic title can
+  occasionally get the wrong poster or year. Delete that title's line from
   `scraper/tmdb_cache.json` and re-scrape to retry it.
