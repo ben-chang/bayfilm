@@ -120,9 +120,10 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
   large text/accents) vs `--bridge-ink` (text-safe orange, ≥4.5:1 — any
   small text); `--edge`/`--shadow` for component outlines and hard offset
   shadows. A pre-paint script in `index.html` sets `data-theme`.
-- Font roles: Big Shoulders = venue "machinery" (wordmark, theater names,
-  day strip); Instrument Serif (+italic) = film titles and editorial copy;
-  Spline Sans Mono = times/labels; Archivo = body.
+- Font roles: Source Sans 3 = wordmark, theater names, day strip, and body;
+  Source Serif 4 (+italic) = film titles and editorial copy; IBM Plex Mono =
+  times and labels. The wordmark is “Bay” in the sans plus italic “Film,”
+  with a film-gate mark.
 - **Never rebuild board DOM on a timer** — the minute tick goes through
   `updateBoardClock()` which moves the now-line/divider and toggles
   `is-past` in place. Full re-renders mid-scroll kill mobile momentum

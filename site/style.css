@@ -13,10 +13,10 @@
   --shadow: #22272B;     /* hard offset shadows */
   --on-ink-soft: #B9BFB8; /* muted text on inverted (ink-bg) chips */
 
-  --display: "Big Shoulders", "Arial Narrow", sans-serif;
-  --body: "Archivo", system-ui, sans-serif;
-  --mono: "Spline Sans Mono", ui-monospace, monospace;
-  --serif: "Instrument Serif", Georgia, serif;
+  --display: "Source Sans 3", system-ui, sans-serif;
+  --body: "Source Sans 3", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --serif: "Source Serif 4", Georgia, serif;
 }
 
 /* screening-room dark theme — tonal remap, all text pairs ≥4.5:1 */
@@ -44,7 +44,7 @@ body {
   color: var(--ink);
   font-family: var(--body);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.55;
   /* the last row can scroll clear of the sticky day strip */
   padding-bottom: calc(var(--daystrip-h, 80px) + 32px);
 }
@@ -75,22 +75,51 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.22em;
   margin: 0;
-  font-family: var(--display);
-  font-weight: 800;
-  font-size: clamp(52px, 9vw, 96px);
-  line-height: 0.9;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
+  font-size: clamp(40px, 6.2vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.035em;
 }
 
-.wordmark span { color: var(--bridge); }
+/* a small film gate: sprocket dots and an orange frame */
+.wordmark__gate {
+  flex: 0 0 auto;
+  width: 0.62em;
+  height: 0.78em;
+  border: 0.07em solid var(--ink);
+  border-radius: 0.1em;
+  background-color: var(--fog);
+  background-image:
+    radial-gradient(circle at 50% 16%, var(--ink) 0 0.055em, transparent 0.065em),
+    radial-gradient(circle at 50% 84%, var(--ink) 0 0.055em, transparent 0.065em),
+    linear-gradient(var(--bridge), var(--bridge));
+  background-size: auto, auto, 56% 40%;
+  background-position: center, center, center;
+  background-repeat: no-repeat;
+}
+
+.wordmark__name {
+  font-family: var(--display);
+  font-weight: 600;
+}
+
+.wordmark__name span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--bridge);
+  letter-spacing: -0.03em;
+}
 
 .tagline {
   margin: 10px 0 0;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 21px;
+  font-size: 22px;
+  line-height: 1.35;
   color: var(--ink);
   font-weight: 400;
 }
@@ -138,8 +167,8 @@ a, button, input, summary { touch-action: manipulation; }
 .mastpanel p {
   margin: 8px 0 0;
   font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.55;
   color: var(--ink-soft);
   border-left: 3px solid var(--bridge);
   padding-left: 12px;
@@ -197,7 +226,7 @@ a, button, input, summary { touch-action: manipulation; }
   background: transparent;
   padding: 10px 16px 8px;
   text-align: left;
-  min-width: 86px;
+  min-width: 96px;
 }
 
 .day__dow {
@@ -212,9 +241,11 @@ a, button, input, summary { touch-action: manipulation; }
 .day__num {
   display: block;
   font-family: var(--display);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
 }
 
 .day__count {
@@ -236,7 +267,7 @@ a, button, input, summary { touch-action: manipulation; }
 
 .day.is-today .day__dow { color: var(--bridge-ink); font-weight: 600; }
 
-.day--edge .day__num { font-size: 22px; }
+.day--edge .day__num { font-size: 20px; }
 
 /* one line for every theater indexed earlier than the rest of the file */
 .stalenote {
@@ -504,7 +535,7 @@ a, button, input, summary { touch-action: manipulation; }
 .axis__inner {
   position: relative;
   height: 100%;
-  margin-left: 168px;
+  margin-left: 196px;
   border-bottom: 1px solid var(--edge);
 }
 
@@ -524,18 +555,17 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .trow__label {
-  flex: 0 0 168px;
+  flex: 0 0 196px;
   padding: 12px 12px 12px 0;
   border-right: 1px solid var(--edge);
 }
 
 .trow__name {
   font-family: var(--display);
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.05;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.011em;
 }
 
 .trow__name a {
@@ -850,9 +880,10 @@ a, button, input, summary { touch-action: manipulation; }
 .film__title {
   flex-basis: 100%;
   font-family: var(--serif);
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 1.02;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
   margin: 0;
 }
 
@@ -868,9 +899,10 @@ a, button, input, summary { touch-action: manipulation; }
   margin: 2px 0 0;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 17px;
   color: var(--ink-soft);
-  line-height: 1.4;
+  line-height: 1.45;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1086,18 +1118,25 @@ a, button, input, summary { touch-action: manipulation; }
 
 .colophon__ghost {
   font-family: var(--display);
-  font-weight: 800;
-  font-size: clamp(90px, 16vw, 230px);
-  line-height: 0.72;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  font-size: clamp(56px, 12vw, 148px);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
   text-align: center;
   color: var(--ink);
-  opacity: 0.07;
+  opacity: 0.08;
   user-select: none;
   pointer-events: none;
   overflow: hidden;
   margin-top: 14px;
   transform: translateY(8%);
+}
+
+.colophon__ghost span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--bridge);
 }
 
 /* ---------- mobile: board flows as a list ---------- */
