@@ -45,6 +45,8 @@ body {
   font-family: var(--body);
   font-size: 16px;
   line-height: 1.5;
+  /* the last row can scroll clear of the sticky day strip */
+  padding-bottom: calc(var(--daystrip-h, 80px) + 32px);
 }
 
 a { color: inherit; }
@@ -234,6 +236,21 @@ a, button, input, summary { touch-action: manipulation; }
 
 .day.is-today .day__dow { color: var(--bridge-ink); font-weight: 600; }
 
+.day--edge .day__num { font-size: 22px; }
+
+/* one line for every theater indexed earlier than the rest of the file */
+.stalenote {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 8px 20px 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.stalenote[hidden] { display: none; }
+
 /* ---------- controls ---------- */
 
 .controls {
@@ -245,6 +262,40 @@ a, button, input, summary { touch-action: manipulation; }
   gap: 10px 18px;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.findrow {
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.findrow .searchlabel {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.alsoon {
+  flex: 1 0 100%;
+  margin: -2px 0 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.alsoon[hidden] { display: none; }
+
+.alsoon .linkbtn {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
 }
 
 .theaters {
@@ -400,16 +451,23 @@ a, button, input, summary { touch-action: manipulation; }
   overflow: hidden;
 }
 
-/* desktop: pin the view toggle top-right so opening the theater list
-   (which makes the left column full-width) can't push it below the chips */
+/* desktop: search and the view toggle share the top row; the theater list
+   spans the full width underneath so opening it can't shove the toggle.
+   Both axes are set on that pair — a column-only placement lets the
+   auto-placement cursor walk past the hole and drop the toggle under
+   the theater list. */
 @media (min-width: 761px) {
-  .controls { position: relative; }
-
-  .viewtoggle {
-    position: absolute;
-    top: 14px;    /* matches .controls padding */
-    right: 20px;
+  .controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 18px;
+    row-gap: 10px;
+    align-items: center;
   }
+
+  .findrow { grid-column: 1; grid-row: 1; }
+  .viewtoggle { grid-column: 2; grid-row: 1; justify-self: end; }
+  .alsoon, .theaters { grid-column: 1 / -1; }
 }
 
 .viewtoggle__btn {
@@ -499,16 +557,10 @@ a, button, input, summary { touch-action: manipulation; }
   letter-spacing: 0.06em;
 }
 
-.trow__stale {
-  display: inline-block;
-  margin-top: 5px;
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--bridge-ink);
-  border: 1px solid var(--bridge-ink);
-  border-radius: 2px;
-  padding: 1px 5px;
-}
+/* older than the rest of the file: quieter, still full-contrast text */
+.trow.is-stale .trow__name { color: var(--ink-soft); }
+
+.trow.is-stale .stub { border-left-color: var(--hairline); }
 
 .nowline {
   position: absolute;
@@ -540,12 +592,7 @@ a, button, input, summary { touch-action: manipulation; }
 
 .tl { padding-top: 4px; }
 
-.tl__stale {
-  margin: 8px 0 0;
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--bridge-ink);
-}
+.tl__row.is-stale .tl__title { color: var(--ink-soft); }
 
 .tl__hour {
   position: sticky;
@@ -624,6 +671,7 @@ a, button, input, summary { touch-action: manipulation; }
   padding: 8px 0;
   border-bottom: 1px solid var(--fog-deep);
   text-decoration: none;
+  scroll-margin-top: calc(var(--daystrip-h, 80px) + 32px);
 }
 
 /* poster thumb rides between time and title; empty box when no art */
@@ -644,6 +692,11 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .tl__row.is-past { opacity: 0.42; }
+
+.tl__row.is-focus,
+.film.is-focus { box-shadow: inset 3px 0 0 var(--bridge); }
+
+.stub-link.is-focus .stub { box-shadow: 3px 3px 0 var(--bridge); }
 
 .tl__time {
   flex: 0 0 58px;
@@ -708,6 +761,7 @@ a, button, input, summary { touch-action: manipulation; }
   position: absolute;
   text-decoration: none;
   transform: translateX(-1px);
+  scroll-margin-top: calc(var(--daystrip-h, 80px) + 32px);
 }
 
 .stub {
@@ -766,6 +820,8 @@ a, button, input, summary { touch-action: manipulation; }
   padding: 16px 0;
   border-bottom: 1px solid var(--hairline);
   flex-wrap: wrap;
+  /* flush with the sticky day strip, so the row above doesn't peek through */
+  scroll-margin-top: var(--daystrip-h, 80px);
 }
 
 .film__thumb {
@@ -799,6 +855,13 @@ a, button, input, summary { touch-action: manipulation; }
   line-height: 1.02;
   margin: 0;
 }
+
+.filmpermalink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.filmpermalink:hover { color: var(--bridge-ink); }
 
 .film__desc {
   flex-basis: 100%;
@@ -897,6 +960,7 @@ a, button, input, summary { touch-action: manipulation; }
   border-radius: 2px 0 0 2px;
   background: var(--stub);
   padding: 2px 8px;
+  line-height: 1.4;
   transition: background 120ms ease, color 120ms ease;
 }
 
@@ -1065,6 +1129,9 @@ a, button, input, summary { touch-action: manipulation; }
   .stub__title { white-space: normal; overflow: visible; }
 
   .filtertoggle { display: inline-flex; }
+
+  .findrow { flex-direction: column; align-items: stretch; gap: 4px; }
+  .findrow .searchbox { max-width: none; }
 
   .filmfilters { display: none; order: 0; }
 

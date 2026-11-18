@@ -107,15 +107,23 @@
       <p>Some theaters, including the Stanford Theatre and BAMPFA, block
       automated indexing, so their listings refresh less often than the
       nightly update. When a theater's listings are more than a day old,
-      they're marked with a "listings from" badge, so double-check those
-      with the box office.</p>
+      a note under the day strip says when they were last indexed, and
+      that row is dimmed, so double-check those with the box office.</p>
     </div>
   </div>
 </header>
 
 <nav class="daystrip" id="daystrip" aria-label="Choose a day"></nav>
+<p id="staleNote" class="stalenote" hidden></p>
 
 <div class="controls">
+  <div class="findrow">
+    <label class="searchlabel" for="filmSearch">Find a film</label>
+    <input id="filmSearch" class="searchbox" type="search"
+           placeholder="Title, blurb, or format — try “70mm”" autocomplete="off">
+    <span id="matchCount" class="allcount" hidden></span>
+  </div>
+  <p id="alsoOn" class="alsoon" hidden aria-live="polite"></p>
   <div class="theaters" id="theaterChips" aria-label="Filter theaters"></div>
   <div class="viewtoggle" role="group" aria-label="View">
     <button id="viewBoard" class="viewtoggle__btn is-active" aria-pressed="true">Board</button>
@@ -128,15 +136,10 @@
   <section id="board" aria-label="Screenings by theater and time"></section>
   <section id="films" aria-label="Screenings by film" hidden></section>
   <section id="allfilms" aria-label="All upcoming films" hidden>
-    <div class="searchrow">
-      <label class="searchlabel" for="filmSearch">Find a film</label>
-      <input id="filmSearch" class="searchbox" type="search"
-             placeholder="Title or format — try “70mm”" autocomplete="off">
-      <span id="allCount" class="allcount"></span>
-    </div>
     <div id="allfilmsList"></div>
   </section>
   <p id="empty" class="empty" hidden>Nothing on the marquee. Try another day, or turn some theaters back on. ✦</p>
+  <p id="emptySearch" class="empty" hidden aria-live="polite"></p>
   <p id="emptyFilters" class="empty empty--filters" hidden>Film filters are on — <button id="clearFilters" class="linkbtn">show everything</button></p>
   <p id="loaderror" class="empty" hidden>The projector jammed: couldn't load showtimes data. If you opened this file directly, serve the folder instead: <code>python3 -m http.server -d site</code></p>
 </main>

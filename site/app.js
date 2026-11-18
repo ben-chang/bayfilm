@@ -8,11 +8,16 @@ const state = {
   off: new Set(),        // disabled theater ids
   view: "board",         // board | films | all
   query: "",
+  film: null,            // slug for #date/film/slug
+  scrollTitle: null,     // board stub to highlight after a time click
+  pendingScroll: false,
   chipsOpen: false,      // theater list expanded (collapsed by default)
   filtersOpen: false,    // mobile: film-filter row expanded
   era: "all",            // all | new (recent releases) | rep (revivals)
   onfilm: false,         // only 35/70/16mm screenings
 };
+
+const DAY_WINDOW = 14;
 
 const LANE_H = 40;
 const STUB_EST_PX = 230;  // rough rendered stub width, for lane collision
@@ -83,8 +88,39 @@ function fmtDate(iso) {
 
 function screeningsOn(date) {
   return state.data.screenings.filter(
-    (s) => s.date === date && !state.off.has(s.theater) && passesFilters(s)
+    (s) => s.date === date && !state.off.has(s.theater) && passesFilters(s) && matchesQuery(s)
   );
+}
+
+function queryText() {
+  return state.query.trim();
+}
+
+function matchesQuery(s) {
+  const q = queryText().toLowerCase();
+  if (!q) return true;
+  const desc = (filmDesc(s.title) || "").toLowerCase();
+  return s.title.toLowerCase().includes(q) ||
+    (s.note || "").toLowerCase().includes(q) ||
+    desc.includes(q);
+}
+
+function filmSlug(title) {
+  const slug = title.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return slug || "film";
+}
+
+function futureDates() {
+  const today = isoToday();
+  const counts = {};
+  for (const s of state.data.screenings) {
+    if (s.date >= today) counts[s.date] = (counts[s.date] || 0) + 1;
+  }
+  const dates = Object.keys(counts).sort();
+  return { dates, counts };
 }
 
 /* ---------- film filters (release era + on-film) ---------- */
@@ -116,10 +152,11 @@ function saveFilmFilters() {
   } catch (e) { /* private mode */ }
 }
 
-// when the filters leave a day empty, point at the reset next to #empty
+// when the filters leave a day empty, point at the reset next to the message
 function updateEmptyFilters() {
+  const showingEmpty = !$("#empty").hidden || !$("#emptySearch").hidden;
   $("#emptyFilters").hidden =
-    $("#empty").hidden || (state.era === "all" && !state.onfilm);
+    !showingEmpty || (state.era === "all" && !state.onfilm);
 }
 
 function filmDesc(title) {
@@ -200,32 +237,92 @@ function downloadICS(s) {
 /* ---------- day strip ---------- */
 
 function renderDaystrip() {
-  const counts = {};
-  for (const s of state.data.screenings) {
-    counts[s.date] = (counts[s.date] || 0) + 1;
-  }
-  const today = isoToday();
-  const dates = Object.keys(counts).sort().filter((d) => d >= today).slice(0, 14);
+  const { dates, counts } = futureDates();
   const strip = $("#daystrip");
   strip.innerHTML = "";
-  for (const iso of dates) {
+  if (!dates.length) return;
+
+  let idx = dates.indexOf(state.date);
+  if (idx < 0) idx = 0;
+  const pageStart = Math.floor(idx / DAY_WINDOW) * DAY_WINDOW;
+  const windowDates = dates.slice(pageStart, pageStart + DAY_WINDOW);
+
+  const goTo = (iso) => {
+    state.date = iso;
+    state.film = null;
+    state.scrollTitle = null;
+    if (state.view === "all") state.view = "board";
+    syncHash();
+    render();
+  };
+
+  if (pageStart > 0) {
+    const dest = dates[Math.max(0, pageStart - DAY_WINDOW)];
+    strip.appendChild(edgeDay("Earlier", dest, counts, goTo));
+  }
+  for (const iso of windowDates) {
     const d = parseISO(iso);
     const btn = document.createElement("button");
     btn.className = "day" +
       (iso === state.date ? " is-selected" : "") +
-      (iso === today ? " is-today" : "");
+      (iso === isoToday() ? " is-today" : "");
     btn.innerHTML =
-      `<span class="day__dow">${iso === today ? "Today" : DOWS[d.getDay()]}</span>` +
+      `<span class="day__dow">${iso === isoToday() ? "Today" : DOWS[d.getDay()]}</span>` +
       `<span class="day__num">${MONTHS[d.getMonth()]} ${d.getDate()}</span>` +
       `<span class="day__count">${counts[iso]} shows</span>`;
-    btn.addEventListener("click", () => {
-      state.date = iso;
-      if (state.view === "all") state.view = "board";
-      syncHash();
-      render();
-    });
+    btn.addEventListener("click", () => goTo(iso));
     strip.appendChild(btn);
   }
+  if (pageStart + DAY_WINDOW < dates.length) {
+    strip.appendChild(edgeDay("Later", dates[pageStart + DAY_WINDOW], counts, goTo));
+  }
+}
+
+function edgeDay(label, iso, counts, goTo) {
+  const d = parseISO(iso);
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "day day--edge";
+  btn.innerHTML =
+    `<span class="day__dow">${label}</span>` +
+    `<span class="day__num">${MONTHS[d.getMonth()]} ${d.getDate()}</span>` +
+    `<span class="day__count">${counts[iso]} shows</span>`;
+  btn.addEventListener("click", () => goTo(iso));
+  return btn;
+}
+
+function renderStaleNote() {
+  const note = $("#staleNote");
+  const today = isoToday();
+  const groups = new Map();
+  for (const [id, t] of Object.entries(state.data.theaters)) {
+    if (state.off.has(id)) continue;
+    const label = staleLabel(t);
+    if (!label) continue;
+    const upcoming = state.data.screenings.some(
+      (s) => s.theater === id && s.date >= today);
+    if (!upcoming) continue;
+    const when = label.replace(/^listings from /, "");
+    if (!groups.has(when)) groups.set(when, []);
+    groups.get(when).push(t.name);
+  }
+  if (!groups.size) {
+    note.hidden = true;
+    note.textContent = "";
+    return;
+  }
+  const parts = [...groups.entries()].map(([when, names]) => {
+    const who = names.length > 4
+      ? `${names.length} theaters`
+      : names.length === 1
+        ? names[0]
+        : names.length === 2
+          ? `${names[0]} and ${names[1]}`
+          : `${names.slice(0, -1).join(", ")}, and ${names[names.length - 1]}`;
+    return `${who} last indexed ${when}`;
+  });
+  note.textContent = parts.join(". ") + ".";
+  note.hidden = false;
 }
 
 /* ---------- theater + region filters ---------- */
@@ -380,7 +477,6 @@ function renderBoard() {
   const board = $("#board");
   board.innerHTML = "";
   const shows = screeningsOn(state.date);
-  $("#empty").hidden = shows.length > 0;
   if (!shows.length) return;
 
   const isToday = state.date === isoToday();
@@ -441,12 +537,11 @@ function renderBoard() {
 
     const stale = staleLabel(t);
     const row = document.createElement("div");
-    row.className = "trow";
+    row.className = "trow" + (stale ? " is-stale" : "");
     row.innerHTML =
       `<div class="trow__label">` + regionTag + `<div class="trow__name">` +
       `<a href="${escapeHtml(t.url)}" target="_blank" rel="noopener">${t.name}</a></div>` +
       `<div class="trow__city">${t.city}</div>` +
-      (stale ? `<div class="trow__stale">${stale}</div>` : "") +
       `</div>`;
     const lanes = document.createElement("div");
     lanes.className = "trow__lanes";
@@ -469,8 +564,10 @@ function renderBoard() {
     for (const s of mine) {
       const past = isToday && s.time && minutes(s.time) < nowMin;
       const a = document.createElement("a");
-      a.className = "stub-link" + (past ? " is-past" : "");
+      a.className = "stub-link" + (past ? " is-past" : "") +
+        (state.scrollTitle === s.title ? " is-focus" : "");
       if (isToday && s.time) a.dataset.time = s.time;
+      a.dataset.title = s.title;
       a.href = s.url || "#";
       a.target = "_blank";
       a.rel = "noopener";
@@ -510,13 +607,6 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
     (a.time || "00:00").localeCompare(b.time || "00:00") ||
     a.theater.localeCompare(b.theater));
 
-  const staleNotes = [...new Set(
-    sorted.map((s) => {
-      const t = state.data.theaters[s.theater];
-      const label = staleLabel(t);
-      return label ? `${SHORT_NAMES[s.theater] || t.name} ${label}` : null;
-    }).filter(Boolean))];
-
   // rows before "now" collect separately so today can fold them away
   const upcoming = [];
   const earlier = [];
@@ -537,11 +627,15 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
     }
     const t = state.data.theaters[s.theater];
     const past = isToday && m !== null && m < nowMin;
+    const stale = staleLabel(t);
+    const focus = state.scrollTitle === s.title;
     if (!nowPlaced) earlierCount++;
     const img = (state.data.films[s.title.toLowerCase()] || {}).img;
     bucket.push(
-      `<a class="tl__row${past ? " is-past" : ""}" href="${s.url || "#"}"` +
+      `<a class="tl__row${past ? " is-past" : ""}${stale ? " is-stale" : ""}` +
+      `${focus ? " is-focus" : ""}" href="${s.url || "#"}"` +
       (isToday && s.time ? ` data-time="${s.time}"` : "") +
+      ` data-title="${escapeHtml(s.title)}"` +
       ` target="_blank" rel="noopener">` +
       `<span class="tl__time">${fmtTime(s.time)}</span>` +
       `<span class="tl__thumb">` +
@@ -556,9 +650,6 @@ function renderMobileTimeline(board, shows, isToday, nowMin) {
   }
 
   const parts = [];
-  if (staleNotes.length) {
-    parts.push(`<p class="tl__stale">${staleNotes.join(" · ")}</p>`);
-  }
   if (earlier.length && earlierCount > 5) {
     parts.push(
       `<button class="tl__earlier" aria-expanded="false" data-count="${earlierCount}">` +
@@ -658,10 +749,18 @@ function updateBoardClock() {
 function pillGroup(s) {
   const past = s.date === isoToday() && s.time && minutes(s.time) < minutes(nowHHMM());
   return `<span class="pillgroup${past ? " is-past" : ""}">` +
-    `<a class="timepill" href="${s.url || "#"}" target="_blank" rel="noopener"` +
-    ` title="Tickets: ${escapeHtml(s.title)} ${fmtTime(s.time)}">${fmtTime(s.time)}</a>` +
+    `<button type="button" class="timepill" data-date="${s.date}"` +
+    ` data-title="${escapeHtml(s.title)}"` +
+    ` title="Show ${fmtDate(s.date)} on the board">${fmtTime(s.time)}</button>` +
     `<button class="icsbtn" data-ics="1" title="Add to calendar" aria-label="Add ${escapeHtml(s.title)} ${fmtTime(s.time)} to calendar">+</button>` +
     `</span>`;
+}
+
+function filmTitleHtml(title, date) {
+  const slug = filmSlug(title);
+  return `<h2 class="film__title"><a class="filmpermalink" href="#${date}/film/${slug}"` +
+    ` data-date="${date}" data-slug="${slug}">${escapeHtml(title)}</a>` +
+    `${filmYearHtml(title)}</h2>`;
 }
 
 function filmLinks(title) {
@@ -688,6 +787,39 @@ function registerIcs(s) {
 }
 
 document.addEventListener("click", (e) => {
+  const perm = e.target.closest("a.filmpermalink");
+  if (perm) {
+    e.preventDefault();
+    state.date = perm.dataset.date;
+    state.view = "films";
+    state.film = perm.dataset.slug;
+    state.scrollTitle = null;
+    state.pendingScroll = true;
+    syncHash();
+    render();
+    return;
+  }
+  const time = e.target.closest("button.timepill");
+  if (time) {
+    state.date = time.dataset.date;
+    state.view = "board";
+    state.film = null;
+    state.scrollTitle = time.dataset.title;
+    state.pendingScroll = true;
+    syncHash();
+    render();
+    return;
+  }
+  const goto = e.target.closest("[data-goto-date]");
+  if (goto) {
+    state.date = goto.dataset.gotoDate;
+    state.film = null;
+    state.scrollTitle = null;
+    if (state.view === "all") state.view = "board";
+    syncHash();
+    render();
+    return;
+  }
   const btn = e.target.closest("[data-ics]");
   if (btn && icsRegistry.has(btn.dataset.icsKey)) {
     downloadICS(icsRegistry.get(btn.dataset.icsKey));
@@ -708,7 +840,7 @@ function renderFilms() {
   wrap.innerHTML = "";
   icsRegistry.clear();
   const shows = screeningsOn(state.date);
-  $("#empty").hidden = shows.length > 0;
+  if (!shows.length) return;
 
   const byFilm = new Map();
   for (const s of shows) {
@@ -737,9 +869,11 @@ function renderFilms() {
       })
       .join("");
     const desc = filmDesc(f.title);
+    const slug = filmSlug(f.title);
+    div.className = "film" + (state.film === slug ? " is-focus" : "");
     div.innerHTML =
       filmThumb(f.title) +
-      `<div class="film__head"><h2 class="film__title">${escapeHtml(f.title)}${filmYearHtml(f.title)}</h2>` +
+      `<div class="film__head">${filmTitleHtml(f.title, state.date)}` +
       badgeHtml(f.notes) + filmLinks(f.title) +
       (desc ? `<p class="film__desc">${escapeHtml(desc)}</p>` : "") +
       `</div>` +
@@ -756,13 +890,10 @@ function renderAll() {
   wrap.innerHTML = "";
   icsRegistry.clear();
   const today = isoToday();
-  const q = state.query.trim().toLowerCase();
 
   const byFilm = new Map();
   for (const s of state.data.screenings) {
-    if (s.date < today || state.off.has(s.theater) || !passesFilters(s)) continue;
-    if (q && !(s.title.toLowerCase().includes(q) ||
-               (s.note || "").toLowerCase().includes(q))) continue;
+    if (s.date < today || state.off.has(s.theater) || !passesFilters(s) || !matchesQuery(s)) continue;
     const key = s.title.toLowerCase();
     if (!byFilm.has(key)) byFilm.set(key, { title: s.title, dates: new Map(), notes: [] });
     const f = byFilm.get(key);
@@ -770,11 +901,6 @@ function renderAll() {
     f.dates.get(s.date).push(s);
     f.notes.push(s.note);
   }
-
-  $("#empty").hidden = byFilm.size > 0;
-  $("#allCount").textContent = byFilm.size
-    ? `${byFilm.size} film${byFilm.size === 1 ? "" : "s"}`
-    : "";
 
   const films = [...byFilm.values()].sort((a, b) => a.title.localeCompare(b.title));
   for (const f of films) {
@@ -804,9 +930,12 @@ function renderAll() {
       })
       .join("");
     const desc = filmDesc(f.title);
+    const firstDate = [...f.dates.keys()].sort()[0];
+    const slug = filmSlug(f.title);
+    div.className = "film" + (state.film === slug ? " is-focus" : "");
     div.innerHTML =
       filmThumb(f.title) +
-      `<div class="film__head"><h2 class="film__title">${escapeHtml(f.title)}${filmYearHtml(f.title)}</h2>` +
+      `<div class="film__head">${filmTitleHtml(f.title, firstDate)}` +
       badgeHtml(f.notes) + filmLinks(f.title) +
       (desc ? `<p class="film__desc">${escapeHtml(desc)}</p>` : "") +
       `</div>` +
@@ -872,8 +1001,102 @@ function initMastPanels() {
 }
 
 function syncHash() {
-  const suffix = state.view === "films" ? "/films" : state.view === "all" ? "/all" : "";
+  let suffix = "";
+  if (state.film) suffix = "/film/" + state.film;
+  else if (state.view === "films") suffix = "/films";
+  else if (state.view === "all") suffix = "/all";
   history.replaceState(null, "", "#" + state.date + suffix);
+}
+
+function otherDatesForQuery() {
+  const today = isoToday();
+  const dates = new Set();
+  for (const s of state.data.screenings) {
+    if (s.date < today || s.date === state.date) continue;
+    if (state.off.has(s.theater) || !passesFilters(s) || !matchesQuery(s)) continue;
+    dates.add(s.date);
+  }
+  return [...dates].sort();
+}
+
+function hiddenQueryHit() {
+  const today = isoToday();
+  const q = queryText();
+  if (!q || !state.off.size) return false;
+  return state.data.screenings.some((s) =>
+    s.date >= today &&
+    (state.view === "all" || s.date === state.date) &&
+    state.off.has(s.theater) && passesFilters(s) && matchesQuery(s));
+}
+
+function updateEmptyState() {
+  const q = queryText();
+  const empty = $("#empty");
+  const emptySearch = $("#emptySearch");
+  const also = $("#alsoOn");
+  const countEl = $("#matchCount");
+  const count = state.view === "all"
+    ? $("#allfilmsList").children.length
+    : screeningsOn(state.date).length;
+  const blank = count === 0;
+
+  empty.hidden = !(blank && !q);
+  emptySearch.hidden = !(blank && q);
+  if (blank && q) {
+    const quoted = `“${q}”`;
+    if (hiddenQueryHit() && state.view === "all") {
+      emptySearch.textContent = `No films match ${quoted} in the theaters that are on.`;
+    } else if (state.view === "all") {
+      emptySearch.textContent = `No films match ${quoted}.`;
+    } else if (hiddenQueryHit()) {
+      emptySearch.textContent = `No films match ${quoted} on this day in the theaters that are on.`;
+    } else {
+      emptySearch.textContent = `No films match ${quoted} on this day.`;
+    }
+  }
+
+  const others = state.view === "all" || !q ? [] : otherDatesForQuery();
+  if (others.length) {
+    const shown = others.slice(0, 5);
+    const more = others.length - shown.length;
+    also.hidden = false;
+    also.innerHTML = `Also playing ` + shown.map((iso) =>
+      `<button type="button" class="linkbtn" data-goto-date="${iso}">${fmtDate(iso)}</button>`
+    ).join(" · ") + (more ? ` · and ${more} more` : "");
+  } else {
+    also.hidden = true;
+    also.innerHTML = "";
+  }
+
+  if (state.view === "all") {
+    countEl.hidden = count === 0;
+    countEl.textContent = count ? `${count} film${count === 1 ? "" : "s"}` : "";
+  } else if (q && count) {
+    countEl.hidden = false;
+    countEl.textContent = `${count} on this day`;
+  } else {
+    countEl.hidden = true;
+    countEl.textContent = "";
+  }
+  updateEmptyFilters();
+}
+
+function scrollToFocus() {
+  const go = () => {
+    setStickyOffsets();
+    const target = document.querySelector(
+      ".film.is-focus, .stub-link.is-focus, .tl__row.is-focus");
+    if (!target) return;
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    target.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+  };
+  // wait for the display font — it changes the day strip's height, and a
+  // scroll that lands first slides the row out from under the strip
+  if (document.fonts && document.fonts.status !== "loaded") {
+    document.fonts.ready.then(() => requestAnimationFrame(go));
+  } else {
+    requestAnimationFrame(go);
+  }
 }
 
 function setStickyOffsets() {
@@ -896,6 +1119,7 @@ function updateStuckShade() {
 
 function render() {
   renderDaystrip();
+  renderStaleNote();
   renderChips();
   setStickyOffsets();
   $("#nowJump").hidden = true; // board render re-shows it when applicable
@@ -909,7 +1133,10 @@ function render() {
   if (state.view === "board") renderBoard();
   else if (state.view === "films") renderFilms();
   else renderAll();
-  updateEmptyFilters();
+  updateEmptyState();
+  const scroll = state.pendingScroll;
+  state.pendingScroll = false;
+  if (scroll) scrollToFocus();
 }
 
 async function init() {
@@ -937,12 +1164,19 @@ async function init() {
   } catch (e) { /* ignore bad storage */ }
 
   const today = isoToday();
-  const dates = [...new Set(state.data.screenings.map((s) => s.date))]
-    .sort()
-    .filter((d) => d >= today);
-  const [hashDate, hashView] = location.hash.slice(1).split("/");
+  const { dates } = futureDates();
+  const parts = location.hash.replace(/^#/, "").split("/");
+  const hashDate = parts[0];
   state.date = dates.includes(hashDate) ? hashDate : dates[0] || today;
-  if (hashView === "films" || hashView === "all") state.view = hashView;
+  if (parts[1] === "film" && parts[2]) {
+    state.view = "films";
+    state.film = decodeURIComponent(parts[2]);
+    state.pendingScroll = true;
+  } else if (parts[1] === "films") {
+    state.view = "films";
+  } else if (parts[1] === "all") {
+    state.view = "all";
+  }
 
   $("#updated").textContent =
     "Listings refreshed " +
@@ -965,6 +1199,8 @@ async function init() {
   for (const [id, v] of [["viewBoard", "board"], ["viewFilms", "films"], ["viewAll", "all"]]) {
     $("#" + id).addEventListener("click", () => {
       state.view = v;
+      state.film = null;
+      state.scrollTitle = null;
       syncHash();
       render();
       if (v === "all") $("#filmSearch").focus();
@@ -973,8 +1209,8 @@ async function init() {
 
   $("#filmSearch").addEventListener("input", (e) => {
     state.query = e.target.value;
-    renderAll();
-    updateEmptyFilters();
+    state.film = null;
+    render();
   });
 
   $("#clearFilters").addEventListener("click", () => {

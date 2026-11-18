@@ -185,18 +185,23 @@ bayfilm/
   divider is off-screen.
 - **By-film view** — the same day grouped by title, with poster thumbnails,
   blurbs, and Letterboxd/IMDb links.
-- **All films view** — every upcoming film across dates with a search box
-  (matches titles and formats, e.g. "70mm").
+- **Find a film** — the search box above the filters matches titles,
+  blurbs, and formats (e.g. "70mm") on the day you're viewing, and points
+  at other days when the title plays later. All films lists every match
+  across dates.
 - **Add to calendar** — the `+` beside any time in the film views downloads
-  an `.ics` for that screening (correct Pacific timezone).
-- **Freshness badges** — rows whose data is >24h older than the rest are
-  flagged "listings from …" (this is how the BAMPFA/Stanford CI fallback
-  stays honest).
+  an `.ics` for that screening (correct Pacific timezone). The time itself
+  opens that day on the board.
+- **Freshness** — theaters indexed more than a day before the rest of the
+  data are named in a note under the day strip, and their rows are dimmed
+  (this is how the BAMPFA/Stanford CI fallback stays honest).
 - **Light/dark themes** — token-driven; follows the OS preference, with a
   masthead toggle that persists. A pre-paint script in `index.html` prevents
   theme flash. All text pairs meet WCAG AA in both themes.
-- **URL hash state** — `#2026-09-05`, `#2026-09-05/films`, or
-  `#2026-09-05/all`, so days and views are shareable/bookmarkable.
+- **URL hash state** — `#2026-09-05`, `#2026-09-05/films`,
+  `#2026-09-05/all`, or `#2026-09-05/film/colony` for one film, so days,
+  views, and films are shareable/bookmarkable. The day strip shows 14
+  dates at a time; Earlier and Later reach anything beyond that window.
 
 Design system in brief: Big Shoulders (display) for the venue "machinery,"
 Instrument Serif (+italic) for film titles and editorial copy, Spline Sans

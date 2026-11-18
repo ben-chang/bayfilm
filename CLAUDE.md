@@ -110,7 +110,8 @@ ratio = lambda f,b: (max(lum(f),lum(b))+.05)/(min(lum(f),lum(b))+.05)
 ## Frontend conventions
 
 - Vanilla JS, no build. All user text through `escapeHtml()`. State lives in
-  the `state` object + URL hash (`#date`, `#date/films`, `#date/all`);
+  the `state` object + URL hash (`#date`, `#date/films`, `#date/all`,
+  `#date/film/slug`);
   filters and theme persist in localStorage (`bayfilm.hidden`,
   `bayfilm.theme`, `bayfilm.filmFilters` — era + on-film toggles).
 - **Theming is token-driven** — never hardcode a hex in a component rule.
