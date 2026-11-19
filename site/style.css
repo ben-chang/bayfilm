@@ -76,11 +76,11 @@ a, button, input, summary { touch-action: manipulation; }
 
 .wordmark {
   margin: 0;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(48px, 8vw, 84px);
-  line-height: 0.95;
-  letter-spacing: -0.035em;
+  font-family: "Big Shoulders", "Arial Narrow", sans-serif;
+  font-weight: 800;
+  font-size: clamp(52px, 9vw, 96px);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 
@@ -1089,15 +1089,15 @@ a, button, input, summary { touch-action: manipulation; }
 .colophon a { color: var(--ink); }
 
 .colophon__ghost {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(64px, 14vw, 168px);
-  line-height: 0.85;
-  letter-spacing: -0.045em;
+  font-family: "Big Shoulders", "Arial Narrow", sans-serif;
+  font-weight: 800;
+  font-size: clamp(90px, 16vw, 230px);
+  line-height: 0.72;
+  letter-spacing: 0.01em;
   text-align: center;
   text-transform: uppercase;
   color: var(--ink);
-  opacity: 0.08;
+  opacity: 0.07;
   user-select: none;
   pointer-events: none;
   overflow: hidden;
