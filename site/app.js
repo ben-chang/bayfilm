@@ -1186,7 +1186,7 @@ async function init() {
 
   console.log(
     "%cBAYFILM",
-    "font: 800 22px 'Big Shoulders', sans-serif; color: #DB4B1F;",
+    "font: 700 22px Inter, sans-serif; color: #DB4B1F;",
     "· the data lives at /data/showtimes.json · see more movies on real screens ✦"
   );
 

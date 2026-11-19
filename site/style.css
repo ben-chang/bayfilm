@@ -13,10 +13,10 @@
   --shadow: #22272B;     /* hard offset shadows */
   --on-ink-soft: #B9BFB8; /* muted text on inverted (ink-bg) chips */
 
-  --display: "Big Shoulders", "Arial Narrow", sans-serif;
-  --body: "Archivo", system-ui, sans-serif;
-  --mono: "Spline Sans Mono", ui-monospace, monospace;
-  --serif: "Instrument Serif", Georgia, serif;
+  --display: "Inter", system-ui, sans-serif;
+  --body: "Inter", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --serif: "Literata", Georgia, serif;
 }
 
 /* screening-room dark theme — tonal remap, all text pairs ≥4.5:1 */
@@ -44,7 +44,7 @@ body {
   color: var(--ink);
   font-family: var(--body);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.55;
   /* the last row can scroll clear of the sticky day strip */
   padding-bottom: calc(var(--daystrip-h, 80px) + 32px);
 }
@@ -76,7 +76,7 @@ a, button, input, summary { touch-action: manipulation; }
 
 .wordmark {
   margin: 0;
-  font-family: var(--display);
+  font-family: "Big Shoulders", "Arial Narrow", sans-serif;
   font-weight: 800;
   font-size: clamp(52px, 9vw, 96px);
   line-height: 0.9;
@@ -90,7 +90,8 @@ a, button, input, summary { touch-action: manipulation; }
   margin: 10px 0 0;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 21px;
+  font-size: 22px;
+  line-height: 1.35;
   color: var(--ink);
   font-weight: 400;
 }
@@ -138,8 +139,8 @@ a, button, input, summary { touch-action: manipulation; }
 .mastpanel p {
   margin: 8px 0 0;
   font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.55;
   color: var(--ink-soft);
   border-left: 3px solid var(--bridge);
   padding-left: 12px;
@@ -197,7 +198,7 @@ a, button, input, summary { touch-action: manipulation; }
   background: transparent;
   padding: 10px 16px 8px;
   text-align: left;
-  min-width: 86px;
+  min-width: 96px;
 }
 
 .day__dow {
@@ -212,9 +213,11 @@ a, button, input, summary { touch-action: manipulation; }
 .day__num {
   display: block;
   font-family: var(--display);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
 }
 
 .day__count {
@@ -236,7 +239,7 @@ a, button, input, summary { touch-action: manipulation; }
 
 .day.is-today .day__dow { color: var(--bridge-ink); font-weight: 600; }
 
-.day--edge .day__num { font-size: 22px; }
+.day--edge .day__num { font-size: 20px; }
 
 /* one line for every theater indexed earlier than the rest of the file */
 .stalenote {
@@ -504,7 +507,7 @@ a, button, input, summary { touch-action: manipulation; }
 .axis__inner {
   position: relative;
   height: 100%;
-  margin-left: 168px;
+  margin-left: 196px;
   border-bottom: 1px solid var(--edge);
 }
 
@@ -524,18 +527,17 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .trow__label {
-  flex: 0 0 168px;
+  flex: 0 0 196px;
   padding: 12px 12px 12px 0;
   border-right: 1px solid var(--edge);
 }
 
 .trow__name {
   font-family: var(--display);
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.05;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.011em;
 }
 
 .trow__name a {
@@ -850,9 +852,10 @@ a, button, input, summary { touch-action: manipulation; }
 .film__title {
   flex-basis: 100%;
   font-family: var(--serif);
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 1.02;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
   margin: 0;
 }
 
@@ -868,9 +871,10 @@ a, button, input, summary { touch-action: manipulation; }
   margin: 2px 0 0;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 17px;
   color: var(--ink-soft);
-  line-height: 1.4;
+  line-height: 1.45;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1085,12 +1089,13 @@ a, button, input, summary { touch-action: manipulation; }
 .colophon a { color: var(--ink); }
 
 .colophon__ghost {
-  font-family: var(--display);
+  font-family: "Big Shoulders", "Arial Narrow", sans-serif;
   font-weight: 800;
   font-size: clamp(90px, 16vw, 230px);
   line-height: 0.72;
   letter-spacing: 0.01em;
   text-align: center;
+  text-transform: uppercase;
   color: var(--ink);
   opacity: 0.07;
   user-select: none;

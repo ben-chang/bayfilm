@@ -203,11 +203,12 @@ bayfilm/
   views, and films are shareable/bookmarkable. The day strip shows 14
   dates at a time; Earlier and Later reach anything beyond that window.
 
-Design system in brief: Big Shoulders (display) for the venue "machinery,"
-Instrument Serif (+italic) for film titles and editorial copy, Spline Sans
-Mono for times and labels, Archivo for body; fog/ink palette with
-international orange as the single accent (`--bridge`, with a darker
-text-safe variant `--bridge-ink` in light mode).
+Design system in brief: Big Shoulders for the all-caps BAYFILM wordmark
+(FILM in the accent color); Inter for theater names, the day strip, and
+body copy; Literata (+italic) for film titles and editorial copy; IBM Plex
+Mono for times and labels. Fog/ink palette with international orange as
+the single accent (`--bridge`, with a darker text-safe variant
+`--bridge-ink` in light mode).
 
 ## Scraper notes and quirks
 
