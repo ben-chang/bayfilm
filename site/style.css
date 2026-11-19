@@ -13,10 +13,10 @@
   --shadow: #22272B;     /* hard offset shadows */
   --on-ink-soft: #B9BFB8; /* muted text on inverted (ink-bg) chips */
 
-  --display: "Source Sans 3", system-ui, sans-serif;
-  --body: "Source Sans 3", system-ui, sans-serif;
+  --display: "Inter", system-ui, sans-serif;
+  --body: "Inter", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --serif: "Source Serif 4", Georgia, serif;
+  --serif: "Literata", Georgia, serif;
 }
 
 /* screening-room dark theme — tonal remap, all text pairs ≥4.5:1 */
@@ -75,44 +75,16 @@ a, button, input, summary { touch-action: manipulation; }
 }
 
 .wordmark {
-  display: flex;
-  align-items: center;
-  gap: 0.22em;
   margin: 0;
-  font-size: clamp(40px, 6.2vw, 64px);
-  line-height: 1;
-  letter-spacing: -0.035em;
-}
-
-/* a small film gate: sprocket dots and an orange frame */
-.wordmark__gate {
-  flex: 0 0 auto;
-  width: 0.62em;
-  height: 0.78em;
-  border: 0.07em solid var(--ink);
-  border-radius: 0.1em;
-  background-color: var(--fog);
-  background-image:
-    radial-gradient(circle at 50% 16%, var(--ink) 0 0.055em, transparent 0.065em),
-    radial-gradient(circle at 50% 84%, var(--ink) 0 0.055em, transparent 0.065em),
-    linear-gradient(var(--bridge), var(--bridge));
-  background-size: auto, auto, 56% 40%;
-  background-position: center, center, center;
-  background-repeat: no-repeat;
-}
-
-.wordmark__name {
   font-family: var(--display);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: clamp(48px, 8vw, 84px);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
 }
 
-.wordmark__name span {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 600;
-  color: var(--bridge);
-  letter-spacing: -0.03em;
-}
+.wordmark span { color: var(--bridge); }
 
 .tagline {
   margin: 10px 0 0;
@@ -1118,11 +1090,12 @@ a, button, input, summary { touch-action: manipulation; }
 
 .colophon__ghost {
   font-family: var(--display);
-  font-weight: 600;
-  font-size: clamp(56px, 12vw, 148px);
-  line-height: 0.9;
-  letter-spacing: -0.04em;
+  font-weight: 700;
+  font-size: clamp(64px, 14vw, 168px);
+  line-height: 0.85;
+  letter-spacing: -0.045em;
   text-align: center;
+  text-transform: uppercase;
   color: var(--ink);
   opacity: 0.08;
   user-select: none;
@@ -1130,13 +1103,6 @@ a, button, input, summary { touch-action: manipulation; }
   overflow: hidden;
   margin-top: 14px;
   transform: translateY(8%);
-}
-
-.colophon__ghost span {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 600;
-  color: var(--bridge);
 }
 
 /* ---------- mobile: board flows as a list ---------- */

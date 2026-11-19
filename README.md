@@ -203,12 +203,12 @@ bayfilm/
   views, and films are shareable/bookmarkable. The day strip shows 14
   dates at a time; Earlier and Later reach anything beyond that window.
 
-Design system in brief: Source Sans 3 for the wordmark, theater names, the
-day strip, and body copy; Source Serif 4 (+italic) for film titles and
-editorial copy; IBM Plex Mono for times and labels. The wordmark is “Bay”
-in the sans, italic “Film,” and a small film-gate mark. Fog/ink palette
-with international orange as the single accent (`--bridge`, with a darker
-text-safe variant `--bridge-ink` in light mode).
+Design system in brief: Inter for the wordmark, theater names, the day
+strip, and body copy; Literata (+italic) for film titles and editorial
+copy; IBM Plex Mono for times and labels. The wordmark is all-caps
+BAYFILM, with FILM in the accent color. Fog/ink palette with international
+orange as the single accent (`--bridge`, with a darker text-safe variant
+`--bridge-ink` in light mode).
 
 ## Scraper notes and quirks
 
